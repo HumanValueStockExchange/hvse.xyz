@@ -1,11 +1,11 @@
 .container {
   margin: auto;
-  max-width: 500px;
+  max-width: 1500px;
   font-family: sans-serif;
 }
 
 .heading {
-  color: #F00000;
+  color: black;
 }
 .nav-links {
   display: flex;
