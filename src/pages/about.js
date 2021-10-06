@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
       <Layout pageTitle="About us">
         <b>MAKING YOU BETTER</b>
-        <p>What is the difference between each of us? Our value; This criterion seems to be subjective. therefore, none objective parameter exists yet to assess human value on an individual scale.The ability to find keys to success  is a vital component of human dignity and a fundamental human right. That’s why we stand for improve yourself without limits.</p>
+        <p>What is the difference between each of us? Our value. This criterion seems to be subjective. therefore, none objective parameter exists yet to assess human value on an individual scale.The ability to find keys to success  is a vital component of human dignity and a fundamental human right. That’s why we stand for improve yourself without limits.</p>
         <b>SUCCESS WITHOUT LIMITS?</b>
         <p>Success is actually entraved by a societal issue: the social elevator elevator disapperance.Unlike other cyptocurrencies, HVSEcoin will not be a goal but a mean: the mean to your success and to improve yourself. In fact, HVSEcoin is the only way to access a new market: that of human values (Human Value Stock Exchange).</p>
         <b>OUR ROLE ABOUT THAT</b>
