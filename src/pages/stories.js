@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 const StoriesPage = () => {
   return (
     <Layout pageTitle="Stories">
-      <p>Welcome to the HVSE foundation website!</p>
+      <p>Watch this space, user and investor stories for the HVSE is being drafted and will be announced shortly!</p>
     </Layout>
   )
 }

@@ -1,10 +1,14 @@
 # HVSE [HVSE, Ͱ]
  
-![](logo.png)
+<h1 align="center" style="margin-top: 1em; margin-bottom: 3em;">
+  <p><a href="https://hvse.xyz"><img alt="hvse logo" src="./logo.png" alt="hvse.xyz" width="125"></a></p>
+  <p>👋 Welcome to hvse.xyz!</p>
+</h1>
+
 
 ## Identity
 
-[hvse.xyz](https://hvse.xyz) is a primary online resource for the HVSE community. Here is the others:
+This is the repo for the [hvse.xyz](https://hvse.xyz) website, a resource for the HVSE community. Here is the others:
 
 - [Whitepaper](?)
 
