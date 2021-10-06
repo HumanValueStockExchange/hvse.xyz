@@ -1,54 +1,26 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# HVSE [HVSE, Ͱ]
+ 
+![](logo.png)
 
-## 🚀 Quick start
+## Identity
 
-1.  **Create a Gatsby site.**
+[hvse.xyz](https://hvse.xyz) is a primary online resource for the HVSE community. Here is the others:
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+- [Whitepaper](?)
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+- [Twitter](https://twitter.com/hvse)
 
-2.  **Start developing.**
+- [Official subreddit](https://www.reddit.com/r/hvse/)
 
-    Navigate into your new site’s directory and start it up.
+- [Discord](https://discord.gg/n4rRamkGuU)
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- Contact : hvse.info@protonmail.com
 
-3.  **Open the code and start customizing!**
 
-    Your site is now running at http://localhost:8000!
+## License
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+HVSE website is released under the terms of the MIT license. See [LICENSE](https://github.com/edlansiaux/HVSECOIN/blob/main/LICENSE) more information or see [opensource.org](https://opensource.org/licenses/MIT).
 
-4.  **Learn more**
+## Development and contributions
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+Development is ongoing, and the development team, as well as other volunteers, can freely work in their own trees and submit pull requests when features or bug fixes are ready.
