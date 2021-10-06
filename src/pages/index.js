@@ -7,6 +7,7 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
       <p>Welcome to the HVSE foundation website!</p>
+      <p>Our website is actually under construction.</p>
     </Layout>
   )
 }
