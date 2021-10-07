@@ -29,7 +29,7 @@ const Layout = ({ pageTitle, children }) => {
       <nav>
       <ul className={navLinks}>
           <li className={navLogo}>
-            <Link to="/index" className={navLinkText}>
+            <Link to="/" className={navLinkText}>
               <StaticImage
               alt="HVSE foundation logo"
               src="../images/logos/logo.png"/>
