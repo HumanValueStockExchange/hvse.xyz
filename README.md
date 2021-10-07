@@ -1,4 +1,7 @@
 # HVSE [HVSE, Ͱ]
+
+[![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=hvse%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/n4rRamkGuU)
+[![Twitter Follow](https://img.shields.io/twitter/follow/hvse.svg?style=social)](https://twitter.com/hvse)
  
 <h1 align="center" style="margin-top: 1em; margin-bottom: 3em;">
   <p><a href="https://hvse.xyz"><img alt="hvse logo" src="./logo.png" alt="hvse.xyz" width="125"></a></p>
@@ -20,6 +23,9 @@ This is the repo for the [hvse.xyz](https://hvse.xyz) website, a resource for th
 
 - Contact : hvse.info@protonmail.com
 
+###Looking for the HVSE blockchain's code?
+
+## How to contribute?
 
 ## License
 
