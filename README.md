@@ -31,7 +31,7 @@ HVSE website is released under the terms of the MIT license. See [LICENSE](https
 
 ## Looking for the HVSE blockchain's code?
 
-If you're looking for the HVSE blockchain itself, there is no single repo. Instead, HVSE has multiple implementations of the protocol written in different programming languages for security and diversity. [Check out the different implementations](https://ethereum.org/en/developers/docs/nodes-and-clients/#clients)
+If you're looking for the HVSE blockchain itself, there is no single repo. Instead, HVSE has multiple implementations of the protocol written in different programming languages for security and diversity. [Check out the different implementations]()
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
@@ -134,7 +134,7 @@ $ git push
 - After your changes are commited to your GitHub fork, submit a pull request (PR) to the `dev` branch of the `HumanValueStockExchange/hvse.xyz` repo
 - In your PR description, reference the issue it resolves (see [linking a pull request to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword))
   - ex. `Updates out of date content [Fixes #1234]`
-- Why not say hi and draw attention to your PR in [our discord server](https://discord.gg/CetY6Y4)?
+- Why not say hi and draw attention to your PR in [our discord server](https://discord.gg/n4rRamkGuU)?
 
 ### Wait for review
 
@@ -143,6 +143,6 @@ $ git push
 
 ### Release
 
-- `master` is continually synced and will automatically deploy new commits to ethereum.org
+- `master` is continually synced and will automatically deploy new commits to hvse.xyz
 - The website team will periodically merge `dev` into `master` (typically multiple times per week)
-- You can [view the history of releases](https://github.com/ethereum/ethereum-org-website/releases), which include PR highlights
+- You can [view the history of releases](https://github.com/HumanValueStockExchange/hvse.xyz/releases), which include PR highlights

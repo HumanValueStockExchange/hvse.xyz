@@ -7,14 +7,41 @@
 .heading {
   color: black;
 }
+
 .nav-links {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
   display: flex;
   list-style: none;
-  padding-left: 0rem;
+  padding-left: 0rem;;
 }
 .nav-link-item {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
   padding-right: 1rem;
 }
 .nav-link-text {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  position: sticky;
   color: black;
+}
+
+.nav-logo {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  position: sticky;
+  width: 05%;
+  padding-right: 1rem;
+}
+
+.site-title {
+  font-size: 3rem;
+  color: black;
+  font-weight: 700;
+  margin: 3rem 0;
 }

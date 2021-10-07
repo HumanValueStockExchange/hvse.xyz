@@ -1,27 +1,43 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { useStaticQuery, graphql, Link  } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
+import Footer from "./footer.js"
 import {
   container,
   heading,
+  siteTitle,
   navLinks,
   navLinkItem,
-  navLinkText
+  navLinkText,
+  navLogo,
 } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
+   const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
   return (
     <div className={container}>
-      <title>{pageTitle}</title>
+      <header style={{ border: "", padding: "0rem 0rem" }}>
       <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
+      <ul className={navLinks}>
+          <li className={navLogo}>
+            <Link to="/index" className={navLinkText}>
+              <StaticImage
+              alt="HVSE foundation logo"
+              src="../images/logos/logo.png"/>
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/stories" className={navLinkText}>
-              Stories
+            <Link to="/news" className={navLinkText}>
+              News
             </Link>
           </li>
           <li className={navLinkItem}>
@@ -30,16 +46,28 @@ const Layout = ({ pageTitle, children }) => {
             </Link>
           </li>
           <li className={navLinkItem}>
+            <Link to="/whitepaper" className={navLinkText}>
+              Whitepaper
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/stories" className={navLinkText}>
+              Stories
+            </Link>
+          </li>
+          <li className={navLinkItem}>
             <Link to="/about" className={navLinkText}>
-              Our fondation
+              About
             </Link>
           </li>
         </ul>
-      </nav>
+        </nav>
+    </header>
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
+      <Footer />
     </div>
   )
 }

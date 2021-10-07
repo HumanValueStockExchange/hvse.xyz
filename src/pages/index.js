@@ -7,10 +7,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 const IndexPage = () => {
   return (
     <Layout pageTitle="">
-      <StaticImage
-        alt="HVSE foundation logo"
-        src="../images/logos/big logo.png"
-      />
       <p>Our website is actually under construction.</p>
     </Layout>
   )
