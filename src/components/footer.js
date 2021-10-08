@@ -34,8 +34,6 @@ const Footer = () => {
                     </MDBCol>
                 </MDBRow>
                 <hr className="rgba-white-light" style={{ margin: "0 15%" }} />
-                </MDBRow>
-                <hr className="clearfix d-md-none rgba-white-light" style={{ margin: "10% 15% 5%" }} />
                 <MDBRow className="pb-3">
                     <MDBCol md="12">
                         <div className="mb-5 flex-center">
@@ -52,7 +50,7 @@ const Footer = () => {
             <div className="footer-copyright text-center py-3">
                 <MDBContainer fluid>
                     &copy; {new Date().getFullYear()} Copyright:
-                <a href="https://www.hvse.xyz" alt=""> HVSE Foundation </a>
+                <a href="https://www.hvse.xyz" alt="">HVSE Foundation </a>
                 </MDBContainer>
             </div>
         </MDBFooter>

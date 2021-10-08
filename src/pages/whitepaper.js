@@ -60,7 +60,7 @@ const WhitepaperPage = () => {
       <p> We define a tokenized user as a person who has achieved the tokenization process allowing to be quoted on the Human Value Stock Market.</p>
       <StaticImage
         alt="Introduction of the HVSEcoin use"
-        src="../images/whitepaper iconography/General scheme.png"
+        src="../images/whitepaper iconography/General scheme.PNG"
       />
       <p> The problem of course is the ethic and philosophical ones: the unavailability principle of the body (and the soul). However, this argument seems fallacious and assimilates more to fear in view of different existing practices (surrogacy, euthanasia ...).</p>
       <b> 3. HVSEcoin (Ͱ) </b>
