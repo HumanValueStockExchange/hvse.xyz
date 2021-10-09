@@ -17,7 +17,9 @@ const Footer = (props) => (
 			<div className={footerStyles.clear}></div>
 			<p className={footerStyles.copyright}>© {(new Date().getFullYear())} <Link to="/">{props.title}</Link> | {props.tagline}</p>
 		</div>
-		<div className={footerStyles.socialIcons}></div>
+		<div className={footerStyles.socialIcons}>
+
+		</div>
 	</div>
 )
 
