@@ -29,10 +29,15 @@ const Layout = ({ pageTitle, children }) => {
       <nav>
       <ul className={navLinks}>
           <li className={navLogo}>
-            <Link to="/index" className={navLinkText}>
+            <Link to="/" className={navLinkText}>
               <StaticImage
               alt="HVSE foundation logo"
               src="../images/logos/logo.png"/>
+            </Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/news" className={navLinkText}>
+              News
             </Link>
           </li>
           <li className={navLinkItem}>
