@@ -28,8 +28,6 @@
 }
 .footer {
     width: 100%;
-    margin: 0 -999px;
-    padding: 30px 999px;
     display: block;
     color: #a7b5c1;
     overflow: hidden;
