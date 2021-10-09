@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useStaticQuery, graphql, Link  } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+import StaticImage from 'gatsby-plugin-image'
 import {
   container,
   heading,
