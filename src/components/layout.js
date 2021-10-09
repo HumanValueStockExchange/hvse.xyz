@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useStaticQuery, graphql, Link  } from 'gatsby'
-import StaticImage from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import Footer from "./footer.js"
 import {
   container,
@@ -32,7 +32,8 @@ const Layout = ({ pageTitle, children }) => {
             <Link to="/" className={navLinkText}>
               <StaticImage
               alt="HVSE foundation logo"
-              src="../images/logos/logo.png"/>
+              src="../images/logos/logo.png"
+              />
             </Link>
           </li>
           <li className={navLinkItem}>
