@@ -32,8 +32,7 @@ const Layout = ({ pageTitle, children }) => {
             <Link to="/" className={navLinkText}>
               <StaticImage
               alt="HVSE foundation logo"
-              src="../images/logos/logo.png"
-              />
+              src="../images/logos/logo.png"/>
             </Link>
           </li>
           <li className={navLinkItem}>
