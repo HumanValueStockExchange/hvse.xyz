@@ -1,6 +1,7 @@
 .active {
   color: LightGrey;
   text-decoration: none;
+  float: center;
 }
 
 .clearfix {
@@ -26,9 +27,11 @@
     height: 0;
     color: #a7b5c1;
 }
+
 .footer {
     width: 100%;
     display: block;
+    float: center;
     color: #a7b5c1;
     overflow: hidden;
     background: #2f353e;
@@ -42,23 +45,20 @@
 }
 
 .menu-footer-wrapper {
-    float: center;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     color: #a7b5c1;
 }
 .menu-footer {
+    display: flex;
     float: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    color: #a7b5c1;
 }
 .menu-footer li {
-    float: center;
-    margin: 0 20px 5px 0;
-    display: inline;
+    display:flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     color: #a7b5c1;
 }
 
@@ -70,10 +70,15 @@
     color: #a7b5c1;
 }
 .social-icons {
-    float: center;
     margin-left: auto;
     margin-right: auto;
-    width: 20px;
+    width: 250px;
+    height: 40px;
     margin-top: 5px;
-    color: LightGrey;
+    float: center;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
 }
