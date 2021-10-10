@@ -32,48 +32,48 @@ const Footer = (props) => (
                 </div>
             </div>
 			<div className={socialIcons}>
-			<Link to="/">
+			<Link external to="https://twitter.com/HVSE_Foundation">
               <StaticImage
               alt="Twitter"
               src="../images/social media button/twitter.png"
               className={icon}
               />
             </Link>
-      <Link to="/">
+      <Link external to="https://discord.com/invite/n4rRamkGuU">
               <StaticImage
               alt="Discord"
               src="../images/social media button/discord2.png"
               className={icon}
               />
             </Link>
-      <Link to="/">
+      <Link external to="https://github.com/HumanValueStockExchange/hvse.xyz">
               <StaticImage
               alt="Github"
               src="../images/social media button/github2.png"
               className={icon}
               />
             </Link>
-      <Link to="/">
+      <Link external to="/">
               <StaticImage
               alt="Telegram"
               src="../images/social media button/telegram2.png"
               className={icon}
               />
             </Link>
-      <Link to="/">
+      <Link external to="https://www.reddit.com/r/hvse/">
               <StaticImage
               alt="Reddit"
               src="../images/social media button/redd.png"
               className={icon}
               />
             </Link>
-      <Link to="/">
+      <a href="mailto:hvse.info@protonmail.com">
               <StaticImage
               alt="Mail"
               src="../images/social media button/mail.png"
               className={icon}
               />
-            </Link>
+            </a>
 			</div>
 			<div className={clear}></div>
 			<p className={copyright}>© {(new Date().getFullYear())}
