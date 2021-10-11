@@ -80,7 +80,7 @@ const Footer = (props) => (
 			  <Link
 			    to="/"
 			    className={copyright}
-			    style={{ textDecoration: 'none' }}> The HVSE Foundation</Link> | {props.tagline}</p>
+			    style={{ textDecoration: 'none' }}> The HVSE Foundation</Link> | All Rights Reserved </p>
 		</div>
 	</div>
 )

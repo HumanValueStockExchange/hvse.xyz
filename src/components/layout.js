@@ -1,12 +1,10 @@
 import * as React from 'react'
-import { useStaticQuery, graphql, Link  } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+import { useStaticQuery, graphql  } from 'gatsby'
 import Header from "./header.js"
 import Footer from "./footer.js"
 import {
   container,
   heading,
-  siteTitle,
 } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {

@@ -1,8 +1,7 @@
 node_modules/
 .cache/
 public
-
-
 #R files
 .Rproj.user
 *.Rproj
+package-lock.json

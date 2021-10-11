@@ -8,22 +8,3 @@
   color: black;
   margin: 5rem 1;
 }
-
-.nav-links {
-  position: -webkit-sticky;
-  position: sticky;
-  float: right;
-  top: 0px;
-  display: flex;
-  list-style: none;
-  padding-left: 0rem;
-  text-decoration: none;
-}
-
-
-.site-title {
-  font-size: 3rem;
-  color: black;
-  font-weight: 700;
-  margin: 5rem 1;
-}
