@@ -1,22 +1,21 @@
 import React from 'react';
+import {
+  lg,
+  xl,
+} from './css/objects/button.module.css';
 
-const sizes = {
-  default: `py-3 px-8`,
-  lg: `py-4 px-12`,
-  xl: `py-5 px-16 text-lg`
+const types = {
+  lg,
+  xl
 };
 
-const Button = ({ children, className = '', size }) => {
+const Button = ({ children, className = '', type }) => {
   return (
     <button
       type="button"
       className={`
-        ${sizes[size] || sizes.default}
+        ${types[type]}
         ${className}
-        bg-primary
-        hover:bg-primary-darker
-        rounded
-        text-white
     `}
     >
       {children}

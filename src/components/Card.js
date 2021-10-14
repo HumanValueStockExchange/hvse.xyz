@@ -1,14 +1,24 @@
 import React from 'react';
+import {
+  borders,
+  primary
+} from "./css/objects/features.module.css"
 
-const Card = ({ className, children }) => (
-  <div
-    className={`p-12 rounded-lg border border-solid border-gray-200 ${className}`}
-    style={{
-      boxShadow: '0 10px 28px rgba(0,0,0,.08)'
-    }}
-  >
-    {children}
+const styleh = {
+  paddingRight: '1',
+  paddingLeft: '1',
+  paddingTop: '20',
+  paddingBottom: '20',
+};
+
+const Card = ({id, children1, children2, children3 }) => (
+<section id={id}>
+  <div className={primary}>
+    <div className={borders}> {children1} </div>
+    <div className={borders}> {children2} </div>
+    <div className={borders}> {children3} </div>
   </div>
+</section>
 );
 
 export default Card;

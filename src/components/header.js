@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from "gatsby"
-import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from "gatsby";
+import { StaticImage } from 'gatsby-plugin-image';
 import {
   header,
   navLinks,
   navLinkItem,
   navLinkText,
   navLogo,
-} from "./header.module.css";
+} from "./css/header.module.css";
 
 const Header = ({children, ...props}) => (
 <div className={header}>

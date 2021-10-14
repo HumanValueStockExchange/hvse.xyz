@@ -3,18 +3,11 @@ import {
   container,
   primary,
   secondary,
-} from './css/objects/splitsection.module.css';
+} from './css/objects/mainblock.module.css';
 
-const primaries = {
 
-};
-
-const secondaries = {
-
-};
-
-const SplitSection = ({ id, primarySlot, secondarySlot }) => (
-  <section id={id} className="py-20">
+const MainBlock = ({ id, primarySlot, secondarySlot }) => (
+  <section id={id} className="py-20" style={{paddingTop:'20', paddingBottom:'20'}}>
     <div className={container}>
       <div className={primary}>{primarySlot}</div>
       <div className={secondary}>{secondarySlot}</div>
@@ -22,4 +15,4 @@ const SplitSection = ({ id, primarySlot, secondarySlot }) => (
   </section>
 );
 
-export default SplitSection;
+export default MainBlock;

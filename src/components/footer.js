@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "gatsby"
-import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from "gatsby";
+import { StaticImage } from 'gatsby-plugin-image';
 import {
   active,
   clearfix,
@@ -12,7 +12,7 @@ import {
   copyright,
   icon,
   socialIcons,
-} from "./footer.module.css";
+} from "./css/footer.module.css";
 
 const Footer = (props) => (
     <div className={[footer, clearfix].join(" ")}>

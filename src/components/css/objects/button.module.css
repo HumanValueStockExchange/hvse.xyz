@@ -1,0 +1,33 @@
+.lg {
+  background-color: #4199e1;
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.lg:hover {
+    background-color:#1e78c2;
+}
+
+.light {
+    background-color: #949494;
+}
+
+.xl {
+  background-color: #4199e1;
+  color: white;
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.xl:hover {
+    background-color:#1e78c2;
+}
