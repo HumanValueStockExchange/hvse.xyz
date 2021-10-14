@@ -25,10 +25,13 @@ const IndexPage = () => {
     <p className="text-xl lg:text-2xl mt-6 font-light" style={{marginTop:'6px', fontWeight:'300', fontSize: '1.25rem',
 lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you can bet on others success , or improve yourself easily or both!</p>
           <Link to="/whitepaper">
-              <Button type="lg" style={{marginTop:'8',paddingRight:'8em'}}>Whitepaper</Button>
+              <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Whitepaper</Button>
             </Link>
             <Link to="/about">
-              <Button type="lg" style={{marginTop:'8',}}>About us</Button>
+              <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>About us</Button>
+            </Link>
+            <Link to="/roadmap">
+              <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Roadmap</Button>
             </Link></div>}
     secondarySlot={<HeroImage />}
     />
@@ -96,7 +99,7 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
     <section id="stories" className="py-20 lg:py-40" style={{paddingBottom:'20', paddingTop:'20'}}>
       <div className="container mx-auto"style={{marginRight:'auto', marginLeft:'auto'}}>
         <LabelText className="mb-8 text-gray-600 text-center">WHAT CUSTOMERS ARE SAYING</LabelText>
-        <div className="flex flex-col md:flex-row md:-mx-3" style={{float: 'center', display:'flex', flexDirection:'row', marginLeft:'3', marginRight:'3'}}>
+        <div className="flex flex-col md:flex-row md:-mx-3" style={{float: 'center', display:'flex', flexDirection:'row', marginLeft:'3', marginRight:'3', columnWidth:'30%'}}>
           {customerData.map(customer => (
             <div key={customer.customerName} className="flex-1 px-3">
               <CustomerCard customer={customer} />
