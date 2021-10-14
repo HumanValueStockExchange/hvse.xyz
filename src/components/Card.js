@@ -4,12 +4,6 @@ import {
   primary
 } from "./css/objects/features.module.css"
 
-const styleh = {
-  paddingRight: '1',
-  paddingLeft: '1',
-  paddingTop: '20',
-  paddingBottom: '20',
-};
 
 const Card = ({id, children1, children2, children3 }) => (
 <section id={id}>

@@ -80,7 +80,7 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
     <section id="stats" className="py-20 lg:pt-32" style={{paddingTop:'5em', paddingBottom:'5em'}}>
       <div className="container mx-auto text-center" style={{marginRight:'auto', marginLeft:'auto', textAlign:'center'}}>
         <LabelText className="text-gray-600">OUR CUSTOMERS GET RESULTS</LabelText>
-        <div className="flex flex-col sm:flex-row mt-8 lg:px-24" style={{display:'flex', flexDirection:'row', marginTop:'4em', padddingLeft:'24', padddingLeft:'24'}}>
+        <div className="flex flex-col sm:flex-row mt-8 lg:px-24" style={{display:'flex', flexDirection:'row', margin:'auto', float: 'center'}}>
           <div className="w-full sm:w-1/3" style={{width:'100%', columnWidth:'1/3'}}>
             <StatsBox primaryText="+100%" secondaryText="IHVTs average capital gain" />
           </div>
@@ -94,7 +94,7 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
       </div>
     </section>
     <section id="stories" className="py-20 lg:py-40" style={{paddingBottom:'20', paddingTop:'20'}}>
-      <div className="container mx-auto" class="container" style={{marginRight:'auto', marginLeft:'auto'}}>
+      <div className="container mx-auto"style={{marginRight:'auto', marginLeft:'auto'}}>
         <LabelText className="mb-8 text-gray-600 text-center">WHAT CUSTOMERS ARE SAYING</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3" style={{float: 'center', display:'flex', flexDirection:'row', marginLeft:'3', marginRight:'3'}}>
           {customerData.map(customer => (
