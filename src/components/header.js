@@ -1,53 +1,49 @@
 import React from "react";
-import { Link } from "gatsby";
 import { StaticImage } from 'gatsby-plugin-image';
+import "./css/header.module.css";
 import {
-  header,
-  navLinks,
-  navLinkItem,
-  navLinkText,
   navLogo,
-} from "./css/header.module.css";
+  unfolding,
+  sub
+} from "./css/header.module.css"
 
 const Header = ({children, ...props}) => (
-<div className={header}>
       <nav>
       <li className={navLogo}>
-            <Link to="/" className={navLinkText}>
+            <a href="/">
               <StaticImage
               alt="HVSE foundation logo"
               src="../images/logos/big logo.png"/>
-            </Link>
+            </a>
       </li>
-      <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/news" className={navLinkText}>
-              News
-            </Link>
+      <ul style={{display:'flex'}}>
+          <li><a href="/news">News</a></li>
+          <li className={unfolding}><a href='#'>Use HVSE</a>
+            <ul className={sub}>
+              <li><a href="#">HVSE Wallets</a></li>
+              <li><a href="#">Get HVSEcoin</a></li>
+              <li><a href="#">Stake with IHVTs</a></li>
+              <li><a href="#">Be tokenized</a></li>
+            </ul>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/roadmap" className={navLinkText}>
-              Roadmap
-            </Link>
+          <li className={unfolding}><a href='#'>Learn</a>
+            <ul className={sub}>
+              <li><a href="#">What is HVSE?</a></li>
+              <li><a href="#">What is HVSEcoin?</a></li>
+              <li><a href="#">What are IHVTs?</a></li>
+              <li><a href="/whitepaper">HVSE whitepaper</a></li>
+              <li><a href="/stories">Stories</a></li>
+              <li><a href="#">F.A.Q.</a></li>
+            </ul>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/whitepaper" className={navLinkText}>
-              Whitepaper
-            </Link>
+          <li className={unfolding}><a href='#'>Foundation</a>
+            <ul className={sub}>
+              <li><a href="/about">About us</a></li>
+              <li><a href="/roadmap">Roadmap</a></li>
+            </ul>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/stories" className={navLinkText}>
-              Stories
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-        </ul>
-        </nav>
-    </div>
+      </ul>
+    </nav>
 )
 
 export default Header
