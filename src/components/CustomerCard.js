@@ -9,8 +9,8 @@ const CustomerCard = ({ customer }) => (
     <p className="mt-6" style={{marginTop:'6', marginLeft:'10px', marginRight:'10px'}}>{customer.content}</p>
     <div className="flex items-center mt-8" style={{marginBottom:'8px', display:'flex', marginLeft:'10px'}}>
       <img
-        className="w-12 h-12 mr-4 rounded-full"
-        style={{width:'120px', height:'120px', marginRight:'10px', borderRadius: '9999px'}}
+        className="w-12 h-12 mr-4"
+        style={{width:'100px', height:'100px', marginRight:'10px'}}
         src={customer.customerImage}
         alt={customer.customerName}
       />

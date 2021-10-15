@@ -24,14 +24,14 @@ const IndexPage = () => {
         <div className="pageTitle" style={{fontWeight:'700', fontSize: '2.25rem', lineHeight: '2.5rem', class:'lead'}}> <p>Human Value Stock Exchange</p></div>
     <p className="text-xl lg:text-2xl mt-6 font-light" style={{marginTop:'6px', fontWeight:'300', fontSize: '1.25rem',
 lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you can bet on others success , or improve yourself easily or both!</p>
-          <Link to="/whitepaper">
-              <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Whitepaper</Button>
-            </Link>
             <Link to="/about">
               <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>About us</Button>
             </Link>
             <Link to="/roadmap">
               <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Roadmap</Button>
+            </Link>
+            <Link to="/whitepaper">
+              <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Whitepaper</Button>
             </Link></div>}
     secondarySlot={<HeroImage />}
     />
@@ -106,7 +106,12 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
             </div>
           ))}
         </div>
-      </div>
+        <div style={{display:'flex', justifyContent:'center'}}>
+        <Link to="/stories">
+              <Button type="bg" style={{marginTop:'8',paddingRight:'0.25em'}}>More stories</Button>
+            </Link>
+        </div>
+        </div>
     </section>
     <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center" class="container" style={{marginRight:'auto', marginLeft:'auto', marginTop:'auto', marginBottom:'auto', paddingTop:'4em', paddingBottom:'4em', textAlign:'center', backgroundColor:'rgba(249, 250, 251,1)', verticalAlign: 'middle',}}>
       <h3 className="text-5xl font-semibold" style={{fontSize: '3rem', lineHeight: '1rem',fontWeight:'600'}}>Ready to improve yourself?</h3>
@@ -114,7 +119,7 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
         We are all waiting you!
       </p>
       <p className="mt-8" style={{marginTop:'8'}}>
-        <Button type="xl">Get Started Now</Button>
+        <Button type="bg">Get Started Now</Button>
       </p>
     </section>
   </Layout>

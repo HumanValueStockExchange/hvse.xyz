@@ -2,11 +2,13 @@ import React from 'react';
 import {
   lg,
   xl,
+  bg,
 } from './css/objects/button.module.css';
 
 const types = {
   lg,
-  xl
+  xl,
+  bg
 };
 
 const Button = ({ children, className = '', type }) => {
