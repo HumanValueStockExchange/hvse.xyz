@@ -13,26 +13,25 @@
 }
 
 .primary {
+  width:100%;
   column-width: 50%;
   display:flex;
   flex-direction:column;
-  margin: auto;
-  p {
-        margin: auto; /* Important */
-        text-align: center;
-      }
+  text-align:left;
+  margin-right: 10px;
+  margin-left: 10px;
+  justify-content: center;
 }
 
 .secondary {
+  width:100%;
   column-width: 50%;
   display:flex;
   flex-direction:column;
-  margin: auto;
-  p {
-        margin: auto; /* Important */
-        text-align: center;
-      }
-
+  text-align:left;
+  margin-right: 10px;
+  margin-left: 10px;
+  justify-content: center;
 }
 
 
