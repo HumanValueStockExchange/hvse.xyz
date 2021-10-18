@@ -1,13 +1,24 @@
 // Step 1: Import React
-import * as React from 'react'
+import React from 'react'
+import { Helmet } from "react-helmet"
+import 'gatsby-remark-mathjax'
+import 'gatsby-transformer-remark'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import SplitSection from '../components/SplitSection';
 
 // Step 2: Define your component
+
 const WhitepaperPage = () => {
   return (
     <Layout pageTitle="Whitepaper">
+
+    <Helmet>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+    </Helmet>
+
       <b>ABSTRACT</b>
       <p>What is the difference between each of us? Our value. This criterion seems to be subjective. Therefore, none objective parameter exist yet to assess human value on an individual scale. This societal issue joins another: the social elevator disappearance. Unlike other crypto currencies, HVSEcoin will not be a goal but a means; the means to assess your added value,  the means to improve yourself. To do this, HVSEcoin is the only way to access a new market: that of human values (Human Value Stock Exchange).</p>
       <b> 1. INTRODUCTION </b>
@@ -115,7 +126,77 @@ const WhitepaperPage = () => {
         secondarySlot={
         <div className="lg:pr-32 xl:pr-48">
         <b> 4.1. Personal staking</b>
-        <p>Users use their Ͱ to buy individual HVPT (Human Value Personnal Token).</p></div>}
+        <p>Users use their Ͱ to buy individual HVPT (Human Value Personnal Token).</p>
+        $$P_s (n)=k_s \cdot n$$
+        where \(k_s\) constant is the same accross all HPVT and never changes during token life.
+        </div>
+        }
+      />
+      <SplitSection
+        id="HVPT individual reserve status"
+        primarySlot={
+        <div>
+          <p>Buy price is determined by number of issued token and individual reserve status:</p>
+          <p>If individual reserve is untouched:</p>
+          $$P_b (n)=P_s (n)=k_s \cdot n$$
+          <p>If individual reserve is empty:</p>
+          $$P_b (n)=k_r \cdot P_s (n)=k_r \cdot k_s \cdot n$$
+        </div>
+        }
+        secondarySlot={<StaticImage
+        alt="HVPT individual reserve status"
+        src="../images/whitepaper iconography/HVPT individual reserve status.png"
+      />
+        }
+      />
+      <SplitSection
+      id="Buyback reserves"
+      primarySlot={<StaticImage
+        alt="Buyback reserves"
+        src="../images/whitepaper iconography/buyback reserves.png"
+      />}
+      secondarySlot={<div>
+      <b>BETWEEN:</b>
+      <p>1. Buyback reserve</p>
+      $$bb=\int_0^n k_r\cdot P_s(z)dz$$
+      $$bb=\int_0^n k_r\cdot k_s\cdot z \cdot dz$$
+      $$bb=(k_r\cdot k_s)/2  \cdot n^2$$
+</div>}
+      />
+      <SplitSection
+      id="HVPT individual reserve max"
+      primarySlot={<div>
+      <p>2. Individual reserve max and \(\%\) calculus where \(0\leq k_i \leq 1-k_r \)</p>
+      $$ir =\int_0^n k_i \cdot P_s(z)\cdot dz =\int_0^n k_i\cdot k_s \cdot z \cdot dz = (k_i \cdot k_s)/2 \cdot n^2$$
+      $$ir(min)=0$$
+      $$ir(max)=((1-k_r \cdot k_s)/2 \cdot n^2$$
+      $$k_i=(2\cdot ir)/(k_s\cdot n^2)$$
+      $$\forall p_i \in [0;1], p_i=(k_i)/(1-k_r)= (2 \cdot ir)/[(1-k_r)(k_s \cdot n^2)]$$
+</div>}
+      secondarySlot={<StaticImage
+        alt="HVPT individual reserve max"
+        src="../images/whitepaper iconography/HVPT individual reserve max.png"
+      />
+      }
+      />
+      <SplitSection
+      id="depositwithdrawal"
+      primarySlot={<StaticImage
+        alt="HVPT individual reserve max"
+        src="../images/whitepaper iconography/depositwithdrawal.png"
+      />}
+      secondarySlot={
+        <div>
+        <b>4.2. Deposit/Withdrawal</b>
+        $$w(max)=ir$$
+        $$d(max)=ir(max)-ir=[(1-k_r)\cdot k_s]/2 \cdot n^2-ir$$
+        $$ir_d=ir+d$$
+        $$ir_w=ir-w$$
+        $$k(id)=[2 \cdot(ir+d)]/(k_s \cdot n^2)=k_i+(2 \cdot d)/(k_s \cdot n^2)$$
+        $$k(iw)=[2 \cdot(ir-w)][k_s \cdot n^2]=k_i-[2 \cdot w][k_s \cdot n^2]$$
+        $$p(iw)=[(k_i-2 \cdot w)/(k_s \cdot n^2)]/(1-k_r)=p_i -[2 \cdot w]/[k_s \cdot n^2 \cdot (1-k_r)]$$
+        </div>
+      }
       />
     </Layout>
   )

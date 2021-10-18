@@ -29,6 +29,15 @@ module.exports = {
         display: "standalone",
         icon: "src/images/logos/logo.png" // This path is relative to the root of the site.
       },
-    }
+    },
+    "gatsby-plugin-react-helmet",
+    {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-mathjax`,
+      ],
+    },
+  },
   ],
 };
