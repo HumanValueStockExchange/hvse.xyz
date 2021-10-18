@@ -1,13 +1,21 @@
 .active {
-  color: LightGrey;
+  color: #2C3E18;;
   text-decoration: none;
   float: center;
+  font-size: 13px;
+  margin-top:2px;
+  margin-bottom: 2px;
+}
+
+.active:hover {
+  color: grey;
+  font-size: 13px;
 }
 
 .clearfix {
     *display: inline-block;
     height: 1%;
-    color: rgba(156, 163, 175,1);
+    color: #2C3E50;
 }
 .clearfix:after {
     content: "";
@@ -16,7 +24,7 @@
     visibility: hidden;
     font-size: 0;
     height: 0;
-    color: rgba(156, 163, 175,1);
+    color: #2C3E50;
 }
 .clear {
     clear: both;
@@ -25,7 +33,7 @@
     visibility: hidden;
     width: 0;
     height: 0;
-    color: rgba(156, 163, 175,1);
+    color: #2C3E50;
 }
 
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
@@ -51,7 +59,7 @@
   margin: 0 7px;
   text-align: center;
   display: inline-block;
-  color: #111;
+  color: #2C3E50;
 
   -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
   -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
@@ -89,14 +97,14 @@
   color: #fff;
 }
 .footer-social-links a:hover:before {
-  background: #111;
+  background: #2C3E50;
 }
 
 .footer {
     width: 100%;
     display: block;
     float: center;
-    color: #a7b5c1;
+    color: #2C3E50;
     overflow: hidden;
     background: rgba(249, 250, 251,1);
     box-shadow: rgba(0,0,0,.15) 0px 0px 5px;
@@ -105,25 +113,27 @@
 }
 .footer-copy {
     float: center;
-    color: rgba(156, 163, 175,1);
+    color: #2C3E50;
 }
 
 .menu-footer-wrapper {
-    color: rgba(156, 163, 175,1);
+    color: #2C3E50;
     display:flex;
     flex-direction: row;
 }
 .menu-footer {
     text-align: left;
+    color: #2C3E50;
 }
 
 .menu-footer ul {
   display: flex;
   flex-direction: column;
+  color: #2C3E50;
 }
 .menu-footer li {
     display:flex;
-    color: rgba(156, 163, 175,1);
+    color: #2C3E50;
 }
 
 .copyright {
@@ -131,5 +141,5 @@
     margin-right: auto;
     width: 350px;
     font-size: 12px;
-    color: rgba(156, 163, 175,1);
+    color: #2C3E50;
 }
