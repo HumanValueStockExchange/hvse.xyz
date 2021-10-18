@@ -18,10 +18,6 @@
   display:flex;
   flex-direction:column;
   margin: auto;
-  p {
-        margin: auto; /* Important */
-        text-align: center;
-      }
 }
 
 .secondary {
@@ -30,11 +26,6 @@
   display:flex;
   flex-direction:column;
   margin: auto;
-  p {
-        margin: auto; /* Important */
-        text-align: center;
-      }
-
 }
 
 
