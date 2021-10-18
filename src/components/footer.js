@@ -12,69 +12,84 @@ import {
   copyright,
   icon,
   socialIcons,
+  footerSocialLinks,
+  discord
 } from "./css/footer.module.css";
+
+
+
 
 const Footer = (props) => (
     <div className={[footer, clearfix].join(" ")}>
 		<div className={footerCopy}>
+		<div className={footerSocialLinks}>
+			  <a href="https://twitter.com/HVSE_Foundation" title="Twitter" target="https://twitter.com/HVSE_Foundation"><i class="fab fa-twitter"></i></a>
+			  <a href="https://github.com/HumanValueStockExchange/hvse.xyz" title="GitHub" target="https://github.com/HumanValueStockExchange/hvse.xyz"><i class="fab fa-github"></i></a>
+			  <a href="https://discord.com/invite/n4rRamkGuU" title="Discord" target="https://discord.com/invite/n4rRamkGuU"><i class="fab fa-discord" ></i></a>
+			  <a href="https://www.reddit.com/r/hvse/" title="Reddit" target="https://www.reddit.com/r/hvse/"><i class="fab fa-reddit"></i></a>
+        <a href="mailto:hvse.info@protonmail.com" title="Mail" target="mailto:hvse.info@protonmail.com"><i class="fa fa-envelope"></i></a>
+			</div>
 			<div className={menuFooterWrapper}>
-				<div>
+				<div style={{display:'flex', flexDirection:'row'}}>
                     <ul className={menuFooter}>
-                        <li><Link to="/"
+                        <b> Use HVSE</b>
+                        <li><Link to="#"
                         className={active}>
-                        Home
+                        HVSE wallets
                         </Link></li>
+                        <li><Link to="#"
+                        className={active}>
+                        Get HVSEcoins
+                        </Link></li>
+                        <li><Link to="#"
+                        className={active}>
+                        Staking with IHVTs
+                        </Link></li>
+                        <li><Link to="#"
+                        className={active}>
+                        Be tokenized
+                        </Link></li>
+                    </ul>
+                    <ul className={menuFooter}>
+                        <b>Learn</b>
+                        <li><Link to="#"
+                        className={active}>
+                        What is HVSE?
+                        </Link></li>
+                        <li><Link to="#"
+                        className={active}>
+                        What is HVSEcoin?
+                        </Link></li>
+                        <li><Link to="#"
+                        className={active}>
+                        What are IHVTs?
+                        </Link></li>
+                        <li><Link to="/whitepaper"
+                        className={active}>
+                        HVSE whitepaper
+                        </Link></li>
+                        <li><Link to="/stories"
+                        className={active}>
+                        Customer stories
+                        </Link></li>
+                        <li><Link to="#"
+                        className={active}>
+                        Frequently asked questions
+                        </Link></li>
+                    </ul>
+                    <ul className={menuFooter}>
+                        <b>Foundation</b>
                         <li><Link to="/about"
                         className={active}>
-                        About
+                        About us
+                        </Link></li>
+                        <li><Link to="/roadmap"
+                        className={active}>
+                        Roadmap
                         </Link></li>
                     </ul>
                 </div>
             </div>
-			<div className={socialIcons}>
-			<Link external to="https://twitter.com/HVSE_Foundation">
-              <StaticImage
-              alt="Twitter"
-              src="../images/social media button/twitter.png"
-              className={icon}
-              />
-            </Link>
-      <Link external to="https://discord.com/invite/n4rRamkGuU">
-              <StaticImage
-              alt="Discord"
-              src="../images/social media button/discord2.png"
-              className={icon}
-              />
-            </Link>
-      <Link external to="https://github.com/HumanValueStockExchange/hvse.xyz">
-              <StaticImage
-              alt="Github"
-              src="../images/social media button/github2.png"
-              className={icon}
-              />
-            </Link>
-      <Link external to="/">
-              <StaticImage
-              alt="Telegram"
-              src="../images/social media button/telegram2.png"
-              className={icon}
-              />
-            </Link>
-      <Link external to="https://www.reddit.com/r/hvse/">
-              <StaticImage
-              alt="Reddit"
-              src="../images/social media button/redd.png"
-              className={icon}
-              />
-            </Link>
-      <a href="mailto:hvse.info@protonmail.com">
-              <StaticImage
-              alt="Mail"
-              src="../images/social media button/mail.png"
-              className={icon}
-              />
-            </a>
-			</div>
 			<div className={clear}></div>
 			<p className={copyright}>© {(new Date().getFullYear())}
 			  <Link

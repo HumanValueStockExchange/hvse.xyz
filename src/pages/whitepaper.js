@@ -2,6 +2,7 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import SplitSection from '../components/SplitSection';
 
 // Step 2: Define your component
 const WhitepaperPage = () => {
@@ -40,14 +41,17 @@ const WhitepaperPage = () => {
       <i> 2.2.1. Description</i>
       <p>The <i>Decentralized Autonomous Trust</i> (DAT) is a specific immutable smart-contract that implements a bonding curve contract with sponsored burning to automatically mint, burn and distribute fully digital security tokens called <i>FAIR securities</i> (FAIRs). These FAIRs represent a claim on the future cash-flows handled by the DAT.</p>
       <p>It is important to note that the DAT is not the organization; like an irrevocable Trust, it is a contract external to the organization.</p>
+      <SplitSection
+      id="Continuous organization Description"
+      primarySlot={<ul><li><b>Buying FAIRs</b>. New FAIRs are minted by the DAT, which increases the price of FAIRs. Part of the money invested goes to the organization and part of it is held back by the DAT in its buy-back reserve.</li>
+      <li><b>Selling FAIRs</b>. The FAIRs sold are burnt by the DAT, which decreases the price of FAIRs, and the DAT refunds the investor with ETH using its buy-back reserve.</li>
+      <li>DAT receiving <b>payement</b>. A payment fraction is used by the DAT to mint new FAIRs (increase both the price of FAIRs and the buy-back reserve). Those newly minted FAIRs are distributed to the current FAIRs holders. The payment rest is transferred to the organization.</li>
+      <li>DAT receiving <b>dividend payement</b>.The amount sent is used to mint new FAIRs (increasing both the price of FAIRs and the buy-back reserve). Those newly minted FAIRs are distributed to the current FAIRs holders.</li></ul>}
+      secondarySlot={
       <StaticImage
         alt="Introduction of the Continous Organization system"
         src="../images/whitepaper iconography/Introducing-Continuous0.png"
-      />
-      <p>- <b>Buying FAIRs</b>. New FAIRs are minted by the DAT, which increases the price of FAIRs. Part of the money invested goes to the organization and part of it is held back by the DAT in its buy-back reserve.</p>
-      <p>- <b>Selling FAIRs</b>. The FAIRs sold are burnt by the DAT, which decreases the price of FAIRs, and the DAT refunds the investor with ETH using its buy-back reserve.</p>
-      <p>- DAT receiving <b>payement</b>. A payment fraction is used by the DAT to mint new FAIRs (increase both the price of FAIRs and the buy-back reserve). Those newly minted FAIRs are distributed to the current FAIRs holders. The payment rest is transferred to the organization.</p>
-      <p>- DAT receiving <b>dividend payement</b>.The amount sent is used to mint new FAIRs (increasing both the price of FAIRs and the buy-back reserve). Those newly minted FAIRs are distributed to the current FAIRs holders.</p>
+      />}/>
       <i> 2.2.2. Pros</i>
       <p>1. <b>Continuous Fundraising</b>. Continuous open primary market where tokens get minted whenever demand exceeds supply. So, it provides ongoing funding and makes the organization less fragile.</p>
       <p>2. <b>Fully liquid</b>. An investor will always be able to buy/sell its FAIRs (not necessarily at the price he wants), even in the public market listing absence.</p>
@@ -56,45 +60,63 @@ const WhitepaperPage = () => {
       <p>5. <b>Permission-less, friction-less and supra-national</b>. Accessibility for everyone fom anywhere without permission.</p>
       <p>6. <b>Governance agnostic</b>. No governance rights. Immutable system and no governance favoritism. So, "Bring Your Own Governance."</p>
       <b> 2.3. HVSE organization</b>
-      <p>We define the HSVEcoin as a gate between crypto-traders and tokenization candidate. Each crypto-traders can buy some HVSEcoin (with fiat) or trade it against other crypto-currencies. Only HVSEcoin could be used to buy or to sell tokenized user action.</p>
-      <p> We define a tokenized user as a person who has achieved the tokenization process allowing to be quoted on the Human Value Stock Market.</p>
-      <StaticImage
+      <SplitSection
+      id="HVSE organization"
+      primarySlot=
+      {<StaticImage
         alt="Introduction of the HVSEcoin use"
         src="../images/whitepaper iconography/General scheme.PNG"
-      />
-      <p> The problem of course is the ethic and philosophical ones: the unavailability principle of the body (and the soul). However, this argument seems fallacious and assimilates more to fear in view of different existing practices (surrogacy, euthanasia ...).</p>
+      />}
+      secondarySlot=
+      {<div><p>We define the HSVEcoin as a gate between crypto-traders and tokenization candidate. Each crypto-traders can buy some HVSEcoin (with fiat) or trade it against other crypto-currencies. Only HVSEcoin could be used to buy or to sell tokenized user action.</p>
+      <p> We define a tokenized user as a person who has achieved the tokenization process allowing to be quoted on the Human Value Stock Market.</p>
+      <p> The problem of course is the ethic and philosophical ones: the unavailability principle of the body (and the soul). However, this argument seems fallacious and assimilates more to fear in view of different existing practices (surrogacy, euthanasia ...).</p></div>}/>
       <b> 3. HVSEcoin (Ͱ) </b>
       <p></p>
       <b> 3.1. Ͱ token supply</b>
-      <p></p>
+      <SplitSection
+      id="Bonding Curve"
+      primarySlot={<div>
       <i> 3.1.1. Bonding curve</i>
       <p> As other financial products, Ͱ will obey to the demand/supply law. Therefore, its prices will change according to this. Differences between sell and buy price allow to create a second market: futures, derived options...Bid asks prices bounded. This makes possible to maintain a market security.</p>
-      <StaticImage
+      </div>}
+      secondarySlot={<StaticImage
         alt="Bonding curve explanation"
         src="../images/whitepaper iconography/bonding_curve.png"
-      />
-      <p></p>
-      <i> 3.1.2. Bonding curve initialization</i>
-      <p> A Minimum Funding Goal was defined to offer the initialization possibility. Till it was not reached, we are on the refundable side; and then, after the Minimum Funding Goal, the curve is launched. Maybe, we will study the possibility to go backwards in the future (but it is not current).</p>
-      <StaticImage
-        alt="Bonding curve initailization"
+      />}/>
+      <SplitSection
+      id="Bonding curve initialization"
+      primarySlot={<StaticImage
+        alt="Bonding curve initialization"
         src="../images/whitepaper iconography/initialization.png"
-      />
-      <p></p>
+      />}
+      secondarySlot={<div>
+      <i> 3.1.2. Bonding curve initialization</i>
+      <p> A Minimum Funding Goal was defined to offer the initialization possibility. Till it was not reached, we are on the refundable side; and then, after the Minimum Funding Goal, the curve is launched. Maybe, we will study the possibility to go backwards in the future (but it is not current).</p></div>}/>
       <b> 4. IHVT mechanism</b>
-      <p> Incoming Ͱ is split between: buying back reserve to guarantee liquidity of Ͱ and individual reserve available to the user for deposit or withdrawal.</p>
-      <StaticImage
+      <SplitSection
+      id="IHVT mechanism introduction"
+      primarySlot={
+        <div className="lg:pr-32 xl:pr-48">
+          <p> Incoming Ͱ is split between: buying back reserve to guarantee liquidity of Ͱ and individual reserve available to the user for deposit or withdrawal.</p>
+        </div>
+      }
+      secondarySlot={<StaticImage
         alt="Bonding curve initailization"
         src="../images/whitepaper iconography/IHVT_mechanism.png"
-      />
-      <p></p>
-      <b> 4.1. Personal staking</b>
-      <StaticImage
+      />}
+    />
+    <SplitSection
+        id="IHVT mechanism introduction"
+        primarySlot={<StaticImage
         alt="Bonding curve initailization"
         src="../images/whitepaper iconography/Buying HVPT.PNG"
+      />}
+        secondarySlot={
+        <div className="lg:pr-32 xl:pr-48">
+        <b> 4.1. Personal staking</b>
+        <p>Users use their Ͱ to buy individual HVPT (Human Value Personnal Token).</p></div>}
       />
-      <p>Users use their Ͱ to buy individual HVPT (Human Value Personnal Token).</p>
-      <p></p>
     </Layout>
   )
 }
