@@ -60,7 +60,7 @@ const WhitepaperPage = () => {
       <li>DAT receiving <b>dividend payement</b>.The amount sent is used to mint new FAIRs (increasing both the price of FAIRs and the buy-back reserve). Those newly minted FAIRs are distributed to the current FAIRs holders.</li></ul>}
       secondarySlot={
       <StaticImage
-
+        style={{width:"500px"}}
         alt="Introduction of the Continous Organization system"
         src="../images/whitepaper iconography/Introducing-Continuous0.png"
       />}/>
@@ -76,6 +76,7 @@ const WhitepaperPage = () => {
       id="HVSE organization"
       primarySlot=
       {<StaticImage
+        style={{width:"500px"}}
         alt="Introduction of the HVSEcoin use"
         src="../images/whitepaper iconography/General scheme.PNG"
       />}
@@ -92,13 +93,13 @@ const WhitepaperPage = () => {
       <i> 3.1.1. Bonding curve</i>
       <p> As other financial products, Ͱ will obey to the demand/supply law. Therefore, its prices will change according to this. Differences between sell and buy price allow to create a second market: futures, derived options...Bid asks prices bounded. This makes possible to maintain a market security.</p>
       </div>}
-      secondarySlot={<StaticImage
+      secondarySlot={<StaticImage         style={{width:"500px"}}
         alt="Bonding curve explanation"
         src="../images/whitepaper iconography/bonding_curve.png"
       />}/>
       <SplitSection
       id="Bonding curve initialization"
-      primarySlot={<StaticImage
+      primarySlot={<StaticImage         style={{width:"500px"}}
         alt="Bonding curve initialization"
         src="../images/whitepaper iconography/initialization.png"
       />}
@@ -113,14 +114,14 @@ const WhitepaperPage = () => {
           <p> Incoming Ͱ is split between: buying back reserve to guarantee liquidity of Ͱ and individual reserve available to the user for deposit or withdrawal.</p>
         </div>
       }
-      secondarySlot={<StaticImage
+      secondarySlot={<StaticImage         style={{width:"500px"}}
         alt="Bonding curve initailization"
         src="../images/whitepaper iconography/IHVT_mechanism.png"
       />}
     />
     <SplitSection
         id="IHVT mechanism introduction"
-        primarySlot={<StaticImage
+        primarySlot={<StaticImage         style={{width:"500px"}}
         alt="Bonding curve initailization"
         src="../images/whitepaper iconography/Buying HVPT.PNG"
       />}
@@ -144,7 +145,7 @@ const WhitepaperPage = () => {
           $$P_b (n)=k_r \cdot P_s (n)=k_r \cdot k_s \cdot n$$
         </div>
         }
-        secondarySlot={<StaticImage
+        secondarySlot={<StaticImage         style={{width:"500px"}}
         alt="HVPT individual reserve status"
         src="../images/whitepaper iconography/HVPT individual reserve status.png"
       />
@@ -152,7 +153,7 @@ const WhitepaperPage = () => {
       />
       <SplitSection
       id="Buyback reserves"
-      primarySlot={<StaticImage
+      primarySlot={<StaticImage         style={{width:"500px"}}
         alt="Buyback reserves"
         src="../images/whitepaper iconography/buyback reserves.png"
       />}
@@ -174,7 +175,7 @@ const WhitepaperPage = () => {
       $$k_i=(2\cdot ir)/(k_s\cdot n^2)$$
       $$\forall p_i \in [0;1], p_i=(k_i)/(1-k_r)= (2 \cdot ir)/[(1-k_r)(k_s \cdot n^2)]$$
 </div>}
-      secondarySlot={<StaticImage
+      secondarySlot={<StaticImage         style={{width:"500px"}}
         alt="HVPT individual reserve max"
         src="../images/whitepaper iconography/HVPT individual reserve max.png"
       />
@@ -182,7 +183,7 @@ const WhitepaperPage = () => {
       />
       <SplitSection
       id="depositwithdrawal"
-      primarySlot={<StaticImage
+      primarySlot={<StaticImage         style={{width:"500px"}}
         alt="HVPT individual reserve max"
         src="../images/whitepaper iconography/depositwithdrawal.png"
       />}
