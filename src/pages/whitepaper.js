@@ -60,6 +60,7 @@ const WhitepaperPage = () => {
       <li>DAT receiving <b>dividend payement</b>.The amount sent is used to mint new FAIRs (increasing both the price of FAIRs and the buy-back reserve). Those newly minted FAIRs are distributed to the current FAIRs holders.</li></ul>}
       secondarySlot={
       <StaticImage
+
         alt="Introduction of the Continous Organization system"
         src="../images/whitepaper iconography/Introducing-Continuous0.png"
       />}/>
