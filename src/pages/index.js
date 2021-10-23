@@ -114,7 +114,7 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
         </div>
     </section>
     <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center" class="container" style={{marginRight:'auto', marginLeft:'auto', marginTop:'auto', marginBottom:'auto', paddingTop:'4em', paddingBottom:'4em', textAlign:'center', backgroundColor:'rgba(249, 250, 251,1)', verticalAlign: 'middle',}}>
-      <h3 className="text-5xl font-semibold" style={{fontSize: '3rem', lineHeight: '1rem',fontWeight:'600'}}>Ready to improve yourself?</h3>
+      <h3 className="text-5xl font-semibold" style={{fontSize: '3rem', lineHeight: '3rem', fontWeight:'600'}}>Ready to improve yourself?</h3>
       <p className="mt-8 text-xl font-light" style={{marginTop:'8', fontSize: '1.25rem', lineHeight: '1.75rem',fontWeight:'300'}}>
         We are all waiting you!
       </p>
