@@ -15,7 +15,7 @@ const CustomerCard = ({ customer }) => {
     <div className="flex items-center mt-8" style={{marginBottom:'8px', display:'flex', marginLeft:'10px'}}>
       <img
         className="w-12 h-12 mr-4"
-        style={{width:'150px', height:'150px', marginRight:'10px'}}
+        style={{maxWidth:'150px', maxHeight:'150px', marginRight:'10px'}}
         src={customer.customerImage}
         alt={customer.customerName}
       />

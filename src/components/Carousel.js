@@ -11,7 +11,7 @@ import customerData from '../data/CustomerData';
 function Carousel() {
   return (
       <div className={container}>
-        <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
+        <ReactCardCarousel autoplay={true} autoplay_speed={8000}>
           {customerData.map((customer) => {
             return (
               <CustomerCard

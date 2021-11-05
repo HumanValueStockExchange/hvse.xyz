@@ -2,7 +2,7 @@ export default [
   {
     title: 'Loans refunding',
     content:
-      'As a scholarship holder, I will have to work in addition to my studies; but thanks to my tokenization, I do not have to do it! In addition, it allowed me to help me raise funds for my future business and home!',
+      'As a scholarship holder, I will have to work in addition to my studies; but thanks to my tokenization, I have not to do it! In addition, it allowed me to help me raise funds for my future business and home!',
     customerName: 'Zoe',
     customerTitle: 'Law Student',
     customerImage: 'https://raw.githubusercontent.com/HumanValueStockExchange/hvse.xyz/master/src/images/stories%20board/zoe.png'
