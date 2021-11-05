@@ -52,7 +52,7 @@ const Footer = (props) => (
                     </ul>
                     <ul className={menuFooter}>
                         <b>Learn</b>
-                        <li><Link to="#"
+                        <li><Link to="/WhatIsHVSE"
                         className={active}>
                         What is HVSE?
                         </Link></li>

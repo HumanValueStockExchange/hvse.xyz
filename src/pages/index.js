@@ -1,19 +1,21 @@
 // Step 1: Import React
-import * as React from 'react'
+import * as React from 'react';
 import Button from '../components/Button';
 import Card from '../components/Card';
-import CustomerCard from '../components/CustomerCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout';
+import Carousel from '../components/Carousel';
 import { Link } from "gatsby";
-import MainBlock from '../components/MainBlock'
+import MainBlock from '../components/MainBlock';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
-import customerData from '../data/CustomerData';
 import HeroImage from '../images/theme/HeroImage';
-import SvgCharts from '../images/theme/SvgCharts'
+import SvgCharts from '../images/theme/SvgCharts';
 
 // Step 2: Define your component
+
+
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -97,21 +99,16 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
       </div>
     </section>
     <section id="stories" className="py-20 lg:py-40" style={{paddingBottom:'20', paddingTop:'20'}}>
+
       <div className="container mx-auto"style={{marginRight:'auto', marginLeft:'auto'}}>
         <LabelText className="mb-8 text-gray-600 text-center">WHAT CUSTOMERS ARE SAYING</LabelText>
-        <div className="flex flex-col md:flex-row md:-mx-3" style={{float: 'center', display:'flex', flexDirection:'row', marginLeft:'3', marginRight:'3', columnWidth:'30%'}}>
-          {customerData.map(customer => (
-            <div key={customer.customerName} className="flex-1 px-3">
-              <CustomerCard customer={customer} />
-            </div>
-          ))}
-        </div>
-        <div style={{display:'flex', justifyContent:'center'}}>
+        <div><Carousel /></div>
+<div style={{display:'flex', justifyContent:'center'}}>
         <Link to="/stories">
-              <Button type="bg" style={{marginTop:'8',paddingRight:'0.25em'}}>More stories ❯</Button>
+              <Button type="bg" style={{paddingRight:'0.25em'}}>More stories ❯</Button>
             </Link>
         </div>
-        </div>
+</div>
     </section>
     <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center" class="container" style={{marginRight:'auto', marginLeft:'auto', marginTop:'auto', marginBottom:'auto', paddingTop:'4em', paddingBottom:'4em', textAlign:'center', backgroundColor:'rgba(249, 250, 251,1)', verticalAlign: 'middle',}}>
       <h3 className="text-5xl font-semibold" style={{fontSize: '3rem', lineHeight: '3rem', fontWeight:'600'}}>Ready to improve yourself?</h3>

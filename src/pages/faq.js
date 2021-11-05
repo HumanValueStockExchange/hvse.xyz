@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 // Step 2: Define your component
 const FAQPage = () => {
   return (
-    <Layout pageTitle="Roadmap">
+    <Layout pageTitle="FAQ">
       <p>Watch this space, Frequently Asked Questions for the HVSE is being drafted and will be announced shortly.</p>
     </Layout>
   )

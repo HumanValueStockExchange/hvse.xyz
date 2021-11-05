@@ -17,7 +17,6 @@ const Header = ({children, ...props}) => (
             </a>
       </li>
       <ul style={{display:'flex'}}>
-          <li><a href="/news">News</a></li>
           <li className={unfolding}><a href='#'>Use HVSE</a>
             <ul className={sub}>
               <li><a href="#">HVSE Wallets</a></li>
@@ -28,7 +27,7 @@ const Header = ({children, ...props}) => (
           </li>
           <li className={unfolding}><a href='#'>Learn</a>
             <ul className={sub}>
-              <li><a href="#">What is HVSE?</a></li>
+              <li><a href="/WhatIsHVSE">What is HVSE?</a></li>
               <li><a href="#">What is HVSEcoin?</a></li>
               <li><a href="#">What are IHVTs?</a></li>
               <li><a href="/whitepaper">HVSE whitepaper</a></li>

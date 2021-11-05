@@ -1,18 +1,18 @@
-.borders {
-  border: solid;
-  border-radius: 0.25rem;
-  display:flex;
-  flex-direction:column;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-right: 0.25em;
-  margin-left: 0.25em;
+.card {
+  height: 17rem;
+  width: 30rem;
+  margin: auto;
+
+  background-color: white;
   box-shadow: 0 10px 28px rgba(0,0,0,.08);
-  padding: 3;
   border-color: #e9ecef;
+
+  border-radius: 0.25rem;
+
+  text-align: center;
+
+  box-sizing: border-box;
 }
-
-
 
 .primary {
    float: center;
@@ -21,3 +21,41 @@
    margin: auto;
    text-align: center;
 }
+
+article {
+  position: absolute;
+  width: 32rem;
+  height: 100%;
+
+  transition: all 1s;
+}
+
+
+
+.container {
+  position: relative;
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items: middle;
+
+  width: 100%;
+  height: 100vh;
+
+  margin: auto;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card img {
+  height: 15rem;
+  width: 10rem;
+
+  object-fit: cover;
+  object-position: top;
+}
+
+
+

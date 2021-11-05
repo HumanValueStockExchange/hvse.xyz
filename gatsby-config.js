@@ -8,13 +8,6 @@ module.exports = {
     plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `News`,
-        path: `${__dirname}/news`,
-      }
-    },
     "gatsby-plugin-mdx",
     {
       resolve: `gatsby-plugin-manifest`,
