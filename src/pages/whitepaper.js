@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 import 'gatsby-remark-mathjax'
 import 'gatsby-transformer-remark'
 import Layout from '../components/layout'
+import { Link } from "gatsby"
 import { StaticImage } from 'gatsby-plugin-image'
 import SplitSection from '../components/SplitSection';
 
@@ -40,7 +41,7 @@ const WhitepaperPage = () => {
       <p> Our society makes a noise: it growls.  However, few people can hear it.There is one million questions to ask, but anyone ask the good ones. Actually, there is only noise. The society in this globality is going to known economic, cultural, social and politic changes as the world has never known.</p>
       <p> The cleverest are the dumbest. Resources needs are going to rise sharply. We need an Odyssian education. Religious extremism is experiencing unprecedented development. In Western countries, inter-generational inequalities are widening like never before. We need an alliance between Apollonian rationality and Dionysian intituition.This is observations and necessities (or sophisms) conglomeration, that we must integrate and therefore act accordingly.</p>
       <p> The fact that we are in a phase of transition towards a new societal model having been established, it is fashionable to affirm that monetary dematerialization will play a significant role there. A new problematic is added to this: the need to surpass one's condition while having the societal levers (going beyond one's origin social class) blocked.</p>
-      <p> Actually, some start-ups have put the idea on the cryptocurrencies way (bitcloud.com, ideamarket.io ...). However, they are only based on the ideas; we consider that our humanity is not only based on ideas (as certain Myers-Briggs Type Indicator results might lead one to believe it) but on physical aspects too. Therefore,we would like to capitalize and to assess human values thanks to different parameters: ideas, finance, sociability, health...</p>
+      <p> Actually, some start-ups have put the idea on the cryptocurrencies way (<a href="https://www.bitcloud.com" style={{textDecoration: "none",  color: "black"}}>Bitcloud</a>, <a href="https://www.ideamarket.io" style={{textDecoration: "none",  color: "black"}}>Ideamarket</a>...). However, they are only based on the ideas; we consider that our humanity is not only based on ideas (as certain Myers-Briggs Type Indicator results might lead one to believe it) but on physical aspects too. Therefore,we would like to capitalize and to assess human values thanks to different parameters: ideas, finance, sociability, health...</p>
       <b> 2. HVSE </b>
       <p></p>
       <b> 2.1. Philosophy </b>
@@ -48,7 +49,7 @@ const WhitepaperPage = () => {
       <p>What is needed is an objective criterion to assess human value on an individual scale. Thanks to big data technologies, we could produce an index based upon personal trackers: health, finance, social life, …</p>
       <p>A centralizing body setting itself the value of a person would be a denial of the crypto-currencies principles. Indeed, the concept HVSE strives to model the societal capital of a person according to the society point of view. In this way, the favoritism absence face to popular sentiment, which once was only an utopia, could thus become a reality. Everyone should thus prove their usefulness to society in various ways to obtain financial leverage (thanks to their tokenization).</p>
       <b> 2.2. Business model </b>
-      <p>We use the Continuous Organization model [1,2] as the main approach.</p>
+      <p>We use the Continuous Organization model [<a href="https://hackernoon.com/introducing-continuous-organizations-22ad9d1f63b7" style={{textDecoration: "none",  color: "black"}}>1</a>, <a href="https://medium.com/@thibauld/continuous-organizations-v1-0-45d42b3082bb" style={{textDecoration: "none",  color: "black"}}>2</a>] as the main approach.</p>
       <i> 2.2.1. Description</i>
       <p>The <i>Decentralized Autonomous Trust</i> (DAT) is a specific immutable smart-contract that implements a bonding curve contract with sponsored burning to automatically mint, burn and distribute fully digital security tokens called <i>FAIR securities</i> (FAIRs). These FAIRs represent a claim on the future cash-flows handled by the DAT.</p>
       <p>It is important to note that the DAT is not the organization; like an irrevocable Trust, it is a contract external to the organization.</p>
