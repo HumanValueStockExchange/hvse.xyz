@@ -32,7 +32,7 @@ const Header = ({children, ...props}) => (
               <li><a href="#">What are IHVTs?</a></li>
               <li><a href="/whitepaper">HVSE whitepaper</a></li>
               <li><a href="/stories">Stories</a></li>
-              <li><a href="#">F.A.Q.</a></li>
+              <li><a href="/faq">F.A.Q.</a></li>
             </ul>
           </li>
           <li className={unfolding}><a href='#'>Foundation</a>

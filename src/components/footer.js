@@ -72,7 +72,7 @@ const Footer = (props) => (
                         className={active}>
                         Customer stories
                         </Link></li>
-                        <li><Link to="#"
+                        <li><Link to="/faq"
                         className={active}>
                         Frequently asked questions
                         </Link></li>
