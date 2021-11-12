@@ -43,7 +43,7 @@ const Footer = (props) => (
                         </Link></li>
                         <li><Link to="#"
                         className={active}>
-                        Staking with IHVTs
+                        Staking on IHVTs
                         </Link></li>
                         <li><Link to="#"
                         className={active}>
@@ -60,7 +60,7 @@ const Footer = (props) => (
                         className={active}>
                         What is HVSEcoin?
                         </Link></li>
-                        <li><Link to="#"
+                        <li><Link to="/WhatAreIHVTs"
                         className={active}>
                         What are IHVTs?
                         </Link></li>

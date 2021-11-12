@@ -21,7 +21,7 @@ const Header = ({children, ...props}) => (
             <ul className={sub}>
               <li><a href="#">HVSE Wallets</a></li>
               <li><a href="#">Get HVSEcoin</a></li>
-              <li><a href="#">Stake with IHVTs</a></li>
+              <li><a href="#">Stake on IHVTs</a></li>
               <li><a href="#">Be tokenized</a></li>
             </ul>
           </li>
@@ -29,7 +29,7 @@ const Header = ({children, ...props}) => (
             <ul className={sub}>
               <li><a href="/WhatIsHVSE">What is HVSE?</a></li>
               <li><a href="#">What is HVSEcoin?</a></li>
-              <li><a href="#">What are IHVTs?</a></li>
+              <li><a href="/WhatAreIHVTs">What are IHVTs?</a></li>
               <li><a href="/whitepaper">HVSE whitepaper</a></li>
               <li><a href="/stories">Stories</a></li>
               <li><a href="/faq">F.A.Q.</a></li>
