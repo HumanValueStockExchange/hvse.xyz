@@ -56,7 +56,7 @@ const Footer = (props) => (
                         className={active}>
                         What is HVSE?
                         </Link></li>
-                        <li><Link to="#"
+                        <li><Link to="/WhatIsHVSEcoin"
                         className={active}>
                         What is HVSEcoin?
                         </Link></li>
