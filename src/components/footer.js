@@ -37,7 +37,7 @@ const Footer = (props) => (
                         className={active}>
                         HVSE wallets
                         </Link></li>
-                        <li><Link to="#"
+                        <li><Link to="/GetHVSEcoin"
                         className={active}>
                         Get HVSEcoins
                         </Link></li>

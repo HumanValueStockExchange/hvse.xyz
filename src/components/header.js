@@ -20,7 +20,7 @@ const Header = ({children, ...props}) => (
           <li className={unfolding}><a href='#'>Use HVSE</a>
             <ul className={sub}>
               <li><a href="#">HVSE Wallets</a></li>
-              <li><a href="#">Get HVSEcoin</a></li>
+              <li><a href="/GetHVSEcoin">Get HVSEcoin</a></li>
               <li><a href="#">Stake on IHVTs</a></li>
               <li><a href="#">Be tokenized</a></li>
             </ul>
