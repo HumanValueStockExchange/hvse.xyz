@@ -86,13 +86,13 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
       <div className="container mx-auto text-center" style={{marginRight:'auto', marginLeft:'auto', textAlign:'center'}}>
         <LabelText className="text-gray-600">OUR CUSTOMERS GET RESULTS</LabelText>
         <div className="flex flex-col sm:flex-row mt-8 lg:px-24" style={{display:'flex', flexDirection:'row', margin:'auto', float: 'center'}}>
-          <div className="w-full sm:w-1/3" style={{width:'100%', columnWidth:'1/3'}}>
+          <div className="w-full sm:w-1/3" style={{width:'100%', columnWidth:'25%', marginRight: '10px', marginLeft: '10px', paddingTop: '1em', paddingBottom:'1em',}}>
             <StatsBox primaryText="+100%" secondaryText="IHVTs average capital gain" />
           </div>
-          <div className="w-full sm:w-1/3" style={{width:'100%', columnWidth:'1/3'}}>
+          <div className="w-full sm:w-1/3" style={{width:'100%', columnWidth:'25%', marginRight: '10px', marginLeft: '10px', paddingTop: '1em', paddingBottom:'1em',}}>
             <StatsBox primaryText="+100%" secondaryText="Checked personal objectives" />
           </div>
-          <div className="w-full sm:w-1/3" style={{width:'100%', columnWidth:'1/3'}}>
+          <div className="w-full sm:w-1/3" style={{width:'100%', columnWidth:'25%', marginRight: '10px', marginLeft: '10px', paddingTop: '1em', paddingBottom:'1em',}}>
             <StatsBox primaryText="+100%" secondaryText="Satisfaction since tokenization" />
           </div>
         </div>
