@@ -83,20 +83,12 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
       secondarySlot={<SvgCharts />}
     />
     <section id="stats" className="py-20 lg:pt-32" style={{paddingTop:'5em', paddingBottom:'5em'}}>
-      <div className="container mx-auto text-center" style={{marginRight:'auto', marginLeft:'auto', textAlign:'center'}}>
         <LabelText className="text-gray-600">OUR CUSTOMERS GET RESULTS</LabelText>
-        <div className="flex flex-col sm:flex-row mt-8 lg:px-24" style={{display:'flex', flexDirection:'row', margin:'auto', float: 'center'}}>
-          <div className="w-full sm:w-1/3" style={{width:'100%', columnWidth:'25%', marginRight: '10px', marginLeft: '10px', paddingTop: '1em', paddingBottom:'1em',}}>
+        <div className="flex flex-col sm:flex-row mt-8 lg:px-24" style={{display:'flex', flexDirection:'row', fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', textAlign: 'center', marginBottom: '3', marginTop:'3em'}}>
             <StatsBox primaryText="+100%" secondaryText="IHVTs average capital gain" />
-          </div>
-          <div className="w-full sm:w-1/3" style={{width:'100%', columnWidth:'25%', marginRight: '10px', marginLeft: '10px', paddingTop: '1em', paddingBottom:'1em',}}>
             <StatsBox primaryText="+100%" secondaryText="Checked personal objectives" />
-          </div>
-          <div className="w-full sm:w-1/3" style={{width:'100%', columnWidth:'25%', marginRight: '10px', marginLeft: '10px', paddingTop: '1em', paddingBottom:'1em',}}>
-            <StatsBox primaryText="+100%" secondaryText="Satisfaction since tokenization" />
-          </div>
+            <StatsBox primaryText="+100%" secondaryText="Satisfaction since tokenization"/>
         </div>
-      </div>
     </section>
     <section id="stories" className="py-20 lg:py-40" style={{paddingBottom:'20', paddingTop:'20'}}>
 

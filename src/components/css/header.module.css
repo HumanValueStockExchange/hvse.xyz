@@ -1,3 +1,11 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
 .nav-logo {
   display: flex;
   float: left;
@@ -31,6 +39,7 @@ nav > ul {
 
 nav ul{
     list-style: none;
+    padding:0;
 }
 
 nav > ul > li{
@@ -38,13 +47,14 @@ nav > ul > li{
   position: relative;
   height: 100%;
   flex: 1;
+  left:0%;
 }
 
 nav > ul > li > a {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 05%;
+   transform: translate(+25%, -50%);
 }
 
 li a {
@@ -61,22 +71,23 @@ li a {
 
 .sub{
   margin-top: 30px;
-  width: 80%;
+  width: 60%;
   text-align: left;
   background-color: white;
   border-radius: 2px;
   overflow: hidden;
-  margin-left:0;
+  padding-left:5px;
   margin-right:0;
   max-height: 0;
   list-style: none;
 }
 
 .sub > li > a{
-  height: 50px;
+  height: 30px;
   padding-left: 0;
-  width: 100%;
-  align-items: center;
+  width: 90%;
+  vertical-align: middle;
+  align-items:center;
   text-align:left;
   margin-left:0;
   display: flex;

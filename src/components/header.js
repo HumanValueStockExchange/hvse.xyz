@@ -16,7 +16,7 @@ const Header = ({children, ...props}) => (
               src="../images/logos/big logo.png"/>
             </a>
       </li>
-      <ul style={{display:'flex'}}>
+      <ul style={{display:'flex', right:'0'}}>
           <li className={unfolding}><a href='#'>Use HVSE</a>
             <ul className={sub}>
               <li><a href="#">HVSE Wallets</a></li>
