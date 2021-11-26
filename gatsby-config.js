@@ -9,6 +9,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
+    "hamburger-react",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
