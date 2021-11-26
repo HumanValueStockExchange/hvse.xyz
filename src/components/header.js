@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../components/Button';
 import "./css/header.module.css";
 import {
-  button,
-  clear,
+  ham,
   copyright,
   footerSocialLinks,
   navLogo,
@@ -12,9 +11,9 @@ import {
   sub,
   menu,
   menu2,
-  sanssautdeligne,
 } from "./css/header.module.css"
-import { Link } from "gatsby";
+import Hamburger from 'hamburger-react'
+
 
 const Header = ({children, ...props}) => (
       <nav>
@@ -25,9 +24,17 @@ const Header = ({children, ...props}) => (
               src="../images/logos/big logo.png"/>
             </a>
       </li>
-      <Button type="lg" className={button} onFocus="document.getElementById('menu_membre').style.width = '175px'">Menu</Button>
-      <div  id="menu_membre" className={menu2}>
-      <ul>
+      <div className={ham}>
+      <Hamburger style={{ham}} onToggle={toggled => {
+      if (toggled) {
+        document.getElementById('menu2').style.width = '220px'
+      } else {
+        document.getElementById('menu2').style.width = '0'
+      }
+      }} />
+      </div>
+      <div  id="menu2" className={menu2}>
+      <ul style={{marginTop:'50px'}}>
           <li className={unfolding}><a href='#'>Use HVSE</a>
             <ul className={sub}>
               <li><a href="#">HVSE Wallets</a></li>
