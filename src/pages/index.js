@@ -11,6 +11,7 @@ import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
 import HeroImage from '../images/theme/HeroImage';
 import SvgCharts from '../images/theme/SvgCharts';
+import { StaticImage } from 'gatsby-plugin-image'
 
 // Step 2: Define your component
 
@@ -24,8 +25,7 @@ const IndexPage = () => {
     primarySlot={
         <div className="text-center lg:text-left lg:w-1/2">
         <div className="pageTitle" style={{fontWeight:'700', fontSize: '2.25rem', lineHeight: '2.5rem', class:'lead'}}> <p>Human Value Stock Exchange</p></div>
-    <p className="text-xl lg:text-2xl mt-6 font-light" style={{marginTop:'6px', fontWeight:'300', fontSize: '1.25rem',
-lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you can bet on others success , or improve yourself easily or both!</p>
+    <p className="text-xl lg:text-2xl mt-6 font-light" style={{marginTop:'6px', fontWeight:'300', fontSize: '70%', lineHeight: '1.75rem'}}>Thanks to our technologies, you can either bet on others success, or improve yourself easily or both!</p>
             <Link to="/about">
               <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>About us ❯</Button>
             </Link>
@@ -35,7 +35,12 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
             <Link to="/whitepaper">
               <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Whitepaper ❯</Button>
             </Link></div>}
-    secondarySlot={<HeroImage />}
+    secondarySlot={
+      <StaticImage style={{maxWidth:"500px"}}
+        alt="HVSE market place"
+        src="../images/theme/market.png"
+      />
+    }
     />
     <div className="head" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', textAlign: 'center', marginBottom: '3', marginTop:'3em'}}>MAIN FEATURES</div>
     <Card
@@ -54,7 +59,10 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<StaticImage style={{maxWidth:"300px", marginRight:'auto', marginLeft:'auto'}}
+        alt="HVSE market place"
+        src="../images/theme/marketers.png"
+      />}
     />
     <SplitSection
       secondarySlot={
@@ -67,7 +75,10 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
           </p>
         </div>
       }
-      primarySlot={<HeroImage />}
+      primarySlot={<StaticImage style={{maxWidth:"300px", marginRight:'auto', marginLeft:'auto'}}
+        alt="HVSE market place"
+        src="../images/theme/planners.png"
+      />}
     />
     <SplitSection
       primarySlot={
@@ -80,7 +91,11 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={
+      <StaticImage style={{maxWidth:"300px", marginRight:'auto', marginLeft:'auto'}}
+        alt="HVSE market place"
+        src="../images/theme/performance.png"
+      />}
     />
     <div id="stats" className="py-20 lg:pt-32" style={{paddingTop:'5em', paddingBottom:'5em',}}>
         <LabelText className="text-gray-600">OUR CUSTOMERS GET RESULTS</LabelText>
