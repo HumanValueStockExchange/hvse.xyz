@@ -1,13 +1,15 @@
-import * as React from "react"
+import * as React from "react";
 import HVSE from '../images/theme/HVSE';
-import Layout from '../components/layout'
+import Layout from '../components/layout';
+import { StaticImage } from 'gatsby-plugin-image';
+import '../css/WhatIsHVSE.css';
 
 // Step 2: Define your component
 const WhatAreIHVTs = () => {
   return (
     <Layout>
-    <div style={{marginRight: 'auto', marginLeft: 'auto', paddingRight: '16', paddingLeft: '16', float: 'center', display:'flex', flexDirection:'row', marginTop: '15px', marginBottom:'15px', paddingTop: '15px', paddingBottom: '15px', justifyContent: 'center', alignItems: 'center'}}>
-      <div style={{width:'100%', height:'100%', textAlign:'left', marginRight: '10px', marginLeft: '10px', justifyContent: 'center', boxSizing: 'border-box', boxShadow: '0 10px 28px rgba(0,0,0,.08)', borderColor: '#e9ecef', borderRadius: '0.25rem', backgroundColor: 'white', paddingLeft:'10px'}}>
+    <div class="container">
+      <div class="mainbox">
         <p style={{fontWeight:'100', fontSize: '1.25rem', lineHeight: '1rem', textAlign:'center'}}>WHAT ARE IHVTs?</p>
         <ul style={{fontSize: '0.75rem', lineHeight: '1.5rem'}}>
           <li>One person, one token. Your value, your token.</li>
@@ -15,8 +17,11 @@ const WhatAreIHVTs = () => {
           <li>IHVTs can only be bought or sold against <a href="/WhatIsHVSEcoin">HVSEcoin</a>.</li>
         </ul>
       </div>
-      <div style={{width:'100%', columnWidth: '70%', display:'flex',   flexDirection:'column', textAlign:'left', marginRight: '10px', marginLeft: '10px'}}>
-      <HVSE />
+      <div class="img">
+      <StaticImage class="img"
+      style={{maxWidth:'210px', marginTop:'20px'}}
+        alt="HVSE market place"
+        src="../images/theme/bet.png"/>
       </div>
     </div>
     </Layout>

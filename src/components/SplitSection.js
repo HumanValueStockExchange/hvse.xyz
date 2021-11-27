@@ -5,13 +5,7 @@ import {
   secondary,
 } from './css/objects/splitsection.module.css';
 
-const primaries = {
 
-};
-
-const secondaries = {
-
-};
 
 const SplitSection = ({ id, primarySlot, secondarySlot }) => (
   <section id={id} className="py-20">

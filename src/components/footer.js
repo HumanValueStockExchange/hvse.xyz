@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import { StaticImage } from 'gatsby-plugin-image';
 import {
   active,
   clearfix,
@@ -10,10 +9,7 @@ import {
   menuFooter,
   clear,
   copyright,
-  icon,
-  socialIcons,
   footerSocialLinks,
-  discord
 } from "./css/footer.module.css";
 
 

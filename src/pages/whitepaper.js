@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet"
 import 'gatsby-remark-mathjax'
 import 'gatsby-transformer-remark'
 import Layout from '../components/layout'
-import { Link } from "gatsby"
 import { StaticImage } from 'gatsby-plugin-image'
 import SplitSection from '../components/SplitSection';
 

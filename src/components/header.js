@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { StaticImage } from 'gatsby-plugin-image';
-import Button from '../components/Button';
 import "./css/header.module.css";
 import {
   ham,

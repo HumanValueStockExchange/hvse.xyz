@@ -1,9 +1,6 @@
 import React from 'react';
 import {
-  card,
-  nextCard,
-  prevCard,
-  activeCard,
+  card
 } from "./css/objects/features.module.css"
 
 

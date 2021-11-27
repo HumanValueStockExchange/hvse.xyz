@@ -1,8 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
-import Coin from "../videos/coin.mp4"
 import Card from '../components/Card';
 
 // Step 2: Define your component
