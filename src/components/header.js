@@ -11,6 +11,7 @@ import {
   sub,
   menu,
   menu2,
+  main,
 } from "./css/header.module.css"
 import Hamburger from 'hamburger-react'
 
@@ -28,8 +29,10 @@ const Header = ({children, ...props}) => (
       <Hamburger style={{ham}} onToggle={toggled => {
       if (toggled) {
         document.getElementById('menu2').style.width = '220px'
+        document.getElementById('main').style.width = '100%'
       } else {
         document.getElementById('menu2').style.width = '0'
+        document.getElementById('main').style.width = '0'
       }
       }} />
       </div>
@@ -65,6 +68,7 @@ const Header = ({children, ...props}) => (
 			<div className={copyright}>©{(new Date().getFullYear())} The HVSE Foundation <p> All Rights Reserved </p> </div>
 		  </ul>
       </div>
+      <div id="main" className={main}></div>
 
 
       <ul className={menu}>

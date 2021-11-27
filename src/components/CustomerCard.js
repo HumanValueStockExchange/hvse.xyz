@@ -20,8 +20,8 @@ const CustomerCard = ({ customer }) => {
         alt={customer.customerName}
       />
       <div>
-        <p className="mt-6" style={{marginTop:'6', marginLeft:'10px', marginRight:'10px', textAlign:'left'}}>{customer.content}</p>
-      <p style={{textAlign:"left", marginLeft:'10px', marginRight:'10px'}}>{customer.customerName}, <span className="text-sm text-gray-600" style={{fontSize: '0.875rem',lineHeight: '1.25rem', color:'rgb(117, 117, 117)'}}>{customer.customerTitle}</span></p>
+        <p className="mt-6" style={{marginTop:'6', marginLeft:'10px', marginRight:'10px', textAlign:'left', fontStyle:'italic'}}>"{customer.content}"</p>
+      <p style={{textAlign:"left", marginLeft:'10px', marginRight:'10px'}}>{customer.customerName}, <span className="text-sm text-gray-600" style={{ color:'rgb(117, 117, 117)'}}>{customer.customerTitle}</span></p>
       </div>
     </div>
   </div>

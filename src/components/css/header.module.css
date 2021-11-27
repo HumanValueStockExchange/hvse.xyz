@@ -193,6 +193,25 @@ nav > ul > li:hover > a{
     box-shadow: rgba(0,0,0,.15) 0px 0px 5px;
 }
 
+
+.main {
+    display:flex;
+    height: 100%; /* 100% Full-height */
+    width:0;
+    position: fixed; /* Stay in place */
+    z-index: -2; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: grey;
+/* Disable horizontal scroll */
+    overflow-x: hidden;
+    padding-top: 15px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    font-size: 10px;
+    opacity: 0.9;
+    box-shadow: rgba(0,0,0,.15) 0px 0px 5px;
+}
+
 .menu2 a {
     padding: 8px 8px 8px 32px;
     width:100%;

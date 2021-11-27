@@ -82,14 +82,14 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
       }
       secondarySlot={<SvgCharts />}
     />
-    <section id="stats" className="py-20 lg:pt-32" style={{paddingTop:'5em', paddingBottom:'5em'}}>
+    <div id="stats" className="py-20 lg:pt-32" style={{paddingTop:'5em', paddingBottom:'5em',}}>
         <LabelText className="text-gray-600">OUR CUSTOMERS GET RESULTS</LabelText>
-        <div className="flex flex-col sm:flex-row mt-8 lg:px-24" style={{display:'flex', flexDirection:'row', fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', textAlign: 'center', marginBottom: '3', marginTop:'3em'}}>
-            <StatsBox primaryText="+100%" secondaryText="IHVTs average capital gain" />
-            <StatsBox primaryText="+100%" secondaryText="Checked personal objectives" />
-            <StatsBox primaryText="+100%" secondaryText="Satisfaction since tokenization"/>
-        </div>
-    </section>
+        <Card
+    id="Main Customers"
+    children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4"  style={{marginTop: '4'}}>IHVTs average capital gain</p></div>}
+    children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4" style={{marginTop: '4'}}>Checked personal objectives</p></div>}
+    children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4"  style={{marginTop: '4'}}>Checked personal objectives</p></div>}/>
+    </div>
     <section id="stories" className="py-20 lg:py-40" style={{paddingBottom:'20', paddingTop:'20'}}>
 
       <div className="container mx-auto"style={{marginRight:'auto', marginLeft:'auto'}}>
