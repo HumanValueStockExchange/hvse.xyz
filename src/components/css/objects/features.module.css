@@ -17,13 +17,17 @@
   box-shadow: 0 10px 28px rgba(0,0,0,.08);
   border-color: #e9ecef;
   border-radius: 0.25rem;
-  column-width:30%;
+  width: 100%;
   padding-right: 10px;
   padding-left: 10px;
   margin-right: 10px;
   margin-left: 10px;
   padding-top: 1em;
   padding-bottom:1em;
+  text-align: center;
+  align-items: middle;
+  align-content:center;
+  justify-content: center;
 }
 
 .primary {
@@ -31,6 +35,7 @@
    flex-direction:row;
    margin:auto;
    margin-top: 10px;
+   margin-bottom: 10px;
    text-align: center;
    align-items: middle;
    align-content:center;

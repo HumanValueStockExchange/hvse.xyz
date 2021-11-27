@@ -86,9 +86,9 @@ lineHeight: '1.75rem'}}>Your success, our means! Thanks to our technologies, you
         <LabelText className="text-gray-600">OUR CUSTOMERS GET RESULTS</LabelText>
         <Card
     id="Main Customers"
-    children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4"  style={{marginTop: '4'}}>IHVTs average capital gain</p></div>}
-    children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4" style={{marginTop: '4'}}>Checked personal objectives</p></div>}
-    children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4"  style={{marginTop: '4'}}>Checked personal objectives</p></div>}/>
+    children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4"  style={{marginTop: '4', textAlign:'center'}}>IHVTs average capital gain</p></div>}
+    children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4" style={{marginTop: '4', textAlign:'center'}}>Checked personal objectives</p></div>}
+    children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4"  style={{marginTop: '4', textAlign:'center'}}>Checked personal objectives</p></div>}/>
     </div>
     <section id="stories" className="py-20 lg:py-40" style={{paddingBottom:'20', paddingTop:'20'}}>
 

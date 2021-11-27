@@ -3,26 +3,20 @@ import { Link } from "gatsby"
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Coin from "../videos/coin.mp4"
+import Card from '../components/Card';
 
 // Step 2: Define your component
 const GetHVSEcoin = () => {
   return (
     <Layout>
-    <div style={{marginRight: 'auto', marginLeft: 'auto', paddingRight: '16', paddingLeft: '16', float: 'center', display:'flex', flexDirection:'row', marginTop: '15px', marginBottom:'15px', paddingTop: '15px', paddingBottom: '15px', justifyContent: 'center', alignItems: 'center'}}>
-      <div style={{width:'100%', height:'100%', textAlign:'left', marginRight: '10px', marginLeft: '10px', justifyContent: 'center', boxSizing: 'border-box', boxShadow: '0 10px 28px rgba(0,0,0,.08)', borderColor: '#e9ecef', borderRadius: '0.25rem', backgroundColor: 'white', paddingLeft:'10px'}}>
-        <p style={{fontWeight:'100', fontSize: '1.25rem', lineHeight: '1rem', textAlign:'center'}}>WHERE TO BUY HVSEcoin?</p>
-        <ul style={{fontSize: '0.75rem', lineHeight: '1.5rem'}}>
-          <li>Centralized exchanges (CEXs)</li>
-          <li>Decentralized exchanges (DEXs)</li>
-          <li>Wallets</li>
-        </ul>
-      </div>
-      <div style={{width:'100%', columnWidth: '50%', display:'flex', flexDirection:'column', textAlign:'center', marginRight: '10px', marginLeft: '10px', alignItems:'center'}}>
-      <video width="240" height="240" autoPlay muted loop>
-        <source src={Coin} type="video/mp4" />
-      </video>
-      </div>
-    </div>
+    <p style={{fontWeight:'100', fontSize: '1.25rem', lineHeight: '2rem', textAlign:'center', alignItems:'center', contentAlign:'middle', whiteSpace:'nowrap'}}>Where can I get some HVSEcoins?</p>
+
+    <Card
+    id="Buying Means"
+    children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Wallets</p><p className="mt-4"  style={{marginTop: '4', textAlign:'left'}}>Some wallets will let you buy HVSEcoin.</p></div>}
+    children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>DEXs</p><p className="mt-4" style={{marginTop: '4', textAlign:'left'}}>A decentralized exchange (or DEX) is a peer-to-peer marketplace where transactions occur directly between crypto traders.</p></div>}
+    children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>CEXs</p><p className="mt-4"  style={{marginTop: '4', textAlign:'left'}}>A CEX is a centralized platform where you can buy and sell cryptocurrencies.</p></div>}
+    />
     </Layout>
   )
 }
