@@ -20,6 +20,11 @@ body {
    display:flex;
 }
 
+nav .overlay{
+  position:fixed;
+  z-index:0;
+}
+
 nav{
     width: 100%;
     font-size: 18px;
