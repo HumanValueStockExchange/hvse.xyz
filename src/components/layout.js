@@ -5,8 +5,6 @@ import Cookie from "../components/CookieConsent.js";
 import {
   title,
   para,
-  overlay,
-  scroll,
   container,
   heading,
 } from '../components/css/layout.module.css';

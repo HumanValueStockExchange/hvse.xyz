@@ -13,12 +13,6 @@ body {
   margin: 5rem 1;
 }
 
-.cookie {
-  position: -webkit-sticky;
-  position: sticky;
-  top:10px;
-}
-
 .title {
   font-size: 14px;
   display: flex;
@@ -27,8 +21,6 @@ body {
   font-weight: bold;
   width:100%;
 }
-
-
 
 .para{
   font-size: 12px;

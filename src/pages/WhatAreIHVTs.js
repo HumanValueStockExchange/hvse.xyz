@@ -1,5 +1,4 @@
 import * as React from "react";
-import HVSE from '../images/theme/HVSE';
 import Layout from '../components/layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import '../css/WhatIsHVSE.css';
