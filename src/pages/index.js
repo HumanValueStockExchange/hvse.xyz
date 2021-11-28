@@ -8,7 +8,7 @@ import Carousel from '../components/Carousel';
 import { Link } from "gatsby";
 import MainBlock from '../components/MainBlock';
 import SplitSection from '../components/SplitSection';
-import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image';
 
 // Step 2: Define your component
 

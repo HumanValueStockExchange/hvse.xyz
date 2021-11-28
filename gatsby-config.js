@@ -46,17 +46,18 @@ module.exports = {
       options: {
         googleAnalytics: {
           trackingId: "G-NCXE675HVX", // leave empty if you want to disable the tracker
-          cookieName: "gatsby-plugin-google-analytics", // here can you change the cookie name
+          cookieName: "gatsby-gdpr-google-analytics", // here can you change the cookie name
           anonymize: true, // default
+          allowAdFeatures: false // default
         },
         googleTagManager: {
           trackingId: "GTM-KL5ML96", // leave empty if you want to disable the tracker
-          cookieName: "gatsby-plugin-google-tagmanager", // // here can you change the cookie name
+          cookieName: "gatsby-gdpr-google-tagmanager", // // here can you change the cookie name
           dataLayerName: "dataLayer", // default
         },
         facebookPixel: {
           pixelId: "277360171070385", // leave empty if you want to disable the tracker
-          cookieName: "gatsby-plugin-facebook-pixel", // // here can you change the cookie name
+          cookieName: "gatsby-gdpr-facebook-pixel", // // here can you change the cookie name
         },
         // defines the environments where the tracking should be available  - default is ["production"]
         environments: ["production", "development"],
