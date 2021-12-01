@@ -44,7 +44,7 @@ const IndexPage = () => {
     id="Main Features"
     children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Tender offering</p><p className="mt-4"  style={{marginTop: '4'}}>After a short period of risk analysis, we will contact you in order to organize your market introduction.</p></div>}
     children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Staking</p><p className="mt-4" style={{marginTop: '4'}}>Thanks to HVSEcore, you can bet on others success and therefore do profits and allow them to do some also.</p></div>}
-    children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Advising</p><p className="mt-4"  style={{marginTop: '4'}}>After your IHVTs tokenization, advices are freely given to you in order to increase your performances.</p></div>}
+    children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Advising</p><p className="mt-4"  style={{marginTop: '4'}}>After your IHVPTs tokenization, advices are freely given to you in order to increase your performances.</p></div>}
     />
         <SplitSection
       id="Tokenization Process"
@@ -52,7 +52,7 @@ const IndexPage = () => {
         <div className="lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Our team of enthusiastic marketers will analyse and evaluate how you could integrate the HVSE and therefore hodling your IHVTs (Individual Human Value Tokens).
+            Our team of enthusiastic marketers will analyse and evaluate how you could integrate the HVSE and therefore hodling your IHVPTs (Individual Human Value Tokens).
           </p>
         </div>
       }
@@ -98,7 +98,7 @@ const IndexPage = () => {
         <LabelText className="text-gray-600">OUR CUSTOMERS GET RESULTS</LabelText>
         <Card
     id="Main Customers"
-    children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4"  style={{marginTop: '4', textAlign:'center'}}>IHVTs average capital gain</p></div>}
+    children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4"  style={{marginTop: '4', textAlign:'center'}}>IHVPTs average capital gain</p></div>}
     children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4" style={{marginTop: '4', textAlign:'center'}}>Checked personal objectives</p></div>}
     children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4"  style={{marginTop: '4', textAlign:'center'}}>Checked personal objectives</p></div>}/>
     </div>

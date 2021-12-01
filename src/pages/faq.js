@@ -19,15 +19,15 @@ const FAQPage = () => {
       }
       secondarySlot={
         <p className="mt-8 text-xl font-light leading-relaxed" style={{textAlign:'justify', justifyContent:'center' }}>
-        As soon as they are collected, all the data concerning each tokenized user are immediately published on the corresponding IHVT page. None data are stocked or saled.
+        As soon as they are collected, all the data concerning each tokenized user are immediately published on the corresponding IHVPT page. None data are stocked or saled.
         </p>
       }
     />
     <SplitSection
       id="Collected data"
       primarySlot={
-        <p className="mt-8 text-xl font-light leading-relaxed" style={{textAlign:'justify', justifyContent:'center' }}>
-        Regarding this philosophical debate, we want to refocus the individual at the heart of society. Indeed, with regard to his actions, the company will decide whether or not to remunerate him through the price of his IHVT. Thus, short selling or long buying actions are not allowed by a single individual but by all of the individuals who have bet on others. In addition, in order to avoid insider trading, each IHVTs buyer or seller will need to authenticate and their identity will be known only to the HVSE. Admittedly, advices could be provided by the 5 majority holders of each IHVT to tokenized people but HVSE regulation will take place in order to limit advices encouraging extreme atitudes. Our main value is and will always be benevolence.
+        <p className="mt-8 text-xl font-light leading-relaxed" style={{textAligIHVPTn:'justify', justifyContent:'center' }}>
+        Regarding this philosophical debate, we want to refocus the individual at the heart of society. Indeed, with regard to his actions, the company will decide whether or not to remunerate him through the price of his IHVPT. Thus, short selling or long buying actions are not allowed by a single individual but by all of the individuals who have bet on others. In addition, in order to avoid insider trading, each IHVPTs buyer or seller will need to authenticate and their identity will be known only to the HVSE. Admittedly, advices could be provided by the 5 majority holders of each IHVPT to tokenized people but HVSE regulation will take place in order to limit advices encouraging extreme atitudes. Our main value is and will always be benevolence.
         </p>
       }
       secondarySlot={

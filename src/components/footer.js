@@ -37,9 +37,9 @@ const Footer = (props) => (
                         className={active}>
                         Get HVSEcoins
                         </Link></li>
-                        <li><Link to="/StakeOnIHVTs"
+                        <li><Link to="/StakeOnIHVPTs"
                         className={active}>
-                        Staking on IHVTs
+                        Staking on IHVPTs
                         </Link></li>
                         <li><Link to="/BeTokenized"
                         className={active}>
@@ -56,9 +56,9 @@ const Footer = (props) => (
                         className={active}>
                         What is HVSEcoin?
                         </Link></li>
-                        <li><Link to="/WhatAreIHVTs"
+                        <li><Link to="/WhatAreIHVPTs"
                         className={active}>
-                        What are IHVTs?
+                        What are IHVPTs?
                         </Link></li>
                         <li><Link to="/whitepaper"
                         className={active}>

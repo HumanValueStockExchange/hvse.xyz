@@ -10,6 +10,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
     "hamburger-react",
+    `gatsby-plugin-anchor-links`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

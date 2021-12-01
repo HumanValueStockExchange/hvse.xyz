@@ -3,5 +3,6 @@ node_modules/
 public
 #R files
 .Rproj.user
-*.Rproj
+hvse.Rproj
 package-lock.json
+.Rhistory

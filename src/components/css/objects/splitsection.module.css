@@ -37,3 +37,17 @@
 }
 
 
+@media (max-width: 828px){
+  .container {
+    flex-direction: column;
+    column-width: 100%;
+  }
+
+  .primary {
+    flex-direction: row;
+  }
+
+  .secondary {
+    flex-direction: row;
+  }
+}

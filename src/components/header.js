@@ -41,7 +41,7 @@ const Header = ({children, ...props}) => (
             <ul className={sub}>
               <li><a href="/HVSEwallets">HVSE Wallets</a></li>
               <li><a href="/GetHVSEcoin">Get HVSEcoin</a></li>
-              <li><a href="/StakeOnIHVTs">Stake on IHVTs</a></li>
+              <li><a href="/StakeOnIHVPTs">Stake on IHVPTs</a></li>
               <li><a href="/BeTokenized">Be tokenized</a></li>
             </ul>
           </li>
@@ -49,7 +49,7 @@ const Header = ({children, ...props}) => (
             <ul className={sub}>
               <li><a href="/WhatIsHVSE">What is HVSE?</a></li>
               <li><a href="/WhatIsHVSEcoin">What is HVSEcoin?</a></li>
-              <li><a href="/WhatAreIHVTs">What are IHVTs?</a></li>
+              <li><a href="/WhatAreIHVPTs">What are IHVPTs?</a></li>
               <li><a href="/Twhitepaper">HVSE whitepaper</a></li>
               <li><a href="/stories">Stories</a></li>
               <li><a href="/faq">F.A.Q.</a></li>
@@ -75,7 +75,7 @@ const Header = ({children, ...props}) => (
             <ul className={sub}>
               <li><a href="/HVSEwallets">HVSE Wallets</a></li>
               <li><a href="/GetHVSEcoin">Get HVSEcoin</a></li>
-              <li><a href="/StakeOnIHVTs">Stake on IHVTs</a></li>
+              <li><a href="/StakeOnIHVPTs">Stake on IHVPTs</a></li>
               <li><a href="/BeTokenized">Be tokenized</a></li>
             </ul>
           </li>
@@ -83,7 +83,7 @@ const Header = ({children, ...props}) => (
             <ul className={sub}>
               <li><a href="/WhatIsHVSE">What is HVSE?</a></li>
               <li><a href="/WhatIsHVSEcoin">What is HVSEcoin?</a></li>
-              <li><a href="/WhatAreIHVTs">What are IHVTs?</a></li>
+              <li><a href="/WhatAreIHVPTs">What are IHVPTs?</a></li>
               <li><a href="/Twhitepaper">HVSE whitepaper</a></li>
               <li><a href="/stories">Stories</a></li>
               <li><a href="/faq">F.A.Q.</a></li>

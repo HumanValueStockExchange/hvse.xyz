@@ -11,7 +11,7 @@ const WhatIsHVSEcoin = () => {
       <div class="mainbox">
         <p style={{fontWeight:'100', fontSize: '1.25rem', lineHeight: '1rem', textAlign:'center'}}>WHAT IS HVSEcoin?</p>
         <ul style={{fontSize: '0.75rem', lineHeight: '1.5rem'}}>
-          <li>One Crypto <a href="/WhatAREIHVTs">to assess them all</a>,</li>
+          <li>One Crypto <a href="/WhatAREIHVPTs">to assess them all</a>,</li>
           <li>One Crypto to bid on them,</li>
           <li>One Crypto to bring them all, and in the brightness bind them.</li>
         </ul>

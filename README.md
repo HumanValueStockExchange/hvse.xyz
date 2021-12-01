@@ -1,7 +1,8 @@
 # HVSE [HVSE, Ͱ]
 
-[![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=hvse%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/n4rRamkGuU)
-[![Twitter Follow](https://img.shields.io/twitter/follow/hvse.svg?style=social)](https://twitter.com/HVSE_Foundation)
+[![Discord](https://img.shields.io/discord/882359998754222121?style=plastic)](https://discord.gg/n4rRamkGuU)
+[![Twitter Follow](https://img.shields.io/twitter/follow/HVSE_Foundation?style=social)](https://twitter.com/HVSE_Foundation)
+[![Reddit](https://img.shields.io/reddit/subreddit-subscribers/hvse?style=social)](https://www.reddit.com/r/hvse/)
  
 <h1 align="center" style="margin-top: 1em; margin-bottom: 3em;">
   <p><a href="https://hvse.xyz"><img alt="hvse logo" src="./logo.png" alt="hvse.xyz" width="125"></a></p>
@@ -23,15 +24,15 @@ This is the repo for the [hvse.xyz](https://hvse.xyz) website, a resource for th
 
 - Contact : hvse.info@protonmail.com
 
-[hvse.xyz](https://hvse.xyz) is improved and changed over time through the contributions of community members who submit content, give feedback, or volunteer their time to managing its evolution. If you’re interested in helping to improve [hvse.xyz](https://hvse.xyz), find out [how to contribute]()
+[hvse.xyz](https://hvse.xyz) is improved and changed over time through the contributions of community members who submit content, give feedback, or volunteer their time to managing its evolution. If you’re interested in helping to improve [hvse.xyz](https://hvse.xyz), find out [how to contribute](https://github.com/HumanValueStockExchange/hvse.xyz#development-and-contributions)
 
 ## License
 
-HVSE website is released under the terms of the MIT license. See [LICENSE](https://github.com/edlansiaux/HVSECOIN/blob/main/LICENSE) more information or see [opensource.org](https://opensource.org/licenses/MIT).
+HVSE website is released under the terms of the MIT license. See [LICENSE](https://github.com/HumanValueStockExchange/hvse.xyz/blob/master/LICENSE) more information or see [opensource.org](https://opensource.org/licenses/MIT).
 
 ## Looking for the HVSE blockchain's code?
 
-If you're looking for the HVSE blockchain itself, there is no single repo. Instead, HVSE has multiple implementations of the protocol written in different programming languages for security and diversity. [Check out the different implementations]()
+If you're looking for the HVSE blockchain itself, there is no single repo. Instead, HVSE has multiple implementations of the protocol written in different programming languages for security and diversity. [Check out the different implementations](https://github.com/HumanValueStockExchange)
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
