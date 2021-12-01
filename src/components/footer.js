@@ -29,7 +29,7 @@ const Footer = (props) => (
 				<div style={{display:'flex', flexDirection:'row'}}>
                     <ul className={menuFooter}>
                         <b> Use HVSE</b>
-                        <li><Link to="#"
+                        <li><Link to="/HVSEwallets"
                         className={active}>
                         HVSE wallets
                         </Link></li>
@@ -37,11 +37,11 @@ const Footer = (props) => (
                         className={active}>
                         Get HVSEcoins
                         </Link></li>
-                        <li><Link to="#"
+                        <li><Link to="/StakeOnIHVTs"
                         className={active}>
                         Staking on IHVTs
                         </Link></li>
-                        <li><Link to="#"
+                        <li><Link to="/BeTokenized"
                         className={active}>
                         Be tokenized
                         </Link></li>

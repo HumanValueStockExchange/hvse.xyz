@@ -29,7 +29,7 @@ const IndexPage = () => {
             <Link to="/roadmap">
               <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Roadmap ❯</Button>
             </Link>
-            <Link to="/whitepaper">
+            <Link to="/Twhitepaper">
               <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Whitepaper ❯</Button>
             </Link></div>}
     secondarySlot={
@@ -43,7 +43,7 @@ const IndexPage = () => {
     <Card
     id="Main Features"
     children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Tender offering</p><p className="mt-4"  style={{marginTop: '4'}}>After a short period of risk analysis, we will contact you in order to organize your market introduction.</p></div>}
-    children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Staking</p><p className="mt-4" style={{marginTop: '4'}}>Thanks to our main software, you can bet on others success and therefore do profits and allow them to do some also.</p></div>}
+    children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Staking</p><p className="mt-4" style={{marginTop: '4'}}>Thanks to HVSEcore, you can bet on others success and therefore do profits and allow them to do some also.</p></div>}
     children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Advising</p><p className="mt-4"  style={{marginTop: '4'}}>After your IHVTs tokenization, advices are freely given to you in order to increase your performances.</p></div>}
     />
         <SplitSection
@@ -120,7 +120,9 @@ const IndexPage = () => {
         We are all waiting you!
       </p>
       <p className="mt-8" style={{marginTop:'8'}}>
+      <Link to="/GetStarted">
         <Button type="bg">Get Started ❯</Button>
+      </Link>
       </p>
     </section>
   </Layout>

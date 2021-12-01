@@ -26,6 +26,15 @@
   max-width:500px;
 }
 
+
+a:link
+{
+ text-decoration:black;
+ border: none;
+}
+
+a { color: black; }
+
 .mainbox {
   width:100%;
   display:flex;
