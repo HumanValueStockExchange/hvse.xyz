@@ -78,6 +78,21 @@ const WhitepaperPage = () => {
     <li>
       <a href="#depowith"><p style={{marginLeft:'7px'}}>4.2.Deposit/Withdrawal</p></a>
     </li>
+    <li>
+      <a href="#governance"><p style={{marginLeft:'7px'}}>4.3.Usefulness</p></a>
+    </li>
+    <li>
+      <a href="#altruism"><p style={{marginLeft:'7px'}}>4.3.1. Altruism</p></a>
+    </li>
+    <li>
+      <a href="#richness"><p style={{marginLeft:'7px'}}>4.3.2. Enrichment</p></a>
+    </li>
+    <li>
+      <a href="#sys"><p style={{marginLeft:'7px'}}>4.3.3. Governance</p></a>
+    </li>
+    <li>
+      <a href="#passive"><p style={{marginLeft:'7px'}}>4.3.4. Passive income</p></a>
+    </li>
   </ul></div>
   <div class="content">
   <p style={{color: 'black', marginRight:'auto', marginLeft:'auto', fontSize:'42px', width:'300px'}}>WHITEPAPER</p>
@@ -242,22 +257,19 @@ const WhitepaperPage = () => {
       $$bb=(k_r\cdot k_s)/2  \cdot n^2$$
 </div>}
       />
-      <SplitSection
-      id="IHVPT individual reserve max"
-      primarySlot={<div>
-      <p>2. Individual reserve max and \(\%\) calculus where \(0\leq k_i \leq 1-k_r \)</p>
+<div>
+      <p >2. Individual reserve max and \(\%\) calculus where \(0\leq k_i \leq 1-k_r \)</p>
+      <StaticImage         style={{maxWidth:"500px", marginRight:'auto', marginLeft:'auto', display:'flex', textAlign: 'center'}}
+        alt="IHVPT individual reserve max"
+        src="../images/whitepaper iconography/HVPT individual reserve max.png"
+      />
+      <div></div>
       $$ir =\int_0^n k_i \cdot P_s(z)\cdot dz =\int_0^n k_i\cdot k_s \cdot z \cdot dz = (k_i \cdot k_s)/2 \cdot n^2$$
       $$ir(min)=0$$
       $$ir(max)=((1-k_r \cdot k_s)/2 \cdot n^2$$
       $$k_i=(2\cdot ir)/(k_s\cdot n^2)$$
       $$\forall p_i \in [0;1], p_i=(k_i)/(1-k_r)= (2 \cdot ir)/[(1-k_r)(k_s \cdot n^2)]$$
-</div>}
-      secondarySlot={<StaticImage         style={{maxWidth:"500px"}}
-        alt="IHVPT individual reserve max"
-        src="../images/whitepaper iconography/HVPT individual reserve max.png"
-      />
-      }
-      />
+</div>
         <div>
         <b id="depowith">4.2. Deposit/Withdrawal</b>
         <StaticImage         style={{maxWidth:"500px", marginRight:'auto', marginLeft:'auto', display:'flex', textAlign: 'center'}}
@@ -272,6 +284,18 @@ const WhitepaperPage = () => {
         $$k(iw)=[2 \cdot(ir-w)][k_s \cdot n^2]=k_i-[2 \cdot w][k_s \cdot n^2]$$
         $$p(iw)=[(k_i-2 \cdot w)/(k_s \cdot n^2)]/(1-k_r)=p_i -[2 \cdot w]/[k_s \cdot n^2 \cdot (1-k_r)]$$
         </div>
+        <b id="governance">4.3. Usefulness</b>
+<p>Regarding the usefulness of holding this or that IHVPT, it lies in few points:altruism, enrichement, governance, passive income. </p>
+<i id='altruism'>4.3.1. Altruism</i>
+<p>After tokenization, the tokenized one will hold 51% of the IHVPTs initially issued. In this way, he will be his majority shareholder in order to avoid any ethical abuse. Then, he may, at his discretion, sell/buy them in order to increase value/capital rising.
+In this way, the possibility of <b>altruism</b> is community-offered by allowing the tokenized person to indirectly raise funds (if she sell their IHVPTs) and promote her success by highlighting her in the community eyes. </p>
+<i id='richness'>4.3.2. Enrichment</i>
+<p> For the IHVPTs or HVSEcoin hodler, <b>getting richer</b> by betting on the good IHVPT: indeed, you can sell the IHVPTs that you hold at any time and thus speculate on their values.</p>
+<i id='sys'>4.3.3. Governance system</i>
+<p>For every IHVPT, a <b>governance token</b> veIHVPT will be emit. In other words, if you buy 1 IHVPT, you'll receive 1 veIHVPT relating to the same tokenized person. You'll receive veIHVPT comes with full voting rights within the IHVPT in addition to becoming eligible for potential airdrops too.</p>
+<i id='passive'> 4.3.4. Passive income</i>
+<p> In order to access to the correspondent veIHVPT, you need to stake your IHVPT. veIHVPT is automatically compounded for your benefit. Upon unstaking, you will receive your original IHVPT plus any additional IHVPT from the official staking pool or other revenue sources.</p>
+<p></p>
     </div>
     </div>
     </Layout>
