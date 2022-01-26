@@ -3,7 +3,7 @@
   display: inline-block;
   padding: 0.5rem 0.5rem;
   border-radius: 5px;
-  color: #fff;
+  color: var(--textInv);
   text-transform: uppercase;
   font-size: 0.75rem;
   letter-spacing: 0.15rem;
@@ -40,7 +40,7 @@
 }
 
 .lg:hover {
-  color: #fff;
+  color: var(--bg);
 }
 .lg:hover:before {
   width: 100%;
@@ -49,7 +49,7 @@
 
 .xl {
   background-color: #4199e1;
-  color: white;
+  color: var(--textInv);
   width: 160px;
   height: 50px;
   border-radius: 5px;
@@ -64,7 +64,7 @@
   display: inline-block;
   padding: 0.75rem 1.25rem;
   border-radius: 10rem;
-  color: #fff;
+  color: var(--textInv);
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 0.15rem;
@@ -97,7 +97,7 @@
   z-index: -2;
 }
 .bg:hover {
-  color: #fff;
+  color: var(--textInv);
 }
 .bg:hover:before {
   width: 100%;

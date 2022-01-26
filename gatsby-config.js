@@ -7,9 +7,11 @@ module.exports = {
     },
     plugins: [
     "gatsby-plugin-image",
+    "react-script-tag",
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
     "hamburger-react",
+    'gatsby-plugin-dark-mode',
     `gatsby-plugin-anchor-links`,
     {
       resolve: `gatsby-plugin-google-analytics`,

@@ -8,7 +8,7 @@ const WhatIsHVSEcoin = () => {
   return (
     <Layout>
     <div class="container">
-      <div class="mainbox">
+      <div class="mainbox" style={{backgroundColor:'var(--bg)'}}>
         <p style={{fontWeight:'100', fontSize: '1.25rem', lineHeight: '1rem', textAlign:'center'}}>WHAT IS HVSEcoin?</p>
         <ul style={{fontSize: '0.75rem', lineHeight: '1.5rem'}}>
           <li>One Crypto <a href="/WhatAREIHVPTs">to assess them all</a>,</li>

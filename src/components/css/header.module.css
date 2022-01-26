@@ -1,10 +1,14 @@
 html {
   height: 100%;
-}
+};
+
 
 body {
   min-height: 100%;
 }
+
+
+@import url("https://use.fontawesome.com/releases/v5.11.1/css/all.css");
 
 .nav-logo {
   display: flex;
@@ -20,6 +24,7 @@ body {
    display:flex;
 }
 
+
 nav .overlay{
   position:fixed;
   z-index:0;
@@ -32,7 +37,7 @@ nav{
     position: -webkit-sticky;
     display:flex;
     box-shadow: rgba(0,0,0,.15) 0px 0px 5px;
-    background-color: white;
+    background-color: var(--bg);
     z-index:1;
     width:100%;
     top: 0;
@@ -52,11 +57,12 @@ nav ul{
 }
 
 nav > ul > li{
-  background-color: white;
+  background-color: var(--bg);
   position: relative;
   height: 100%;
   flex: 1;
   left:0%;
+  top:10px;
 }
 
 nav > ul > li > a {
@@ -68,7 +74,7 @@ nav > ul > li > a {
 
 li a {
   text-decoration: none;
-  color: black;
+  color: var(--textTitle);
 }
 
 .unfolding > a:after{
@@ -82,7 +88,7 @@ li a {
   margin-top: 30px;
   width: 60%;
   text-align: left;
-  background-color: white;
+  background-color: var(--bg);
   border-radius: 2px;
   overflow: hidden;
   padding-left:5px;
@@ -112,7 +118,7 @@ nav > ul > li:hover > a{
 }
 
 .sous-menu > li:hover > a {
-  color: white;
+  color: var(--bg);
 }
 
 @keyframes rotationFleche {
@@ -290,6 +296,27 @@ nav > ul > li:hover > a{
     width: 0;
     height: 0;
     color: #2C3E50;
+}
+
+.submenu2 {
+  text-align: right;
+  margin-top:10px;
+  margin-bottom:10px;
+  display:flex;
+  flex-direction:row;
+  margin-right:auto;
+  margin-left:auto;
+  width:100%;
+}
+
+.col {
+
+  margin-right:auto;
+  margin-left:auto;
+  color: #2C3E50;
+  text-align:center;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .footer-social-links {

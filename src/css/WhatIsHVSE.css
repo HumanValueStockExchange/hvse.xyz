@@ -1,10 +1,19 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+
 .container{
    margin-right: auto;
    margin-left: auto;
    padding-right: 16;
    padding-left: 16;
    float: center;
-   display:flex;
+   display:grid;
    flex-direction:row;
    margin-top: 15px;
    margin-bottom:15px;
@@ -12,6 +21,7 @@
    padding-bottom: 15px;
    justify-content: center;
    align-items: center;
+   min-height: 100%;
 }
 
 .img {
@@ -51,10 +61,12 @@ a { color: black; }
   background-color: white;
   padding-left: 10px;
   padding-right: 10px;
+  min-height: 100%;
 }
 
 @media (max-width: 840px) {
   .container {
        flex-direction:column;
+       min-height: 100%;
   }
 }

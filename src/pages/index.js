@@ -9,6 +9,9 @@ import { Link } from "gatsby";
 import MainBlock from '../components/MainBlock';
 import SplitSection from '../components/SplitSection';
 import { StaticImage } from 'gatsby-plugin-image';
+import "../css/global.css";
+import '../css/roadmap.css';
+import Stock from '../images/theme/Stock.js'
 
 // Step 2: Define your component
 
@@ -26,20 +29,14 @@ const IndexPage = () => {
             <Link to="/about">
               <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>About us ❯</Button>
             </Link>
-            <Link to="/roadmap">
-              <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Roadmap ❯</Button>
-            </Link>
             <Link to="/Twhitepaper">
               <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Whitepaper ❯</Button>
             </Link></div>}
     secondarySlot={
-      <StaticImage style={{maxWidth:"500px"}}
-        alt="HVSE market place"
-        src="../images/theme/market.png"
-      />
+      <Stock></Stock>
     }
     />
-    <div className="head" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', textAlign: 'center', marginBottom: '3', marginTop:'3em'}}>MAIN FEATURES</div>
+    <div className="head" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', textAlign: 'center', marginBottom: '3', marginTop:'3em',  color:'var(--textNormal)'}}>MAIN FEATURES</div>
     <Card
     id="Main Features"
     children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Tender offering</p><p className="mt-4"  style={{marginTop: '4'}}>After a short period of risk analysis, we will contact you in order to organize your market introduction.</p></div>}
@@ -94,28 +91,94 @@ const IndexPage = () => {
         src="../images/theme/performance.png"
       />}
     />
-    <div id="stats" className="py-20 lg:pt-32" style={{paddingTop:'5em', paddingBottom:'5em',}}>
-        <LabelText className="text-gray-600">OUR CUSTOMERS GET RESULTS</LabelText>
-        <Card
-    id="Main Customers"
-    children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4"  style={{marginTop: '4', textAlign:'center'}}>IHVPTs average capital gain</p></div>}
-    children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4" style={{marginTop: '4', textAlign:'center'}}>Checked personal objectives</p></div>}
-    children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>+100%</p><p className="mt-4"  style={{marginTop: '4', textAlign:'center'}}>Checked personal objectives</p></div>}/>
+    <div id="roadmap" className="py-20 lg:pt-32" style={{paddingTop:'5em', paddingBottom:'5em', color:'var(--textNormal)'}}>
+        <LabelText className="text-600" style={{color:'var(--textNormal)'}}>ROADMAP</LabelText>
+        <h1>HVSE progression, <span>2021–2023</span></h1>
+      <div class="flex-parent">
+        <div class="input-flex-container">
+		      <input type="radio" name="timeline-dot" data-description="11/2021" checked/>
+		      <div class="dot-info" data-description="11/2021">
+			      <span class="year">11/2021</span>
+			      <span class="label">Website</span>
+		      </div>
+		      <input type="radio" name="timeline-dot" data-description="02/2022"/>
+		      <div class="dot-info" data-description="02/2022">
+			      <span class="year">02/2022</span>
+			      <span class="label">Whitepaper publication</span>
+		      </div>
+		      <input type="radio" name="timeline-dot" data-description="07/2022"/>
+		      <div class="dot-info" data-description="07/2022">
+			      <span class="year">07/2022</span>
+			      <span class="label">Blockchain deployement</span>
+		      </div>
+		      <input type="radio" name="timeline-dot" data-description="09/2022"/>
+		      <div class="dot-info" data-description="09/2022">
+			      <span class="year">09/2022</span>
+			      <span class="label">HVSEcore 1.0.</span>
+		      </div>
+		      <input type="radio" name="timeline-dot" data-description="12/2022"/>
+		      <div class="dot-info" data-description="12/2022">
+			      <span class="year">12/2022</span>
+			      <span class="label">Foundation officialisation</span>
+		      </div>
+		      <input type="radio" name="timeline-dot" data-description="01/2023"/>
+		      <div class="dot-info" data-description="01/2023">
+			      <span class="year">01/2023</span>
+			      <span class="label">Ambassadors recruitment</span>
+		      </div>
+		      <input type="radio" name="timeline-dot" data-description="02/2023"/>
+          <div class="dot-info" data-description="02/2023">
+            <span class="year">02/2023</span>
+            <span class="label">HVSEcore 2.0.</span>
+		      </div>
+		      <input type="radio" name="timeline-dot" data-description="03/2023"/>
+		      <div class="dot-info" data-description="03/2023">
+			      <span class="year">03/2023</span>
+			      <span class="label">First tokenizations</span>
+		      </div>
+		      <input type="radio" name="timeline-dot" data-description="06/2023"/>
+		      <div class="dot-info" data-description="06/2023">
+			      <span class="year">06/2023</span>
+			      <span class="label">Marketing campaign</span>
+		      </div>
+		      <input type="radio" name="timeline-dot" data-description="09/2023"/>
+		      <div class="dot-info" data-description="09/2023">
+			      <span class="year">09/2023</span>
+			      <span class="label">Official listings</span>
+		      </div>
+		        <div id="timeline-descriptions-wrapper">
+			        <p data-description="11/2021">The website first implementation which is the main HVSE community ressource.</p>
+			        <p data-description="02/2022">Whitepaper final copy published, which allows to everyone to understand our philosophy as best as possible.</p>
+			        <p data-description="07/2022">
+			        <ul>
+			        <li>HVSEcoin and IHVPT blockchains published on GitHub.</li>
+			        <li>Deployement of HVSEcoin.</li>
+			        <li>Deployment of the liquidity pool on Uniswap.</li>
+			        <li>Listing on CoinGecko and on CoinMarketCap.</li>
+			        <li>First Security Audit.</li>
+			        <li> Website implementation in 3.0.</li>
+			        </ul>
+			        </p>
+			        <p data-description="09/2022">First release of HVSEcore, our main software: a wallet and a DEX to buy/sell HVSEcoin.</p>
+			        <p data-description="12/2022">Administrative and juridic status of our foundation accepted by authorities, in order to recruit employees and obtain official licenses. At the same time, audits will be performed.</p>
+			        <p data-description="01/2023">First part of the marketing campaign: our ambassadors recruitment.</p>
+			        <p data-description="02/2023">HVSEcore 2.0 allowing to buy/sell IHVPTs.</p>
+		      	  <p data-description="03/2023">Begining of the tokenization process for everyone.</p>
+			        <p data-description="06/2023">Second phase of the marketing campaign.</p>
+			        <p data-description="09/2023">HVSEcoin listing on various CEXs as Binance or Coinbase.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <section id="stories" className="py-20 lg:py-40" style={{paddingBottom:'20', paddingTop:'20'}}>
+    <section id="stories" className="py-20 lg:py-40" style={{paddingBottom:'20', paddingTop:'20', color:'var(--textNormal)'}}>
 
       <div style={{marginRight:'auto', marginLeft:'auto'}}>
-        <LabelText className="mb-8 text-gray-600 text-center">WHAT CUSTOMERS ARE SAYING</LabelText>
+        <LabelText className="mb-8 text-600 text-center" style={{color:'var(--textNormal)'}}>WHAT CUSTOMERS ARE SAYING</LabelText>
         <div><Carousel /></div>
-<div style={{display:'flex', justifyContent:'center'}}>
-        <Link to="/stories">
-              <Button type="bg" style={{paddingRight:'0.25em'}}>More stories ❯</Button>
-            </Link>
-        </div>
 </div>
     </section>
-    <section  style={{marginRight:'auto', marginLeft:'auto', marginTop:'auto', marginBottom:'auto', paddingTop:'4em', paddingBottom:'4em', textAlign:'center', backgroundColor:'rgba(249, 250, 251,1)', verticalAlign: 'middle', boxSizing: 'border-box', boxShadow: '0 10px 28px rgba(0,0,0,.08)',   borderColor: '#e9ecef', borderRadius: '0.25rem'}}>
-      <h3 className="text-5xl font-semibold" style={{fontSize: '3rem', lineHeight: '3rem', fontWeight:'600'}}>Ready to improve yourself?</h3>
+    <section  style={{marginRight:'auto', marginLeft:'auto', marginTop:'auto', marginBottom:'auto', paddingTop:'4em', paddingBottom:'4em', textAlign:'center', backgroundColor:'var(--bg)', verticalAlign: 'middle', boxSizing: 'border-box', boxShadow: '0 10px 28px rgba(0,0,0,.08)',   borderColor: '#e9ecef', borderRadius: '0.25rem'}}>
+      <h3 className="text-5xl font-semibold" style={{fontSize: '3rem', lineHeight: '3rem', fontWeight:'600', color:'var(--textNormal)'}}>Ready to improve yourself?</h3>
       <p className="mt-8 text-xl font-light" style={{marginTop:'8', fontSize: '1.25rem', lineHeight: '1.75rem',fontWeight:'300'}}>
         We are all waiting you!
       </p>

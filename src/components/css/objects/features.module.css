@@ -3,7 +3,7 @@
   width: 30rem;
   margin: auto;
 
-  background-color: white;
+  background-color: var(--bg);
 
   box-sizing: border-box;
   box-shadow: 0 10px 28px rgba(0,0,0,.08);
@@ -88,6 +88,7 @@
      width:300px;
      height:30%;
      float:center;
+     color: var(--textNormal);
      text-align: center;
      align-items: middle;
      align-content:center;
@@ -104,7 +105,7 @@
   width: 300px;
   margin: auto;
 
-  background-color: white;
+  background-color: var(--bg);
   font-size: 30%;
   box-sizing: border-box;
   box-shadow: 0 10px 28px rgba(0,0,0,.08);

@@ -1,0 +1,219 @@
+
+.navi-data-strip {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    max-width: 100%;
+    height: 100px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: linear-gradient(to bottom right, #708090, #778899, #C0C0C0);
+    box-sizing: border-box;
+    box-shadow: 5 15px 33px rgba(0,0,0,.08);
+}
+
+.navi-data-strip__ticker-viewport-inner {
+    position: absolute;
+    height: 100px;
+    display: table;
+    background-color: #0D0208;
+
+}
+
+.navi-data-strip__ticker-viewport {
+    display: flex;
+    position: absolute;
+    left: 100px;
+    right: 10px;
+    top:7px;
+    bottom:7px;
+    overflow: hidden;
+    width: calc(100% - 110px);
+    height: 80px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+div {
+    display: block;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+div, span, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+
+.navi-data-strip__tickers-list-first {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding-right:0;
+    white-space: nowrap;
+
+    transition-property: all;
+    transition-duration: 0s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+
+    -webkit-animation: animateFirstList 30s linear;
+    animation: animateFirstList 30s linear;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.navi-data-strip__tickers-list-first::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+}
+
+.navi-data-strip__tickers-list-first::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+}
+
+
+.navi-data-strip__ticker-link{
+    color: var(--textNormal);
+    text-decoration: none;
+    padding: 0 25px;
+    padding: 0 10px;
+    color: #1ec503;
+    font-family: 'Matrix Code NFI', sans-serif;
+    text-shadow: 0 0 1px #1ec503,0 0 1px #1ec503,0 0 1px #1ec503;
+}
+
+.navi-data-strip__ticker {
+    display: inline-block;
+    margin-top:15px;
+    padding-top:15px;
+    line-height: 30px;
+    padding: 10 25px;
+    padding: 10 10px;
+    color: #1ec503;
+    font-family: 'Matrix Code NFI', sans-serif;
+    text-shadow: 0 0 1px #1ec503,0 0 1px #1ec503,0 0 1px #1ec503;
+    font-size: 50px;
+}
+
+.navi-data-strip__ticker-label {
+    display: inline;
+}
+
+.navi-data-strip__ticker-market-price {
+    display: inline;
+    font-size: 50px;
+    padding: 0 25px;
+    padding: 0 10px;
+    color: #1ec503;
+	font-family: 'Matrix Code NFI', sans-serif;
+	text-shadow: 0 0 1px #1ec503,0 0 1px #1ec503,0 0 1px #1ec503;
+}
+
+.navi-data-strip__ticker-direction--negative {
+    width: 0;
+    height: 0;
+    border-right:20px solid transparent;
+    border-left:20px solid transparent;
+
+    border-top:30px solid red;
+    padding: 2px 0;
+}
+
+.navi-data-strip__ticker-direction--positive {
+    max-width: 0;
+    height: 0;
+    border-right:20px solid transparent;
+    border-left:20px solid transparent;
+
+    border-bottom:30px solid darkgreen;
+    padding: 2px 0;
+}
+
+.navi-data-strip__ticker-direction {
+    display: inline-block;
+    vertical-align: baseline;
+    vertical-align: initial;
+}
+
+.navi-data-strip__ticker-value--negative {
+    background-color: red;
+}
+
+.navi-data-strip__ticker-value--positive {
+    background-color: darkgreen;
+}
+.navi-data-strip__ticker-value {
+    display: inline;
+    padding: 2px 1px 1px;
+    color: #1ec503;
+
+    padding: 0 25px;
+    padding: 0 10px;
+	  font-family: 'Matrix Code NFI', sans-serif;
+	  text-shadow: 0 0 1px #1ec503,0 0 1px #1ec503,0 0 1px #1ec503;
+    font-size: 50px;
+}
+
+
+@-webkit-keyframes animateFirstList {0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+}
+100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}}
+
+
+@keyframes animateFirstList {0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+}
+100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}}

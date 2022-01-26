@@ -18,7 +18,7 @@ const WhitepaperPage = () => {
       <script id="MathJax-script" async src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
     </Helmet>
-      <p>Our whitepaper will be published no later than February 2022, as it specified in the <a href="/roadmap">Roadmap</a>.</p>
+      <p style={{margin: 'auto'}}>Our whitepaper will be published no later than February 2022, as it specified in the Roadmap.</p>
     </Layout>
   )
 }
