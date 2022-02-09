@@ -1,11 +1,9 @@
 // Step 1: Import React
-import React from 'react'
-import { Helmet } from "react-helmet"
-import 'gatsby-remark-mathjax'
-import 'gatsby-transformer-remark'
-import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
-import SplitSection from '../components/SplitSection';
+import React from 'react';
+import { Helmet } from "react-helmet";
+import 'gatsby-remark-mathjax';
+import 'gatsby-transformer-remark';
+import Layout from '../components/layout';
 
 // Step 2: Define your component
 
