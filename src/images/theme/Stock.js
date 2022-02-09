@@ -7,7 +7,7 @@ var Component = React.Component;
 class Stock extends Component {
   render() {
 		return (
-		  <div class="navi-data-strip">
+		  <div class="navi-data-strip" style={{marginTop:'10px'}}>
 		  <div><StaticImage style={{maxWidth:"70px", display:'flex', top:'25px', bottom:'25px', left:'15px'}}
         alt="HVSE logo"
         src="../logos/logo.jpeg"

@@ -71,7 +71,7 @@ const Header = ({children, ...props}) => (
       <div className={submenu2}>
 
       <div className={col}>
-      <div style={{marginTop:'10px', fontSize:"25px"}}><ThemeToggler>
+      <div  style={{marginTop:'10px', fontSize:"25px"}}><ThemeToggler>
         {({ theme, toggleTheme }) => (
           <label>
             <i
@@ -126,7 +126,7 @@ const Header = ({children, ...props}) => (
             <i
               class="fas fa-adjust"
               onClick={() => theme === 'dark' ? toggleTheme('light') : toggleTheme('dark')}
-              style={{marginTop:'10px', marginBottom:'auto', textAlign:'right', marginRight:'25px'}}
+              style={{marginTop:'20px', marginBottom:'auto', textAlign:'right', marginRight:'25px'}}
             ></i>
           </label>
         )}

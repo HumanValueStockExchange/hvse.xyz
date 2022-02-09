@@ -24,14 +24,15 @@ const IndexPage = () => {
     id="Get started"
     primarySlot={
         <div className="text-center lg:text-left lg:w-1/2">
-        <div className="pageTitle" style={{fontWeight:'700', fontSize: '2.25rem', lineHeight: '2.5rem', class:'lead'}}> <p>Human Value Stock Exchange</p></div>
-    <p className="text-xl lg:text-2xl mt-6 font-light" style={{marginTop:'6px', fontWeight:'300', fontSize: '120%', lineHeight: '1.75rem'}}>Thanks to our technologies, you can either bet on others success, or improve yourself easily or both!</p>
+        <div className="pageTitle" style={{fontWeight:'700', fontSize: '2.25rem', lineHeight: '2.5rem', class:'lead', textAlign: 'center'}}> <p>Human Value Stock Exchange</p></div>
+    <p className="text-xl lg:text-2xl mt-6 font-light" style={{marginTop:'6px', fontWeight:'300', fontSize: '120%', lineHeight: '1.75rem', textAlign: 'center'}}>Bet on others success, or improve yourself readily!</p>
+    <div style={{textAlign: 'center', marginRight:'auto', marginLeft:'auto'}}>
             <Link to="/about">
               <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>About us ❯</Button>
             </Link>
             <Link to="/Twhitepaper">
               <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Whitepaper ❯</Button>
-            </Link></div>}
+            </Link></div></div>}
     secondarySlot={
       <Stock></Stock>
     }
@@ -39,9 +40,9 @@ const IndexPage = () => {
     <div className="head" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', textAlign: 'center', marginBottom: '3', marginTop:'3em',  color:'var(--textNormal)'}}>MAIN FEATURES</div>
     <Card
     id="Main Features"
-    children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Tender offering</p><p className="mt-4"  style={{marginTop: '4'}}>After a short period of risk analysis, we will contact you in order to organize your market introduction.</p></div>}
-    children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Staking</p><p className="mt-4" style={{marginTop: '4'}}>Thanks to HVSEcore, you can bet on others success and therefore do profits and allow them to do some also.</p></div>}
-    children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Advising</p><p className="mt-4"  style={{marginTop: '4'}}>After your IHVPTs tokenization, advices are freely given to you in order to increase your performances.</p></div>}
+    children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Tender offer</p><p className="mt-4"  style={{marginTop: '4'}}>After a risk analysis study, we will contact you in order to organize your <a href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}>IHVPT</a> initial public offering.</p></div>}
+    children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Staking</p><p className="mt-4" style={{marginTop: '4'}}>You can bet on others success, and so make profits. Thanks to <a href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}>IHVPTs</a> staking system, holders are rewarded.</p></div>}
+    children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Advising</p><p className="mt-4"  style={{marginTop: '4'}}>After your tokenization, advices will be given by your <a href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}>IHVPTs</a> hodlers in order to increase your performances (thanks to a DAO governance system).</p></div>}
     />
         <SplitSection
       id="Tokenization Process"
@@ -49,7 +50,7 @@ const IndexPage = () => {
         <div className="lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Our team of enthusiastic marketers will analyse and evaluate how you could integrate the HVSE and therefore hodling your IHVPTs (Individual Human Value Tokens).
+            Our marketers team will analyse and assess how you could integrate the <a href="/WhatIsHVSE" style={{textDecoration: "none",  color: 'var(--textLink)'}}>HVSE market</a>.
           </p>
         </div>
       }
@@ -65,7 +66,7 @@ const IndexPage = () => {
             Design, Plan and Chill
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Once your market implementation analysis process is completed by our analysts, our staff will help you in the right way to introduce you on the HVSE market.
+            Once your tokenization study is completed, our staff will help you in the right way to introduce you on the <a href="/WhatIsHVSE" style={{textDecoration: "none",  color: 'var(--textLink)'}}>HVSE market</a>.
           </p>
         </div>
       }
@@ -81,7 +82,7 @@ const IndexPage = () => {
             Search For Your Performance Optimization
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            With all the information in place concerning various life aspects(health, wages,...), you will be presented with an action plan that you need to follow
+            With several informations (health, wages, community impact...), <a href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}>IHVPTs</a> hodlers will present advices that you can follow or not.
           </p>
         </div>
       }
@@ -93,7 +94,7 @@ const IndexPage = () => {
     />
     <div id="roadmap" className="py-20 lg:pt-32" style={{paddingTop:'5em', paddingBottom:'5em', color:'var(--textNormal)'}}>
         <LabelText className="text-600" style={{color:'var(--textNormal)'}}>ROADMAP</LabelText>
-        <h1>HVSE progression, <span>2021–2023</span></h1>
+        <h1>HVSE progression</h1>
       <div class="flex-parent">
         <div class="input-flex-container">
 		      <input type="radio" name="timeline-dot" data-description="11/2021" checked/>
