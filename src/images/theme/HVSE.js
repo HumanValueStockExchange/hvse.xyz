@@ -11,7 +11,6 @@ var yVal2 = 47.64;
 var yVal3 = 42.67;
 var yVal4 = 46.16;
 var updateInterval = 1000;
-var graph = "darkgreen";
 
 
 class HVSE extends Component {
@@ -23,24 +22,12 @@ class HVSE extends Component {
 		setInterval(this.updateChart, updateInterval);
 	}
 	updateChart() {
-	  var A = yVal2 + yVal3;
 		yVal1 = yVal1 +  1 + Math.random() *(-1-1);
 		yVal2 = yVal1 +  1 + Math.random() *(-1-1);
 		yVal3 = yVal3 +  1 + Math.random() *(-1-1);
 		yVal4 = yVal3 +  1 + Math.random() *(-1-1);
 		dps.push({x: xVal,y: [yVal1, yVal2, yVal3, yVal4]});
-		var B = yVal2 + yVal3;
 		xVal++;
-		if (dps.length >  10 ) {
-			dps.shift();
-		}
-		if (A < B) {
-		  graph = "darkgreen";
-		}
-		if (B > A) {
-		  graph = "red";
-		}
-
 		this.chart.render();
 	}
 	render() {
@@ -64,9 +51,7 @@ class HVSE extends Component {
 			}]
 		}
 		return (
-		<div>
-			<CanvasJSChart options = {options} onRef={ref => this.chart = ref}/>
-		</div>
+		<div><CanvasJSChart options = {options} onRef={ref => this.chart = ref}/></div>
 		);
 	}
 };
