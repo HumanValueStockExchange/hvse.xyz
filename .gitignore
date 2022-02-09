@@ -1,8 +1,7 @@
 node_modules/
 .cache/
-public
+public/
 #R files
 .Rproj.user
 hvse.Rproj
-package-lock.json
 .Rhistory

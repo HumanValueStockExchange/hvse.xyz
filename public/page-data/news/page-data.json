@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-news-index-js",
+    "path": "/news/",
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"October 7, 2021","title":"Our website implementation"},"id":"36a99917-38f2-50cb-b57b-7db66bc1cbc2","slug":"first-news"},{"frontmatter":{"date":"July 25, 2021","title":"Yet Another Post"},"id":"25546bf2-7ba1-5e5c-96fa-78780d42f497","slug":"third-news"},{"frontmatter":{"date":"July 24, 2021","title":"Another Post"},"id":"4d49dbba-f502-5730-b5f5-308c23dc78df","slug":"second-news"}]}},"pageContext":{}},
+    "staticQueryHashes": ["3159585216"]}

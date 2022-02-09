@@ -4,6 +4,7 @@ import Card from '../components/Card';
 import '../css/WhatIsHVSE.css';
 import MainBlock from '../components/MainBlock';
 import HVSE from '../images/theme/HVSE.js';
+import "../css/global.css";
 
 // Step 2: Define your component
 const WhatAreIHVPTs = () => {
@@ -12,7 +13,7 @@ const WhatAreIHVPTs = () => {
     <MainBlock
       primarySlot={
         <div  class="mainbox" style={{backgroundColor:'var(--bg)', maxWidth:'100%', minHeight:'100%'}}>
-        <p style={{fontWeight:'100', fontSize: '1.25rem', lineHeight: '1rem', textAlign:'center'}}>WHAT ARE IHVPTs?</p>
+        <p style={{fontWeight:'100', fontSize:'1.25rem', lineHeight:'1rem', textAlign:'center'}}>WHAT ARE IHVPTs?</p>
         <ul style={{fontSize: '0.75rem', lineHeight: '1.5rem',}}>
           <li>One person, one token. Your value, your token.</li>
           <li>IHVPTs are Individual Human Value Personalized Tokens.</li>
