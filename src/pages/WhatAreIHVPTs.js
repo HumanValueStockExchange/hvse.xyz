@@ -3,7 +3,6 @@ import Layout from '../components/layout';
 import Card from '../components/Card';
 import '../css/WhatIsHVSE.css';
 import MainBlock from '../components/MainBlock';
-import HVSE from '../images/theme/HVSE.js';
 import "../css/global.css";
 import { StaticImage } from 'gatsby-plugin-image';
 
