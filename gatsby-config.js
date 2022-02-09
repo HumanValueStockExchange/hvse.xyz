@@ -10,6 +10,7 @@ module.exports = {
     "react-script-tag",
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
+    'react-dom',
     "hamburger-react",
     'gatsby-plugin-dark-mode',
     `gatsby-plugin-anchor-links`,

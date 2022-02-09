@@ -1,21 +1,7 @@
 const gatsbyConfig = require(`./gatsby-config.js`)
+const path = require(`path`)
 
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-
-  actions.setWebpackConfig({
-    node: {
-      fs: 'empty'
-    }
-  })
-
-  if(stage === 'build-html'){
-    actions.setWebpackConfig({
-      module: {
-        rules: [{
-          test: /canvas/,
-          use: loaders.null()
-        }]
-      }
-    })
-  }
+exports.onPostBuild = ({ reporter }) => {
+  reporter.info(`Your Gatsby site has been built!`)
 }
+

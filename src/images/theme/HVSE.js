@@ -1,6 +1,7 @@
 import React from 'react';
 import CanvasJSReact from '../../canvasjs.react.js';
 import "../../css/global.css";
+import ReactDOM from 'react-dom';
 
 var Component = React.Component;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
@@ -55,5 +56,10 @@ class HVSE extends Component {
 		);
 	}
 };
+
+ReactDOM.render(
+  <HVSE />,
+  document.getElementById('root')
+);
 
 export default HVSE;
