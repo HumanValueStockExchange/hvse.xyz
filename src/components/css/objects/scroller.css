@@ -15,7 +15,11 @@
   margin:0;
   max-width:300px;
   max-height:400px;
+<<<<<<< HEAD
   background-color:var(--bg);
+=======
+  background-color:#fff;
+>>>>>>> c9e98c789ad647a20e36b2b4519a5b5561318015
   border:1px solid #ccc;
   -webkit-overflow-scrolling: auto;
   overflow-x:hidden;
