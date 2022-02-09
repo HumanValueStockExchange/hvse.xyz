@@ -5,6 +5,7 @@ import '../css/WhatIsHVSE.css';
 import MainBlock from '../components/MainBlock';
 import HVSE from '../images/theme/HVSE.js';
 import "../css/global.css";
+import { StaticImage } from 'gatsby-plugin-image';
 
 // Step 2: Define your component
 const WhatAreIHVPTs = () => {
@@ -22,7 +23,10 @@ const WhatAreIHVPTs = () => {
       </div>
       }
       secondarySlot={
-      <HVSE/>}
+      <StaticImage class="img"
+      style={{maxWidth:'210px', marginTop:'20px'}}
+        alt="HVSE market place"
+        src="../images/theme/bet.png"/>}
     />
     <Card
     id="Chara1 IHVPTs"
