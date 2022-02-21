@@ -41,7 +41,7 @@ function Carousel() {
     </div>
   </div></div>
           <div><div className={card}>
-    <p className="text-xl font-semibold" style={{fontSize: '1.25rem', lineHeight:'1.75rem', fontWeigth:'600', textAlign:'center',  color:'var(--textNormal)'}}><FormattedMessage id="amy1" defaultMessage='THE "social network"'/></p>
+    <p className="text-xl font-semibold" style={{fontSize: '1.25rem', lineHeight:'1.75rem', fontWeigth:'600', textAlign:'center',  color:'var(--textNormal)'}}><FormattedMessage id="amy1" defaultMessage='THE social network'/></p>
     <div className="flex items-center mt-8" style={{marginBottom:'8px', display:'flex', marginLeft:'10px'}}>
       <img
         className="w-12 h-12 mr-4"
