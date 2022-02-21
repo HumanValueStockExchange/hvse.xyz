@@ -1,0 +1,83 @@
+{
+  "about-us": {
+    "defaultMessage": "About us"
+  },
+  "hello-world": {
+    "defaultMessage": "Hello World!"
+  },
+  "homepage": {
+    "defaultMessage": "Homepage"
+  },
+  "learn-more-about-us": {
+    "defaultMessage": "Learn more about us"
+  },
+  "welcome-on-our-website": {
+    "defaultMessage": "Welcome on our multi-language website"
+  },
+  "slogan": {
+    "defaultMessage": "Bet on others success, or improve yourself readily!"
+  },
+  "use-hvse": {
+    "defaultMessage": "Use HVSE"
+  },
+  "making-you-better": {
+    "defaultMessage": "IMPROVING HELP"
+  },
+  "white-paper": {
+    "defaultMessage": "Whitepaper"
+  },
+  "main-features": {
+    "defaultMessage": "MAIN FEATURES"
+  },
+  "tender-offer": {
+    "defaultMessage": "Tender offer"
+  },
+  "riskanal1": {
+    "defaultMessage": "After a risk analysis study, we will contact you in order to organize your"
+  },
+  "riskanal2": {
+    "defaultMessage": "into the HVSE."
+  },
+  "staking": {
+    "defaultMessage": "Staking"
+  },
+  "advising": {
+    "defaultMessage": "Advising"
+  },
+  "stakingsub1": {
+    "defaultMessage": "You can bet on others success, and so make profits. Thanks to the staking system of"
+  },
+  "stakingsub2": {
+   "defaultMessage":  "holders are rewarded."
+  },
+  "advisingsub1": {
+    "defaultMessage": "After your tokenization, advices will be given by hodlers of your"
+  },
+  "advisingsub2": {
+    "defaultMessage": "in order to increase your performances (thanks to a DAO governance system)."
+  },
+  "hvse-market": {
+    "defaultMessage": "HVSE market"
+  },
+  "MA": {
+    "defaultMessage": "Market Analysis"
+  },
+    "MAsub": { "defaultMessage": "Our marketers team will analyse and assess how you could integrate the " },
+    "3D": { "defaultMessage": "Design, Plan and Chill" },
+    "3Dsub": { "defaultMessage": "Once your tokenization study is completed, our staff will help you in the right way to introduce you on the " },
+    "opti": { "defaultMessage": "Search For Your Performance Optimization" },
+    "optisub1": { "defaultMessage": "With several informations (health, wages, community impact...), hodlers of " },
+    "optisub2": { "defaultMessage": " will present advices that you can follow or not." },
+    "roadmap": { "defaultMessage": "ROADMAP" },
+    "hvse-prog": { "defaultMessage": "HVSE progression" },
+    "website": { "defaultMessage": "Website" },
+    "wp-pub": { "defaultMessage": "Whitepaper publication" },
+    "block-dep": { "defaultMessage": "Blockchain deployement" },
+    "foundoff": { "defaultMessage": "Foundation officialisation" },
+    "ambrec": { "defaultMessage": "Ambassadors recruitment" },
+    "firsttoken": { "defaultMessage": "First tokenizations" },
+    "markcamp": { "defaultMessage": "Marketing campaign" },
+    "offlist": { "defaultMessage": "Official listings" },
+    "websub": { "defaultMessage": "The website first implementation which is the main HVSE community ressource." },
+    "wp-pubsub": { "defaultMessage": "Whitepaper final copy published, which allows to everyone to understand our philosophy as best as possible."
+}

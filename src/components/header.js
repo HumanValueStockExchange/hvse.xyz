@@ -18,8 +18,7 @@ import {
 import Hamburger from 'hamburger-react';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import "../css/global.css"
-
+import "../css/global.css";
 
 
 
@@ -67,6 +66,12 @@ const Header = ({children, ...props}) => (
               <li><a href="/faq">F.A.Q.</a></li>
             </ul>
           </li>
+        <li className={unfolding}><a href='#'>Language</a>
+          <ul className={sub}>
+        <li><a href="/">English</a></li>
+        <li><a href="/fr/">Français</a></li>
+        <li><a href="/es/">Spanish</a></li>
+      </ul></li>
       <div>
       <div className={submenu2}>
 
@@ -120,6 +125,12 @@ const Header = ({children, ...props}) => (
               <li><a href="/faq">F.A.Q.</a></li>
             </ul>
           </li>
+           <li className={unfolding}><a href='#'>Language</a>
+          <ul className={sub}>
+        <li><a href="/">English</a></li>
+        <li><a href="/fr/">French</a></li>
+        <li><a href="/es/">Spanish</a></li>
+      </ul></li>
           <ThemeToggler>
         {({ theme, toggleTheme }) => (
           <label>
@@ -134,6 +145,7 @@ const Header = ({children, ...props}) => (
 
       </ul>
     </nav>
+
 )
 
 export default Header

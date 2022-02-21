@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-js",
     "path": "/",
-    "result": {"pageContext":{}},
+    "result": {"pageContext":{"language":"en","messages":{"welcome-on-our-website":"Welcome on our website","hello-world":"Hello World!","about-us":"About us","learn-more-about-us":"Learn more about us","homepage":"Homepage","slogan":"Bet on others success, or improve yourself readily!","use-hvse":"Use HVSE","making-you-better":"IMPROVING HELP","white-paper":"Whitepaper","main-features":"MAIN FEATURES","tender-offer":"Tender offer","riskanal1":"After a risk analysis study, we will contact you in order to organize your","riskanal2":"into the HVSE.","staking":"Staking","advising":"Advising","stakingsub1":"You can bet on others success, and so make profits. Thanks to the staking system of","stakingsub2":"holders are rewarded.","advisingsub1":"After your tokenization, advices will be given by hodlers of your","advisingsub2":"in order to increase your performances (thanks to a DAO governance system).","hvse-market":"HVSE market","3D":"Design, Plan and Chill","MA":"Market Analysis","3Dsub":"Once your tokenization study is completed, our staff will help you in the right way to introduce you on the ","MAsub":"Our marketers team will analyse and assess how you could integrate the "}}},
     "staticQueryHashes": []}

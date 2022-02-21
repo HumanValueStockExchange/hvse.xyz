@@ -11,47 +11,61 @@ import SplitSection from '../components/SplitSection';
 import { StaticImage } from 'gatsby-plugin-image';
 import "../css/global.css";
 import '../css/roadmap.css';
-import Stock from '../images/theme/Stock.js'
+import Stock from '../images/theme/Stock.js';
+import {FormattedMessage} from "react-intl";
+import LinkTranslated from "../components/LinkTranslated";
+import SimpleLocalize from "../components/SimpleLocalize";
 
 // Step 2: Define your component
 
 
 
-const IndexPage = () => {
+function IndexPage(props) {
+  const language = props.pageContext.language;
   return (
+    <SimpleLocalize {...props}>
     <Layout>
     <MainBlock
     id="Get started"
     primarySlot={
         <div className="text-center lg:text-left lg:w-1/2">
         <div className="pageTitle" style={{fontWeight:'700', fontSize: '2.25rem', lineHeight: '2.5rem', class:'lead', textAlign: 'center'}}> <p>Human Value Stock Exchange</p></div>
-    <p className="text-xl lg:text-2xl mt-6 font-light" style={{marginTop:'6px', fontWeight:'300', fontSize: '120%', lineHeight: '1.75rem', textAlign: 'center'}}>Bet on others success, or improve yourself readily!</p>
+    <div className="text-xl lg:text-2xl mt-6 font-light" style={{marginTop:'0px',marginBottom:'15px', fontWeight:'300', fontSize: '120%', lineHeight: '1.75rem', textAlign: 'center', marginRight:'auto', marginLeft:'auto'}}><FormattedMessage id="slogan" defaultMessage="Bet on others success, or improve yourself readily!"/></div>
     <div style={{textAlign: 'center', marginRight:'auto', marginLeft:'auto'}}>
-            <Link to="/about">
-              <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>About us ❯</Button>
-            </Link>
-            <Link to="/Twhitepaper">
-              <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}>Whitepaper ❯</Button>
-            </Link></div></div>}
+            <LinkTranslated href="/about">
+              <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}><FormattedMessage
+          id="about-us"
+          defaultMessage="About us"
+        /></Button>
+            </LinkTranslated>
+            <LinkTranslated href="/Twhitepaper">
+              <Button type="lg" style={{marginTop:'8',paddingRight:'0.25em'}}><FormattedMessage
+          id="white-paper"
+          defaultMessage="Whitepaper"
+        /></Button>
+            </LinkTranslated></div></div>}
     secondarySlot={
       <Stock></Stock>
     }
     />
-    <div className="head" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', textAlign: 'center', marginBottom: '3', marginTop:'3em',  color:'var(--textNormal)'}}>MAIN FEATURES</div>
+    <div className="head" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', textAlign: 'center', marginBottom: '3', marginTop:'3em',  color:'var(--textNormal)'}}>
+    <FormattedMessage id="main-features" defaultMessage="MAIN FEATURES"/>
+    </div>
     <Card
-    id="Main Features"
-    children1={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Tender offer</p><p className="mt-4"  style={{marginTop: '4'}}>After a risk analysis study, we will contact you in order to organize your <a href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}>IHVPT</a> initial public offering.</p></div>}
-    children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Staking</p><p className="mt-4" style={{marginTop: '4'}}>You can bet on others success, and so make profits. Thanks to <a href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}>IHVPTs</a> staking system, holders are rewarded.</p></div>}
-    children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Advising</p><p className="mt-4"  style={{marginTop: '4'}}>After your tokenization, advices will be given by your <a href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}>IHVPTs</a> hodlers in order to increase your performances (thanks to a DAO governance system).</p></div>}
+    children1={<div><div className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600',marginTop: '20px', marginBottom:'20px'}}><FormattedMessage id="tender-offer" defaultMessage="Tender offer"/></div>
+    <div className="mt-4"  style={{marginTop: '20px'}}><FormattedMessage id='riskanal1' defaultMessage='After a risk analysis study, we will contact you in order to organize your'/> <LinkTranslated href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}>IHVPT</LinkTranslated> <FormattedMessage id='riskanal2' defaultMessage="into the HVSE."/></div></div>}
+    children2={<div>
+    <div className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600',marginTop: '20px', marginBottom:'20px'}}><FormattedMessage id="staking" defaultMessage="Staking"/></div><div className="mt-4" style={{marginTop: '20px'}}><FormattedMessage id="stakingsub1" defaultMessage="You can bet on others success, and so make profits. Thanks to the staking system of"/><LinkTranslated href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}> IHVPTs,</LinkTranslated><FormattedMessage id="stakingsub2" defaultMessage="holders are rewarded."/></div></div>}
+    children3={<div><div className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600',marginTop: '20px', marginBottom:'20px'}}><FormattedMessage id="advising" defaultMessage="Advising"/></div><div className="mt-4"  style={{marginTop: '20px'}}><FormattedMessage id="advisingsub1" defaultMessage="After your tokenization, advices will be given by hodlers of your"/><LinkTranslated href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}> IHVPT </LinkTranslated><FormattedMessage id="advisingsub2" defaultMessage="in order to increase your performances (thanks to a DAO governance system)."/></div></div>}
     />
         <SplitSection
       id="Tokenization Process"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            Our marketers team will analyse and assess how you could integrate the <a href="/WhatIsHVSE" style={{textDecoration: "none",  color: 'var(--textLink)'}}>HVSE market</a>.
-          </p>
+          <h3 className="text-3xl font-semibold leading-tight"><div><FormattedMessage id="MA" defaultMessage="Market Analysis"/></div></h3>
+          <div className="mt-8 text-xl font-light leading-relaxed"><FormattedMessage id="MAsub"
+            defaultMessage="Our marketers team will analyse and assess how you could integrate the "/><LinkTranslated href="/WhatIsHVSE" style={{textDecoration: "none",  color: 'var(--textLink)'}}><FormattedMessage id="hvse-market" defaultMessage="HVSE market"/></LinkTranslated>.
+          </div>
         </div>
       }
       secondarySlot={<StaticImage style={{maxWidth:"300px", marginRight:'auto', marginLeft:'auto'}}
@@ -62,12 +76,12 @@ const IndexPage = () => {
     <SplitSection
       secondarySlot={
         <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Design, Plan and Chill
+          <h3 className="text-3xl font-semibold leading-tight"><div>
+            <FormattedMessage id="3D" defaultMessage="Design, Plan and Chill"/></div>
           </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            Once your tokenization study is completed, our staff will help you in the right way to introduce you on the <a href="/WhatIsHVSE" style={{textDecoration: "none",  color: 'var(--textLink)'}}>HVSE market</a>.
-          </p>
+          <div className="mt-8 text-xl font-light leading-relaxed">
+            <FormattedMessage id="3Dsub" defaultMessage="Once your tokenization study is completed, our staff will help you in the right way to introduce you on the "/><LinkTranslated href="/WhatIsHVSE" style={{textDecoration: "none",  color: 'var(--textLink)'}}><FormattedMessage id="hvse-market" defaultMessage="HVSE market"/></LinkTranslated>.
+          </div>
         </div>
       }
       primarySlot={<StaticImage style={{maxWidth:"300px", marginRight:'auto', marginLeft:'auto'}}
@@ -78,12 +92,12 @@ const IndexPage = () => {
     <SplitSection
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Search For Your Performance Optimization
+          <h3 className="text-3xl font-semibold leading-tight"><div>
+            <FormattedMessage id="opti" defaultMessage="Search For Your Performance Optimization"/></div>
           </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            With several informations (health, wages, community impact...), <a href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}>IHVPTs</a> hodlers will present advices that you can follow or not.
-          </p>
+          <div className="mt-8 text-xl font-light leading-relaxed">
+            <FormattedMessage id="optisub1" defaultMessage="With several informations (health, wages, community impact...), hodlers of "/><LinkTranslated href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}>IHVPTs</LinkTranslated><FormattedMessage id="optisub2" defaultMessage=" will present advices that you can follow or not."/>
+          </div>
         </div>
       }
       secondarySlot={
@@ -93,24 +107,24 @@ const IndexPage = () => {
       />}
     />
     <div id="roadmap" className="py-20 lg:pt-32" style={{paddingTop:'5em', paddingBottom:'5em', color:'var(--textNormal)'}}>
-        <LabelText className="text-600" style={{color:'var(--textNormal)'}}>ROADMAP</LabelText>
-        <h1>HVSE progression</h1>
+        <LabelText className="text-600" style={{color:'var(--textNormal)'}}><FormattedMessage id="roadmap" defaultMessage="ROADMAP"/></LabelText>
+        <h1><FormattedMessage id="hvse-prog" defaultMessage="HVSE progression"/></h1>
       <div class="flex-parent">
         <div class="input-flex-container">
 		      <input type="radio" name="timeline-dot" data-description="11/2021" checked/>
 		      <div class="dot-info" data-description="11/2021">
 			      <span class="year">11/2021</span>
-			      <span class="label">Website</span>
+			      <span class="label"><FormattedMessage id="website" defaultMessage="Website"/></span>
 		      </div>
 		      <input type="radio" name="timeline-dot" data-description="02/2022"/>
 		      <div class="dot-info" data-description="02/2022">
 			      <span class="year">02/2022</span>
-			      <span class="label">Whitepaper publication</span>
+			      <span class="label"><FormattedMessage id="wp-pub" defaultMessage="Whitepaper publication"/></span>
 		      </div>
 		      <input type="radio" name="timeline-dot" data-description="07/2022"/>
 		      <div class="dot-info" data-description="07/2022">
 			      <span class="year">07/2022</span>
-			      <span class="label">Blockchain deployement</span>
+			      <span class="label"><FormattedMessage id="block-dep" defaultMessage="Blockchain deployement"/></span>
 		      </div>
 		      <input type="radio" name="timeline-dot" data-description="09/2022"/>
 		      <div class="dot-info" data-description="09/2022">
@@ -120,12 +134,12 @@ const IndexPage = () => {
 		      <input type="radio" name="timeline-dot" data-description="12/2022"/>
 		      <div class="dot-info" data-description="12/2022">
 			      <span class="year">12/2022</span>
-			      <span class="label">Foundation officialisation</span>
+			      <span class="label"><FormattedMessage id="foundoff" defaultMessage="Foundation officialisation"/></span>
 		      </div>
 		      <input type="radio" name="timeline-dot" data-description="01/2023"/>
 		      <div class="dot-info" data-description="01/2023">
 			      <span class="year">01/2023</span>
-			      <span class="label">Ambassadors recruitment</span>
+			      <span class="label"><FormattedMessage id="ambrec" defaultMessage="Ambassadors recruitment"/></span>
 		      </div>
 		      <input type="radio" name="timeline-dot" data-description="02/2023"/>
           <div class="dot-info" data-description="02/2023">
@@ -135,21 +149,21 @@ const IndexPage = () => {
 		      <input type="radio" name="timeline-dot" data-description="03/2023"/>
 		      <div class="dot-info" data-description="03/2023">
 			      <span class="year">03/2023</span>
-			      <span class="label">First tokenizations</span>
+			      <span class="label"><FormattedMessage id="firsttoken" defaultMessage="First tokenizations"/></span>
 		      </div>
 		      <input type="radio" name="timeline-dot" data-description="06/2023"/>
 		      <div class="dot-info" data-description="06/2023">
 			      <span class="year">06/2023</span>
-			      <span class="label">Marketing campaign</span>
+			      <span class="label"><FormattedMessage id="markcamp" defaultMessage="Marketing campaign"/></span>
 		      </div>
 		      <input type="radio" name="timeline-dot" data-description="09/2023"/>
 		      <div class="dot-info" data-description="09/2023">
 			      <span class="year">09/2023</span>
-			      <span class="label">Official listings</span>
+			      <span class="label"><FormattedMessage id="offlist" defaultMessage="Official listings"/></span>
 		      </div>
 		        <div id="timeline-descriptions-wrapper">
-			        <p data-description="11/2021">The website first implementation which is the main HVSE community ressource.</p>
-			        <p data-description="02/2022">Whitepaper final copy published, which allows to everyone to understand our philosophy as best as possible.</p>
+			        <p data-description="11/2021"><FormattedMessage id="websub" defaultMessage="The website first implementation which is the main HVSE community ressource."/></p>
+			        <p data-description="02/2022"><FormattedMessage id="wp-pubsub" defaultMessage="Whitepaper final copy published, which allows to everyone to understand our philosophy as best as possible."/></p>
 			        <p data-description="07/2022">
 			        <ul>
 			        <li>HVSEcoin and IHVPT blockchains published on GitHub.</li>
@@ -190,8 +204,8 @@ const IndexPage = () => {
       </p>
     </section>
   </Layout>
+  </SimpleLocalize>
   )
 }
-
 // Step 3: Export your component
 export default IndexPage
