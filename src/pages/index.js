@@ -23,8 +23,8 @@ import SimpleLocalize from "../components/SimpleLocalize";
 function IndexPage(props) {
   const language = props.pageContext.language;
   return (
-    <Layout>
     <SimpleLocalize {...props}>
+    <Layout>
     <MainBlock
     id="Get started"
     primarySlot={
@@ -203,8 +203,8 @@ function IndexPage(props) {
       </LinkTranslated>
       </p>
     </section>
-  </SimpleLocalize>
   </Layout>
+  </SimpleLocalize>
   )
 }
 // Step 3: Export your component

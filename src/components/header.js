@@ -19,17 +19,20 @@ import Hamburger from 'hamburger-react';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../css/global.css";
+import {FormattedMessage} from "react-intl";
+import LinkTranslated from "../components/LinkTranslated";
 
 
 
-const Header = ({children, ...props}) => (
+function Header({children, ...props}) {
+  return(
       <nav>
       <li className={navLogo}>
-            <a href="/">
+            <LinkTranslated href="/">
               <StaticImage
               alt="HVSE foundation logo"
               src="../images/logos/big logo.png"/>
-            </a>
+            </LinkTranslated>
       </li>
       <div className={ham}>
       <Hamburger style={{ham}} onToggle={toggled => {
@@ -44,33 +47,33 @@ const Header = ({children, ...props}) => (
       </div>
       <div  id="menu2" className={menu2}>
       <ul style={{marginTop:'50px'}}>
-          <li className={unfolding}><a href='#'>Use HVSE</a>
+          <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="use-hvse" defaultMessage="Use HVSE"/></LinkTranslated>
             <ul className={sub}>
-              <li><a href="/HVSEwallets">HVSE Wallets</a></li>
-              <li><a href="/GetHVSEcoin">Get HVSEcoin</a></li>
-              <li><a href="/StakeOnIHVPTs">Stake on IHVPTs</a></li>
-              <li><a href="/BeTokenized">Be tokenized</a></li>
+              <li><LinkTranslated href="/HVSEwallets"><FormattedMessage id="hvse-wallets" defaultMessage="HVSE Wallets"/></LinkTranslated></li>
+              <li><LinkTranslated href="/GetHVSEcoin"><FormattedMessage id="get-hvse" defaultMessage="Get HVSEcoin"/></LinkTranslated></li>
+              <li><LinkTranslated href="/StakeOnIHVPTs"><FormattedMessage id="stakeih" defaultMessage="Stake on IHVPTs"/></LinkTranslated></li>
+              <li><LinkTranslated href="/BeTokenized"><FormattedMessage id="betok" defaultMessage="Be tokenized"/></LinkTranslated></li>
             </ul>
           </li>
-          <li className={unfolding}><a href='#'>Learn</a>
+          <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="learn" defaultMessage="Learn"/></LinkTranslated>
             <ul className={sub}>
-              <li><a href="/WhatIsHVSE">What is HVSE?</a></li>
-              <li><a href="/WhatIsHVSEcoin">What is HVSEcoin?</a></li>
-              <li><a href="/WhatAreIHVPTs">What are IHVPTs?</a></li>
-              <li><a href="/Twhitepaper">HVSE whitepaper</a></li>
+              <li><LinkTranslated href="/WhatIsHVSE"><FormattedMessage id="whatishvse" defaultMessage="What is HVSE?"/></LinkTranslated></li>
+              <li><LinkTranslated href="/WhatIsHVSEcoin"><FormattedMessage id="whatishvsecoin" defaultMessage="What is HVSEcoin?"/></LinkTranslated></li>
+              <li><LinkTranslated href="/WhatAreIHVPTs"><FormattedMessage id="whatareihvpts" defaultMessage="What are IHVPTs?"/></LinkTranslated></li>
+              <li><LinkTranslated href="/Twhitepaper"><FormattedMessage id="hvsewhite" defaultMessage="HVSE whitepaper"/></LinkTranslated></li>
             </ul>
           </li>
-          <li className={unfolding}><a href='#'>Foundation</a>
+          <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="foun" defaultMessage="HVSE Wallets"/></LinkTranslated>
             <ul className={sub}>
-              <li><a href="/about">About us</a></li>
-              <li><a href="/faq">F.A.Q.</a></li>
+              <li><LinkTranslated href="/about"><FormattedMessage id="about-us" defaultMessage="About us"/></LinkTranslated></li>
+              <li><LinkTranslated href="/faq"><FormattedMessage id="faq" defaultMessage="F.A.Q."/></LinkTranslated></li>
             </ul>
           </li>
-        <li className={unfolding}><a href='#'>Language</a>
+        <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="lang" defaultMessage="Language"/></LinkTranslated>
           <ul className={sub}>
-        <li><a href="/">English</a></li>
-        <li><a href="/fr/">Français</a></li>
-        <li><a href="/es/">Spanish</a></li>
+        <li><LinkTranslated href="/"><FormattedMessage id="english" defaultMessage="English"/></LinkTranslated></li>
+        <li><LinkTranslated href="/fr/"><FormattedMessage id="fra" defaultMessage="French"/></LinkTranslated></li>
+        <li><LinkTranslated href="/es/"><FormattedMessage id="esp" defaultMessage="Spanish"/></LinkTranslated></li>
       </ul></li>
       <div>
       <div className={submenu2}>
@@ -94,7 +97,7 @@ const Header = ({children, ...props}) => (
       </div>
 
       <div className={footerSocialLinks}>
-			  <a href="https://twitter.com/HVSE_Foundation" title="Twitter" target="https://twitter.com/HVSE_Foundation"><i class="fab fa-twitter"></i></a><a href="https://github.com/HumanValueStockExchange/hvse.xyz" title="GitHub" target="https://github.com/HumanValueStockExchange/hvse.xyz"><i class="fab fa-github"></i></a><a href="https://discord.com/invite/n4rRamkGuU" title="Discord" target="https://discord.com/invite/n4rRamkGuU"><i class="fab fa-discord" ></i></a><a href="https://www.reddit.com/r/hvse/" title="Reddit" target="https://www.reddit.com/r/hvse/"><i class="fab fa-reddit"></i></a><a href="mailto:hvse.info@protonmail.com" title="Mail" target="mailto:hvse.info@protonmail.com"><i class="fa fa-envelope"></i></a>
+			  <LinkTranslated href="https://twitter.com/HVSE_Foundation" title="Twitter" target="https://twitter.com/HVSE_Foundation"><i class="fab fa-twitter"></i></LinkTranslated><LinkTranslated href="https://github.com/HumanValueStockExchange/hvse.xyz" title="GitHub" target="https://github.com/HumanValueStockExchange/hvse.xyz"><i class="fab fa-github"></i></LinkTranslated><LinkTranslated href="https://discord.com/invite/n4rRamkGuU" title="Discord" target="https://discord.com/invite/n4rRamkGuU"><i class="fab fa-discord" ></i></LinkTranslated><LinkTranslated href="https://www.reddit.com/r/hvse/" title="Reddit" target="https://www.reddit.com/r/hvse/"><i class="fab fa-reddit"></i></LinkTranslated><LinkTranslated href="mailto:hvse.info@protonmail.com" title="Mail" target="mailto:hvse.info@protonmail.com"><i class="fa fa-envelope"></i></LinkTranslated>
 			</div>
 			<div className={copyright}>©{(new Date().getFullYear())} The HVSE Foundation <p> All Rights Reserved </p> </div>
 		  </ul>
@@ -103,33 +106,33 @@ const Header = ({children, ...props}) => (
 
 
       <ul className={menu}>
-          <li className={unfolding}><a href='#'>Use HVSE</a>
+          <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="use-hvse" defaultMessage="Use HVSE"/></LinkTranslated>
             <ul className={sub}>
-              <li><a href="/HVSEwallets">HVSE Wallets</a></li>
-              <li><a href="/GetHVSEcoin">Get HVSEcoin</a></li>
-              <li><a href="/StakeOnIHVPTs">Stake on IHVPTs</a></li>
-              <li><a href="/BeTokenized">Be tokenized</a></li>
+              <li><LinkTranslated href="/HVSEwallets"><FormattedMessage id="hvse-wallets" defaultMessage="HVSE Wallets"/></LinkTranslated></li>
+              <li><LinkTranslated href="/GetHVSEcoin"><FormattedMessage id="get-hvse" defaultMessage="Get HVSEcoin"/></LinkTranslated></li>
+              <li><LinkTranslated href="/StakeOnIHVPTs"><FormattedMessage id="stakeih" defaultMessage="Stake on IHVPTs"/></LinkTranslated></li>
+              <li><LinkTranslated href="/BeTokenized"><FormattedMessage id="betok" defaultMessage="Be tokenized"/></LinkTranslated></li>
             </ul>
           </li>
-          <li className={unfolding}><a href='#'>Learn</a>
+          <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="learn" defaultMessage="Learn"/></LinkTranslated>
             <ul className={sub}>
-              <li><a href="/WhatIsHVSE">What is HVSE?</a></li>
-              <li><a href="/WhatIsHVSEcoin">What is HVSEcoin?</a></li>
-              <li><a href="/WhatAreIHVPTs">What are IHVPTs?</a></li>
-              <li><a href="/Twhitepaper">HVSE whitepaper</a></li>
+              <li><LinkTranslated href="/WhatIsHVSE"><FormattedMessage id="whatishvse" defaultMessage="What is HVSE?"/></LinkTranslated></li>
+              <li><LinkTranslated href="/WhatIsHVSEcoin"><FormattedMessage id="whatishvsecoin" defaultMessage="What is HVSEcoin?"/></LinkTranslated></li>
+              <li><LinkTranslated href="/WhatAreIHVPTs"><FormattedMessage id="whatareihvpts" defaultMessage="What are IHVPTs?"/></LinkTranslated></li>
+              <li><LinkTranslated href="/Twhitepaper"><FormattedMessage id="hvsewhite" defaultMessage="HVSE whitepaper"/></LinkTranslated></li>
             </ul>
           </li>
-          <li className={unfolding}><a href='#'>Foundation</a>
+          <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="foun" defaultMessage="HVSE Wallets"/></LinkTranslated>
             <ul className={sub}>
-              <li><a href="/about">About us</a></li>
-              <li><a href="/faq">F.A.Q.</a></li>
+              <li><LinkTranslated href="/about"><FormattedMessage id="about-us" defaultMessage="About us"/></LinkTranslated></li>
+              <li><LinkTranslated href="/faq"><FormattedMessage id="faq" defaultMessage="F.A.Q."/></LinkTranslated></li>
             </ul>
           </li>
-           <li className={unfolding}><a href='#'>Language</a>
+        <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="lang" defaultMessage="Language"/></LinkTranslated>
           <ul className={sub}>
-        <li><a href="/">English</a></li>
-        <li><a href="/fr/">French</a></li>
-        <li><a href="/es/">Spanish</a></li>
+        <li><LinkTranslated href="/"><FormattedMessage id="english" defaultMessage="English"/></LinkTranslated></li>
+        <li><LinkTranslated href="/fr/"><FormattedMessage id="fra" defaultMessage="French"/></LinkTranslated></li>
+        <li><LinkTranslated href="/es/"><FormattedMessage id="esp" defaultMessage="Spanish"/></LinkTranslated></li>
       </ul></li>
           <ThemeToggler>
         {({ theme, toggleTheme }) => (
@@ -142,10 +145,9 @@ const Header = ({children, ...props}) => (
           </label>
         )}
       </ThemeToggler>
-
       </ul>
     </nav>
-
-)
+);
+}
 
 export default Header
