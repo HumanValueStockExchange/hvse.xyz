@@ -166,21 +166,21 @@ function IndexPage(props) {
 			        <p data-description="02/2022"><FormattedMessage id="wp-pubsub" defaultMessage="Whitepaper final copy published, which allows to everyone to understand our philosophy as best as possible."/></p>
 			        <p data-description="07/2022">
 			        <ul>
-			        <li>HVSEcoin and IHVPT blockchains published on GitHub.</li>
-			        <li>Deployement of HVSEcoin.</li>
-			        <li>Deployment of the liquidity pool on Uniswap.</li>
-			        <li>Listing on CoinGecko and on CoinMarketCap.</li>
-			        <li>First Security Audit.</li>
-			        <li> Website implementation in 3.0.</li>
+			        <li><FormattedMessage id= "block-depsub1" defaultMessage="HVSEcoin and IHVPT blockchains published on GitHub."/></li>
+			        <li><FormattedMessage id= "block-depsub2" defaultMessage="Deployement of HVSEcoin."/></li>
+			        <li><FormattedMessage id= "block-depsub3" defaultMessage="Deployment of the liquidity pool on Uniswap."/></li>
+			        <li><FormattedMessage id= "block-depsub4" defaultMessage="Listing on CoinGecko and on CoinMarketCap."/></li>
+			        <li><FormattedMessage id= "block-depsub5" defaultMessage="First Security Audit."/></li>
+			        <li><FormattedMessage id= "block-depsub6" defaultMessage="Website implementation in 3.0."/></li>
 			        </ul>
 			        </p>
-			        <p data-description="09/2022">First release of HVSEcore, our main software: a wallet and a DEX to buy/sell HVSEcoin.</p>
-			        <p data-description="12/2022">Administrative and juridic status of our foundation accepted by authorities, in order to recruit employees and obtain official licenses. At the same time, audits will be performed.</p>
-			        <p data-description="01/2023">First part of the marketing campaign: our ambassadors recruitment.</p>
-			        <p data-description="02/2023">HVSEcore 2.0 allowing to buy/sell IHVPTs.</p>
-		      	  <p data-description="03/2023">Begining of the tokenization process for everyone.</p>
-			        <p data-description="06/2023">Second phase of the marketing campaign.</p>
-			        <p data-description="09/2023">HVSEcoin listing on various CEXs as Binance or Coinbase.</p>
+			        <p data-description="09/2022"><FormattedMessage id= "hvsec1" defaultMessage="First release of HVSEcore, our main software: a wallet and a DEX to buy/sell HVSEcoin."/></p>
+			        <p data-description="12/2022"><FormattedMessage id= "foundsub" defaultMessage="Administrative and juridic status of our foundation accepted by authorities, in order to recruit employees and obtain official licenses. At the same time, audits will be performed."/></p>
+			        <p data-description="01/2023"><FormattedMessage id= "ambsub" defaultMessage="First part of the marketing campaign: our ambassadors recruitment."/></p>
+			        <p data-description="02/2023"><FormattedMessage id= "hvsec2" defaultMessage="HVSEcore 2.0 allowing to buy/sell IHVPTs."/></p>
+		      	  <p data-description="03/2023"><FormattedMessage id= "toksub" defaultMessage="Begining of the tokenization process for everyone."/></p>
+			        <p data-description="06/2023"><FormattedMessage id= "marksub" defaultMessage="Second phase of the marketing campaign."/></p>
+			        <p data-description="09/2023"><FormattedMessage id= "finalsub" defaultMessage="HVSEcoin listing on various CEXs as Binance or Coinbase."/></p>
           </div>
         </div>
       </div>
@@ -188,19 +188,19 @@ function IndexPage(props) {
     <section id="stories" className="py-20 lg:py-40" style={{paddingBottom:'20', paddingTop:'20', color:'var(--textNormal)'}}>
 
       <div style={{marginRight:'auto', marginLeft:'auto'}}>
-        <LabelText className="mb-8 text-600 text-center" style={{color:'var(--textNormal)'}}>WHAT CUSTOMERS ARE SAYING</LabelText>
+        <LabelText className="mb-8 text-600 text-center" style={{color:'var(--textNormal)'}}><FormattedMessage id= "cust" defaultMessage="WHAT CUSTOMERS ARE SAYING"/></LabelText>
         <div><Carousel /></div>
 </div>
     </section>
     <section  style={{marginRight:'auto', marginLeft:'auto', marginTop:'auto', marginBottom:'auto', paddingTop:'4em', paddingBottom:'4em', textAlign:'center', backgroundColor:'var(--bg)', verticalAlign: 'middle', boxSizing: 'border-box', boxShadow: '0 10px 28px rgba(0,0,0,.08)',   borderColor: '#e9ecef', borderRadius: '0.25rem'}}>
-      <h3 className="text-5xl font-semibold" style={{fontSize: '3rem', lineHeight: '3rem', fontWeight:'600', color:'var(--textNormal)'}}>Ready to improve yourself?</h3>
+      <h3 className="text-5xl font-semibold" style={{fontSize: '3rem', lineHeight: '3rem', fontWeight:'600', color:'var(--textNormal)'}}><FormattedMessage id= "red" defaultMessage="Ready to improve yourself?"/></h3>
       <p className="mt-8 text-xl font-light" style={{marginTop:'8', fontSize: '1.25rem', lineHeight: '1.75rem',fontWeight:'300'}}>
-        We are all waiting you!
+        <FormattedMessage id= "wait" defaultMessage="We are all waiting you!"/>
       </p>
       <p className="mt-8" style={{marginTop:'8'}}>
-      <Link to="/GetStarted">
-        <Button type="bg">Get Started ❯</Button>
-      </Link>
+      <LinkTranslated href="/GetStarted">
+        <Button type="bg"><FormattedMessage id= "start" defaultMessage="Get Started"/></Button>
+      </LinkTranslated>
       </p>
     </section>
   </Layout>
