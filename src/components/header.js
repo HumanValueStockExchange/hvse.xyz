@@ -63,7 +63,7 @@ function Header({children, ...props}) {
               <li><LinkTranslated href="/Twhitepaper"><FormattedMessage id="white-paper" defaultMessage="Whitepaper"/></LinkTranslated></li>
             </ul>
           </li>
-          <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="foun" defaultMessage="HVSE Wallets"/></LinkTranslated>
+          <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="foun" defaultMessage="Foundation"/></LinkTranslated>
             <ul className={sub}>
               <li><LinkTranslated href="/about"><FormattedMessage id="about-us" defaultMessage="About us"/></LinkTranslated></li>
               <li><LinkTranslated href="/faq"><FormattedMessage id="faq" defaultMessage="F.A.Q."/></LinkTranslated></li>
