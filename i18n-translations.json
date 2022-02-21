@@ -55,7 +55,16 @@
     "cust" : "WHAT CUSTOMERS ARE SAYING",
     "red" : "Ready to improve yourself?",
     "wait" : "We are all waiting you!",
-    "start" : "Get Started!"
+    "start" : "Get Started!",
+    "zoe1" : "Loans refunding",
+    "zoe2" : "As a government-funded student, I will have to work in addition to my studies; but thanks to my tokenization, I have not to do it! That allowed me to help me raise funds for my future business and my student loan!",
+    "zoe3" : "Law Student",
+    "bill1" : "Making profits by helping",
+    "bill2" : "As an usual crypto hodler, I expect some pecunial profits for my investments. This system has the ability to combine 2 opposed concepts: profit and altruism!",
+    "bill3" : "Serial staker",
+    "amy1" : "THE 'social network'",
+    "amy2" : "Traditional business angels are elitist, and unreachable. HVSE allows everyone to invest in others! This is the social future that is being created here!",
+    "amy3" : "Business angel"
     },
   "fr" : {
     "welcome-on-our-website" : "Bienvenue sur notre site",
@@ -79,11 +88,11 @@
     "advisingsub2" : "dans le but d'augmenter vos performances (grâce au système de gouvernance décentralisée).",
     "hvse-market" : "marché HVSE",
     "MA" : "Analyse de Marché",
-    "MAsub" : "Nos analystes évaluerons comment vous pouvez intégrer le",
+    "MAsub" : "Nos analystes évalueront comment vous pouvez intégrer le ",
     "3D" : "Concevoir, Planifier et Profiter",
-    "3Dsub" : "Une fois votre demande de tokenization étudiée, nos employés vous aideront afin de vous introduire correctement sur le",
+    "3Dsub" : "Une fois votre demande de tokenization étudiée, nos employés vous aideront afin de vous introduire correctement sur le ",
     "opti" : "Optimisation de vos performances",
-    "optisub1" : "Avec de nombreuses informations (médicales, financières, communautaires...), les détenteurs d'",
+    "optisub1" : "Avec de nombreuses informations (médicales, financières, communautaires...), les détenteurs d ' ",
     "optisub2" : " vous fourniront des conseils et recommendations que vous pourrez suivre ou non.",
     "roadmap" : "FEUILLE DE ROUTE",
     "hvse-prog" : "Progression du HVSE",
@@ -113,7 +122,16 @@
     "cust" : "AVIS",
     "red" : "Prêts à vous améliorer?",
     "wait" : "Nous vous attendons!",
-    "start" : "Commencez!"
+    "start" : "Commencez!",
+    "zoe1" : "Remboursement de prêts",
+    "zoe2" : "Comme étudiante boursière, je devais travailler en plus de mes études; mais grâce à ma tokenization, je n'ai plus à le faire! Ceci me permet de lever des fonds à la fois pour mes projets entrepreunariaux et mon prêt étudiant!",
+    "zoe3" : "Etudiante en Droit",
+    "bill1" : "Faire des profits tout en aidant",
+    "bill2" : "Comme tout détenteur de cryptos, je m'attends à un certain retour sur investissement. Ce système à l'avantage de combiner 2 valeurs généralement opposées : le profit et l'altruisme!",
+    "bill3" : "Parieur en série",
+    "amy1" : "LE 'réseau social'",
+    "amy2" : "Les traditionnels investisseurs providentiels sont élitistes et injoignables. HVSE permet à chacun d'investir dans autrui! C'est le futur social qui est créé ici!",
+    "amy3" : "Investisseuse providentielle"
   },
   "es" : {
     "welcome-on-our-website" : "Bienvenido a nuestro sitio web",
@@ -171,6 +189,15 @@
     "cust" : "OPINIÓNES",
     "red" : "¿Listo para mejorar?",
     "wait" : "¡Os esperamos!",
-    "start" : "¡Empezar!"
+    "start" : "¡Empezar!",
+    "zoe1" : "Reembolso de prestamos",
+    "zoe2" : "Como estudiante becado, tenía que trabajar además de mis estudios; pero gracias a mi tokenización, ¡ya no tengo que hacerlo! ¡Esto me permite recaudar fondos tanto para mis proyectos empresariales como para mi préstamo estudiantil!",
+    "zoe3" : "Estudiante de derecho",
+    "bill1" : "Obtén ganancias mientras ayudas",
+    "bill2" : "Como cualquier poseedor de criptomonedas, espero algún retorno de la inversión. Este sistema tiene la ventaja de combinar 2 valores generalmente opuestos: ¡beneficio y altruismo!",
+    "bill3" : "Apostador en serie",
+    "amy1" : "LA 'red social'",
+    "amy2" : "Los inversores ángeles tradicionales son elitistas e inalcanzables. ¡HVSE permite que todos inviertan en los demás! ¡Es el futuro social que se crea aquí!",
+    "amy3" : "Inversor de Angeles"
   }
 }

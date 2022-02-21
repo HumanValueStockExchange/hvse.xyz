@@ -23,8 +23,8 @@ import SimpleLocalize from "../components/SimpleLocalize";
 function IndexPage(props) {
   const language = props.pageContext.language;
   return (
-    <SimpleLocalize {...props}>
     <Layout>
+    <SimpleLocalize {...props}>
     <MainBlock
     id="Get started"
     primarySlot={
@@ -188,7 +188,7 @@ function IndexPage(props) {
     <section id="stories" className="py-20 lg:py-40" style={{paddingBottom:'20', paddingTop:'20', color:'var(--textNormal)'}}>
 
       <div style={{marginRight:'auto', marginLeft:'auto'}}>
-        <LabelText className="mb-8 text-600 text-center" style={{color:'var(--textNormal)'}}><FormattedMessage id= "cust" defaultMessage="WHAT CUSTOMERS ARE SAYING"/></LabelText>
+        <LabelText className="mb-8 text-600 text-center" style={{color:'var(--textNormal)'}}><FormattedMessage id="cust" defaultMessage="WHAT CUSTOMERS ARE SAYING"/></LabelText>
         <div><Carousel /></div>
 </div>
     </section>
@@ -203,8 +203,8 @@ function IndexPage(props) {
       </LinkTranslated>
       </p>
     </section>
-  </Layout>
   </SimpleLocalize>
+  </Layout>
   )
 }
 // Step 3: Export your component
