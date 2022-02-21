@@ -5,7 +5,6 @@ import Card from '../components/Card';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout';
 import Carousel from '../components/Carousel';
-import { Link } from "gatsby";
 import MainBlock from '../components/MainBlock';
 import SplitSection from '../components/SplitSection';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -21,7 +20,6 @@ import SimpleLocalize from "../components/SimpleLocalize";
 
 
 function IndexPage(props) {
-  const language = props.pageContext.language;
   return (
     <SimpleLocalize {...props}>
     <Layout>
@@ -55,7 +53,7 @@ function IndexPage(props) {
     children1={<div><div className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600',marginTop: '20px', marginBottom:'20px'}}><FormattedMessage id="tender-offer" defaultMessage="Tender offer"/></div>
     <div className="mt-4"  style={{marginTop: '20px'}}><FormattedMessage id='riskanal1' defaultMessage='After a risk analysis study, we will contact you in order to organize your'/> <LinkTranslated href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}>IHVPT</LinkTranslated> <FormattedMessage id='riskanal2' defaultMessage="into the HVSE."/></div></div>}
     children2={<div>
-    <div className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600',marginTop: '20px', marginBottom:'20px'}}><FormattedMessage id="staking" defaultMessage="Staking"/></div><div className="mt-4" style={{marginTop: '20px'}}><FormattedMessage id="stakingsub1" defaultMessage="You can bet on others success, and so make profits. Thanks to the staking system of"/><LinkTranslated href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}> IHVPTs,</LinkTranslated><FormattedMessage id="stakingsub2" defaultMessage="holders are rewarded."/></div></div>}
+    <div className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600',marginTop: '20px', marginBottom:'20px'}}><FormattedMessage id="staking1" defaultMessage="Staking"/></div><div className="mt-4" style={{marginTop: '20px'}}><FormattedMessage id="stakingsub1" defaultMessage="You can bet on others success, and so make profits. Thanks to the staking system of"/><LinkTranslated href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}> IHVPTs,</LinkTranslated><FormattedMessage id="stakingsub2" defaultMessage="holders are rewarded."/></div></div>}
     children3={<div><div className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600',marginTop: '20px', marginBottom:'20px'}}><FormattedMessage id="advising" defaultMessage="Advising"/></div><div className="mt-4"  style={{marginTop: '20px'}}><FormattedMessage id="advisingsub1" defaultMessage="After your tokenization, advices will be given by hodlers of your"/><LinkTranslated href="/WhatAreIHVPTs" style={{textDecoration: "none",  color: 'var(--textLink)'}}> IHVPT </LinkTranslated><FormattedMessage id="advisingsub2" defaultMessage="in order to increase your performances (thanks to a DAO governance system)."/></div></div>}
     />
         <SplitSection
