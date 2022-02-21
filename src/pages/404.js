@@ -25,9 +25,17 @@ const codeStyles = {
 }
 
 // markup
-const NotFoundPage = () => {
+import * as React from 'react'
+import Layout from '../components/layout'
+import {FormattedMessage} from "react-intl";
+import LinkTranslated from "../components/LinkTranslated";
+import SimpleLocalize from "../components/SimpleLocalize";
+
+// Step 2: Define your component
+function NotFoundPage(props) {
   return (
-    <main style={pageStyles}>
+    <SimpleLocalize {...props}>
+    <Layout>
       <title>Not found</title>
       <h1 style={headingStyles}>Page not found</h1>
       <p style={paragraphStyles}>
@@ -47,7 +55,7 @@ const NotFoundPage = () => {
         <br />
         <Link to="/">Go home</Link>.
       </p>
-    </main>
+    </Layout></SimpleLocalize>
   )
 }
 

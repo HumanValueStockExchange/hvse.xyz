@@ -5,10 +5,14 @@ import '../css/WhatIsHVSE.css';
 import MainBlock from '../components/MainBlock';
 import "../css/global.css";
 import { StaticImage } from 'gatsby-plugin-image';
+import {FormattedMessage} from "react-intl";
+import LinkTranslated from "../components/LinkTranslated";
+import SimpleLocalize from "../components/SimpleLocalize";
 
 // Step 2: Define your component
-const WhatAreIHVPTs = () => {
+function WhatAreIHVPTs(props) {
   return (
+    <SimpleLocalize {...props}>
     <Layout style={{minHeight:'100%'}}>
     <MainBlock
       primarySlot={
@@ -39,7 +43,7 @@ const WhatAreIHVPTs = () => {
     children2={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Retributions</p><p className="mt-4" style={{marginTop: '4', textAlign:'left'}}>Tokenized people can if they wish <b>provide NFTs or other benefits to their IHVPTs holders</b>. No obligation in this regard exists but it remains possible.</p></div>}
     children3={<div><p className="font-semibold text-xl" style={{fontSize: '1.25rem', lineHeight: '1.75rem', fontWeight: '600', marginBottom:'8'}}>Derivatives</p><p className="mt-4"  style={{marginTop: '4', textAlign:'left'}}>This utility  allows <b>to bet on IHVPTs derived products</b> like bearish or bullish levers (as <a href="https://en.wikipedia.org/wiki/Contract_for_difference" style={{textDecoration: "none",  color: 'var(--textLink)'}}>CFDs</a>). That's a prediction market.</p></div>}
     />
-    </Layout>
+    </Layout></SimpleLocalize>
   )
 }
 

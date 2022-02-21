@@ -15,8 +15,8 @@ import SimpleLocalize from "../components/SimpleLocalize";
 
 function WhitepaperPage(props) {
   return (
-    <Layout>
     <SimpleLocalize {...props}>
+    <Layout>
     <Helmet>
       <script src="//polyfill.io/v3/polyfill.min.js?features=es6"></script>
       <script id="MathJax-script" async src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -313,8 +313,8 @@ In this way, the possibility of <b>altruism</b> is community-offered by allowing
 <p>This utility allows <b>to bet on IHVPTs derived products</b> which can, for example, be bearish or bullish levers (as <a href="https://en.wikipedia.org/wiki/Contract_for_difference" style={{textDecoration: "none",  color: 'var(--textLink)'}}>CFDs</a>) making it possible to bet on the rise/fall in the price of the corresponding IHVPT.</p>
     </div>
     </div>
-    </SimpleLocalize>
     </Layout>
+    </SimpleLocalize>
   )
 }
 

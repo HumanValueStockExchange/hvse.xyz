@@ -2,11 +2,14 @@ import * as React from "react";
 import Layout from '../components/layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import '../css/WhatIsHVSE.css';
-
+import {FormattedMessage} from "react-intl";
+import LinkTranslated from "../components/LinkTranslated";
+import SimpleLocalize from "../components/SimpleLocalize";
 
 // Step 2: Define your component
-const WhatIsHVSE = () => {
+function WhatIsHVSE(props) {
   return (
+    <SimpleLocalize {...props}>
     <Layout>
     <div class="container">
       <StaticImage class="img"
@@ -20,6 +23,7 @@ const WhatIsHVSE = () => {
       </div>
     </div>
     </Layout>
+    </SimpleLocalize>
   )
 }
 

@@ -2,10 +2,14 @@ import * as React from "react";
 import Layout from '../components/layout';
 import Coin from "../videos/coin.mp4";
 import '../css/WhatIsHVSE.css';
+import {FormattedMessage} from "react-intl";
+import LinkTranslated from "../components/LinkTranslated";
+import SimpleLocalize from "../components/SimpleLocalize";
 
 // Step 2: Define your component
-const WhatIsHVSEcoin = () => {
+function WhatIsHVSEcoin(props) {
   return (
+    <SimpleLocalize {...props}>
     <Layout>
     <div class="container">
       <div class="mainbox" style={{backgroundColor:'var(--bg)'}}>
@@ -23,6 +27,7 @@ const WhatIsHVSEcoin = () => {
       </div>
     </div>
     </Layout>
+    </SimpleLocalize>
   )
 }
 

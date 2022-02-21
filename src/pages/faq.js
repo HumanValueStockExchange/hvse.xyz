@@ -2,10 +2,14 @@
 import * as React from 'react';
 import Layout from '../components/layout';
 import SplitSection from '../components/SplitSection';
+import {FormattedMessage} from "react-intl";
+import LinkTranslated from "../components/LinkTranslated";
+import SimpleLocalize from "../components/SimpleLocalize";
 
 // Step 2: Define your component
-const FAQPage = () => {
+function FAQPage(props) {
   return (
+    <SimpleLocalize {...props}>
     <Layout pageTitle="FAQ">
     <p>Here we answer the most common questions about the HVSE project. If by any chance you have others, please let us know.</p>
     <SplitSection
@@ -53,7 +57,7 @@ const FAQPage = () => {
         </p>
       }
     />
-    </Layout>
+    </Layout></SimpleLocalize>
   )
 }
 
