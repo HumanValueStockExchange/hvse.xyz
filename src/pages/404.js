@@ -1,4 +1,9 @@
 
+import * as React from 'react'
+import Layout from '../components/layout'
+import {FormattedMessage} from "react-intl";
+import LinkTranslated from "../components/LinkTranslated";
+import SimpleLocalize from "../components/SimpleLocalize";
 import { Link } from "gatsby"
 
 // styles
@@ -25,11 +30,6 @@ const codeStyles = {
 }
 
 // markup
-import * as React from 'react'
-import Layout from '../components/layout'
-import {FormattedMessage} from "react-intl";
-import LinkTranslated from "../components/LinkTranslated";
-import SimpleLocalize from "../components/SimpleLocalize";
 
 // Step 2: Define your component
 function NotFoundPage(props) {
