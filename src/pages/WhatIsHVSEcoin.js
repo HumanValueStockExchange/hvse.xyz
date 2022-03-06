@@ -13,11 +13,11 @@ function WhatIsHVSEcoin(props) {
     <Layout>
     <div class="container">
       <div class="mainbox" style={{backgroundColor:'var(--bg)'}}>
-        <p style={{fontWeight:'100', fontSize: '1.25rem', lineHeight: '1rem', textAlign:'center'}}>WHAT IS HVSEcoin?</p>
+        <div style={{fontWeight:'100', fontSize: '1.25rem', lineHeight: '1rem', textAlign:'center', textTransform: 'uppercase'}}><FormattedMessage id="whatishvsecoin" defaultMessage="What is HVSEcoin?"/></div>
         <ul style={{fontSize: '0.75rem', lineHeight: '1.5rem'}}>
-          <li>One Crypto <a href="/WhatAREIHVPTs">to assess them all</a>,</li>
-          <li>One Crypto to bid on them,</li>
-          <li>One Crypto to bring them all, and in the brightness bind them.</li>
+          <li><FormattedMessage id="hvsecoin1" defaultMessage="One Crypto"/> <LinkTranslated href="/WhatAREIHVPTs"><FormattedMessage id="hvsecoin12" defaultMessage="to assess them all,"/></LinkTranslated></li>
+          <li><FormattedMessage id="hvsecoin2" defaultMessage="One Crypto to bid on them,"/></li>
+          <li><FormattedMessage id="hvsecoin3" defaultMessage="One Crypto to bring them all, and in the brightness bind them."/></li>
         </ul>
       </div>
       <div style={{width:'100%', columnWidth: '50%', display:'flex', flexDirection:'column', textAlign:'center', marginRight: '10px', marginLeft: '10px', alignItems:'center', marginTop:'20px'}}>
