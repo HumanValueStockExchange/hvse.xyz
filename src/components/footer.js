@@ -11,9 +11,9 @@ import {
   copyright,
   footerSocialLinks,
 } from "./css/footer.module.css";
-import {FormattedMessage} from "react-intl";
-import LinkTranslated from "../components/LinkTranslated";
-import SimpleLocalize from "../components/SimpleLocalize"
+import { FormattedMessage } from "react-intl";
+import LinkTranslated from "./LinkTranslated";
+import SimpleLocalize from "./SimpleLocalize";
 
 
 function Footer(props) {
@@ -27,7 +27,7 @@ function Footer(props) {
 			  <LinkTranslated
 			    to="/"
 			    className={copyright}
-			    style={{ textDecoration: 'none' }}> <FormmattedMessage id= "foot1" defaultMessage="The HVSE Foundation"/></LinkTranslated> <FormattedMessage id="foot2" defaultMessage=" | All Rights Reserved"/> </div>
+			    style={{ textDecoration: 'none' }}> <FormattedMessage id= "foot1" defaultMessage="The HVSE Foundation"/></LinkTranslated> <FormattedMessage id="foot2" defaultMessage=" | All Rights Reserved"/> </div>
             </div>
         <div className={footerSocialLinks}>
 			  <a href="https://twitter.com/HVSE_Foundation" title="Twitter" target="https://twitter.com/HVSE_Foundation"><i class="fab fa-twitter"></i></a>
