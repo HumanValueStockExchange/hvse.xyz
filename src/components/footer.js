@@ -13,12 +13,10 @@ import {
 } from "./css/footer.module.css";
 import {FormattedMessage} from "react-intl";
 import LinkTranslated from "../components/LinkTranslated";
-import SimpleLocalize from "../components/SimpleLocalize";
+import SimpleLocalize from "../components/SimpleLocalize"
 
 
-
-
-function Footer(props) => {
+function Footer(props) {
   return(
     <div className={[footer, clearfix].join(" ")}>
 		<div className={footerCopy}>
