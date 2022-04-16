@@ -114,7 +114,7 @@ function IndexPage(props) {
 			      <span class="year">11/2021</span>
 			      <span class="label"><FormattedMessage id="website" defaultMessage="Website"/></span>
 		      </div>
-		      <input type="radio" name="timeline-dot" data-description="04/2022" checked/>
+		      <input type="radio" name="timeline-dot" data-description="04/2022"/>
 		      <div class="dot-info" data-description="04/2022">
 			      <span class="year">04/2022</span>
 			      <span class="label"><FormattedMessage id="wp-pub" defaultMessage="Whitepaper publication"/></span>
