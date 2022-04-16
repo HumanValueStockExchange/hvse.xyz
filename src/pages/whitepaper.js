@@ -106,11 +106,11 @@ function WhitepaperPage(props) {
   </ul></div>
   <div class="content">
   <p style={{color: 'var(--textNormal)', marginRight:'auto', marginLeft:'auto', fontSize:'42px', width:'300px'}}>WHITEPAPER</p>
-  <b><FormattedMessage id="Abstract" defaultMessage="ABSTRACT"/></b>
+  <b id="Abstract"><FormattedMessage id="Abstract" defaultMessage="ABSTRACT"/></b>
       <FormattedMessage id="Abstract1" defaultMessage="What is the difference between each of us? Our value. This criterion seems to be subjective. Therefore, none objective parameter exist yet to assess human value on an individual scale. This societal issue joins another: the social elevator disappearance. Unlike other crypto currencies, HVSEcoin will not be a goal but a means; the means to assess your added value,  the means to improve yourself. To do this, HVSEcoin is the only way to access a new market: that of human values (Human Value Stock Exchange)."/>
-      <b><FormattedMessage id="Introduction" defaultMessage="1. INTRODUCTION"/></b>
+      <b id="Introduction"><FormattedMessage id="Introduction" defaultMessage="1. INTRODUCTION"/></b>
       <p></p>
-      <b><FormattedMessage id="History" defaultMessage="1.1. History Lesson"/></b>
+      <b id="History"><FormattedMessage id="History" defaultMessage="1.1. History Lesson"/></b>
       <p> There is 3 generations of cryptocurrencies.<b>The first generation</b> is represented by Bitcoin (2009). Strongly established, initiator of the media and public madness for cryptocurrencies, it suffers from regularly pointed out shortcomings, such as its slowness, its relatively small block size, in particular.</p>
       <p>A <b>second generation</b> (2011) presents either minor improvements or technological innovations allowing new functions. The archetype  is Ethereum (which is derived from the source code of Bitcoin), which makes use of smart contracts.</p>
       <p>The <b>third generation</b> (since 2017): Noticing new limitations, notably in capacity, security and governance. New cryptocurrencies have emerged, such as EOS.IO, Cardano (ADA), AION, ICON (ICX) and Raiden Network (RDN), for the best known. EOS.IO is itself derived from Ethereum. They bring innovations, but, in August 2018, none has gained the upper hand over the others.</p>
