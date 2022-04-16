@@ -114,9 +114,9 @@ function IndexPage(props) {
 			      <span class="year">11/2021</span>
 			      <span class="label"><FormattedMessage id="website" defaultMessage="Website"/></span>
 		      </div>
-		      <input type="radio" name="timeline-dot" data-description="02/2022"/>
-		      <div class="dot-info" data-description="02/2022">
-			      <span class="year">02/2022</span>
+		      <input type="radio" name="timeline-dot" data-description="04/2022"/>
+		      <div class="dot-info" data-description="04/2022">
+			      <span class="year">04/2022</span>
 			      <span class="label"><FormattedMessage id="wp-pub" defaultMessage="Whitepaper publication"/></span>
 		      </div>
 		      <input type="radio" name="timeline-dot" data-description="07/2022"/>
@@ -161,7 +161,7 @@ function IndexPage(props) {
 		      </div>
 		        <div id="timeline-descriptions-wrapper">
 			        <p data-description="11/2021"><FormattedMessage id="websub" defaultMessage="The website first implementation which is the main HVSE community ressource."/></p>
-			        <p data-description="02/2022"><FormattedMessage id="wp-pubsub" defaultMessage="Whitepaper final copy published, which allows to everyone to understand our philosophy as best as possible."/></p>
+			        <p data-description="04/2022"><FormattedMessage id="wp-pubsub" defaultMessage="Whitepaper final copy published, which allows to everyone to understand our philosophy as best as possible."/></p>
 			        <p data-description="07/2022">
 			        <ul>
 			        <li><FormattedMessage id= "block-depsub1" defaultMessage="HVSEcoin and IHVPT blockchains published on GitHub."/></li>
