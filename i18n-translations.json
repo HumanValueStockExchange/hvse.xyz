@@ -176,7 +176,7 @@
     "foot2": " | All Rights Reserved",
     "Abstract" : "ABSTRACT",
     "Introduction" : "1.INTRODUCTION",
-    "History" : "1.1.History Lesson",
+    "History" : "1.1.History Lesson"
 
 
 
@@ -353,7 +353,10 @@
     "about10" : "REJOIGNEZ-NOUS",
     "about11": "Nous recrutons actuellement. Si la mission de notre fondation vous intéresse, vous êtes invités à rejoindre l'équipe HVSE.xyz.",
     "foot1": "La Fondation HVSE",
-    "foot2": " | Tous droits réservés"
+    "foot2": " | Tous droits réservés",
+    "Abstract" : "RESUME",
+    "Introduction" : "1.INTRODUCTION",
+    "History" : "1.1.Leçon d'Histoire"
   },
   "es" : {
     "welcome-on-our-website" : "Bienvenido a nuestro sitio web",
@@ -527,6 +530,9 @@
     "about10" : "ÚNETE A NOSOTROS",
     "about11": "Actualmente estamos reclutando. Si está interesado en la misión de nuestra fundación, está invitado a unirse al equipo HVSE.xyz.",
     "foot1": "La Fundación HVSE",
-    "foot2": " | Todos los Derechos Reservados"
+    "foot2": " | Todos los Derechos Reservados",
+    "Abstract" : "ABSTRACTA",
+    "Introduction" : "1.INTRODUCCIÓN",
+    "History" : "1.1.Leccion de Historia",
   }
 }
