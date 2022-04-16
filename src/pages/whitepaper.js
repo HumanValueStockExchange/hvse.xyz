@@ -25,90 +25,90 @@ function WhitepaperPage(props) {
     <div class="container">
       <div class="bar"><ul class="sidebar">
   <li>
-      <a href="#Abstract" title="Abstract"><p style={{marginLeft:'7px'}}>ABSTRACT</p></a>
+      <LinkTranslated href="#Abstract" title="Abstract"><p style={{marginLeft:'7px'}}><FormattedMessage id='Abstract' defaultMessage='ABSTRACT'/></p></LinkTranslated>
     </li>
     <li>
-      <a href="#Introduction"><p style={{marginLeft:'7px'}}>1.INTRODUCTION</p></a>
+      <LinkTranslated href="#Introduction"><p style={{marginLeft:'7px'}}><FormattedMessage id="Introduction" defaultMessage='1.INTRODUCTION'/></p></LinkTranslated>
     </li>
-    <li><a href="#History"><p style={{marginLeft:'7px'}}>1.1.History Lesson</p></a>
+    <li><LinkTranslated href="#History"><p style={{marginLeft:'7px'}}><FormattedMessage id='History' defaultMessage="1.1.History Lesson"/></p></LinkTranslated>
     </li>
-    <li><a href="#curtok"><p style={{marginLeft:'7px'}}>1.2.Currency or token</p></a>
+    <li><LinkTranslated href="#curtok"><p style={{marginLeft:'7px'}}>1.2.Currency or token</p></LinkTranslated>
     </li>
-    <li><a href="#prob"><p style={{marginLeft:'7px'}}>1.3.Problems</p></a>
-    </li>
-    <li>
-      <a href="#HVSE"><p style={{marginLeft:'7px'}}>2.HVSE</p></a>
+    <li><LinkTranslated href="#prob"><p style={{marginLeft:'7px'}}>1.3.Problems</p></LinkTranslated>
     </li>
     <li>
-      <a href="#HVSEphilosophy"><p style={{marginLeft:'7px'}}>2.1.HVSE philosophy</p></a>
+      <LinkTranslated href="#HVSE"><p style={{marginLeft:'7px'}}>2.HVSE</p></LinkTranslated>
     </li>
     <li>
-      <a href="#General"><p style={{marginLeft:'7px'}}>2.1.1.Generalities</p></a>
+      <LinkTranslated href="#HVSEphilosophy"><p style={{marginLeft:'7px'}}>2.1.HVSE philosophy</p></LinkTranslated>
     </li>
     <li>
-      <a href="#Applied"><p style={{marginLeft:'7px'}}>2.1.2.Applied</p></a>
+      <LinkTranslated href="#General"><p style={{marginLeft:'7px'}}>2.1.1.Generalities</p></LinkTranslated>
     </li>
     <li>
-      <a href="#Business"><p style={{marginLeft:'7px'}}>2.2.Business model</p></a>
+      <LinkTranslated href="#Applied"><p style={{marginLeft:'7px'}}>2.1.2.Applied</p></LinkTranslated>
     </li>
     <li>
-      <a href="#Description"><p style={{marginLeft:'7px'}}>2.2.1.Description</p></a>
+      <LinkTranslated href="#Business"><p style={{marginLeft:'7px'}}>2.2.Business model</p></LinkTranslated>
     </li>
     <li>
-      <a href="#Pros"><p style={{marginLeft:'7px'}}>2.2.2.Pros</p></a>
-    </li>
-    <li><a href="#Organization"><p style={{marginLeft:'7px'}}>2.3.HVSE organization</p></a>
-    </li>
-    <li><a href="#HVSEcoin"><p style={{marginLeft:'7px'}}>3.HVSEcoin (Ͱ)</p></a>
-    </li>
-    <li><a href="#supply"><p style={{marginLeft:'7px'}}>3.1. Ͱ supply</p></a>
-    </li>
-    <li><a href="#bonding"><p style={{marginLeft:'7px'}}>3.1.1. Bonding curve</p></a>
-    </li>
-    <li><a href="#ini"><p style={{marginLeft:'7px'}}>3.1.2. Initialization</p></a>
-    </li>
-    <li><a href="#blockchain"><p style={{marginLeft:'7px'}}>3.2. Blockchain</p></a>
-    </li>
-    <li><a href="#model"><p style={{marginLeft:'7px'}}>3.2.1. Model</p></a>
-    </li>
-    <li><a href="#innovations"><p style={{marginLeft:'7px'}}>3.2.2. Innovations</p></a>
+      <LinkTranslated href="#Description"><p style={{marginLeft:'7px'}}>2.2.1.Description</p></LinkTranslated>
     </li>
     <li>
-      <a href="#mecha"><p style={{marginLeft:'7px'}}>4.IHVPT mechanism</p></a>
+      <LinkTranslated href="#Pros"><p style={{marginLeft:'7px'}}>2.2.2.Pros</p></LinkTranslated>
+    </li>
+    <li><LinkTranslated href="#Organization"><p style={{marginLeft:'7px'}}>2.3.HVSE organization</p></LinkTranslated>
+    </li>
+    <li><LinkTranslated href="#HVSEcoin"><p style={{marginLeft:'7px'}}>3.HVSEcoin (Ͱ)</p></LinkTranslated>
+    </li>
+    <li><LinkTranslated href="#supply"><p style={{marginLeft:'7px'}}>3.1. Ͱ supply</p></LinkTranslated>
+    </li>
+    <li><LinkTranslated href="#bonding"><p style={{marginLeft:'7px'}}>3.1.1. Bonding curve</p></LinkTranslated>
+    </li>
+    <li><LinkTranslated href="#ini"><p style={{marginLeft:'7px'}}>3.1.2. Initialization</p></LinkTranslated>
+    </li>
+    <li><LinkTranslated href="#blockchain"><p style={{marginLeft:'7px'}}>3.2. Blockchain</p></LinkTranslated>
+    </li>
+    <li><LinkTranslated href="#model"><p style={{marginLeft:'7px'}}>3.2.1. Model</p></LinkTranslated>
+    </li>
+    <li><LinkTranslated href="#innovations"><p style={{marginLeft:'7px'}}>3.2.2. Innovations</p></LinkTranslated>
+    </li>
+    <li>
+      <LinkTranslated href="#mecha"><p style={{marginLeft:'7px'}}>4.IHVPT mechanism</p></LinkTranslated>
     </li>
   <li>
-      <a href="#staking"><p style={{marginLeft:'7px'}}>4.1.Personal staking</p></a>
+      <LinkTranslated href="#staking"><p style={{marginLeft:'7px'}}>4.1.Personal staking</p></LinkTranslated>
     </li>
     <li>
-      <a href="#depowith"><p style={{marginLeft:'7px'}}>4.2.Deposit/Withdrawal</p></a>
+      <LinkTranslated href="#depowith"><p style={{marginLeft:'7px'}}>4.2.Deposit/Withdrawal</p></LinkTranslated>
     </li>
     <li>
-      <a href="#governance"><p style={{marginLeft:'7px'}}>4.3.Usefulness</p></a>
+      <LinkTranslated href="#governance"><p style={{marginLeft:'7px'}}>4.3.Usefulness</p></LinkTranslated>
     </li>
     <li>
-      <a href="#altruism"><p style={{marginLeft:'7px'}}>4.3.1. Altruism</p></a>
+      <LinkTranslated href="#altruism"><p style={{marginLeft:'7px'}}>4.3.1. Altruism</p></LinkTranslated>
     </li>
     <li>
-      <a href="#richness"><p style={{marginLeft:'7px'}}>4.3.2. Enrichment</p></a>
+      <LinkTranslated href="#richness"><p style={{marginLeft:'7px'}}>4.3.2. Enrichment</p></LinkTranslated>
     </li>
     <li>
-      <a href="#sys"><p style={{marginLeft:'7px'}}>4.3.3. Governance</p></a>
+      <LinkTranslated href="#sys"><p style={{marginLeft:'7px'}}>4.3.3. Governance</p></LinkTranslated>
     </li>
     <li>
-      <a href="#passive"><p style={{marginLeft:'7px'}}>4.3.4. Passive income</p></a>
+      <LinkTranslated href="#passive"><p style={{marginLeft:'7px'}}>4.3.4. Passive income</p></LinkTranslated>
     </li>
     <li>
-      <a href="#retributions"><p style={{marginLeft:'7px'}}>4.3.5. Retributions</p></a>
+      <LinkTranslated href="#retributions"><p style={{marginLeft:'7px'}}>4.3.5. Retributions</p></LinkTranslated>
     </li>
     <li>
-      <a href="#derivatives"><p style={{marginLeft:'7px'}}>4.3.6. Derivatives</p></a>
+      <LinkTranslated href="#derivatives"><p style={{marginLeft:'7px'}}>4.3.6. Derivatives</p></LinkTranslated>
     </li>
   </ul></div>
   <div class="content">
   <p style={{color: 'var(--textNormal)', marginRight:'auto', marginLeft:'auto', fontSize:'42px', width:'300px'}}>WHITEPAPER</p>
-  <b id="Abstract">ABSTRACT</b>
+  <b><FormattedMessage id="Abstract" defaultMessage="ABSTRACT"/></b>
       <p>What is the difference between each of us? Our value. This criterion seems to be subjective. Therefore, none objective parameter exist yet to assess human value on an individual scale. This societal issue joins another: the social elevator disappearance. Unlike other crypto currencies, HVSEcoin will not be a goal but a means; the means to assess your added value,  the means to improve yourself. To do this, HVSEcoin is the only way to access a new market: that of human values (Human Value Stock Exchange).</p>
-      <b id="Introduction"> 1. INTRODUCTION </b>
+      <b><FormattedMessage id="Introduction" defaultMessage="1. INTRODUCTION"/></b>
       <p></p>
       <b id="History"> 1.1. History Lesson </b>
       <p> There is 3 generations of cryptocurrencies.<b>The first generation</b> is represented by Bitcoin (2009). Strongly established, initiator of the media and public madness for cryptocurrencies, it suffers from regularly pointed out shortcomings, such as its slowness, its relatively small block size, in particular.</p>
@@ -127,7 +127,7 @@ function WhitepaperPage(props) {
       <p> Our society makes a noise: it growls.  However, few people can hear it.There is one million questions to ask, but anyone ask the good ones. Actually, there is only noise. The society in this globality is going to known economic, cultural, social and politic changes as the world has never known.</p>
       <p> The cleverest are the dumbest. Resources needs are going to rise sharply. We need an Odyssian education. Religious extremism is experiencing unprecedented development. In Western countries, inter-generational inequalities are widening like never before. We need an alliance between Apollonian rationality and Dionysian intituition.This is observations and necessities (or sophisms) conglomeration, that we must integrate and therefore act accordingly.</p>
       <p> The fact that we are in a phase of transition towards a new societal model having been established, it is fashionable to affirm that monetary dematerialization will play a significant role there. A new problematic is added to this: the need to surpass one's condition while having the societal levers (going beyond one's origin social class) blocked.</p>
-      <p> Actually, some start-ups have put the idea on the cryptocurrencies way (<a href="https://www.bitclout.com" style={{textDecoration: "none",  color: 'var(--textLink)'}}>BitClout</a>, <a href="https://www.ideamarket.io" style={{textDecoration: "none",  color: 'var(--textLink)'}}>Ideamarket</a>...). However, they are only based on the ideas; we consider that our humanity is not only based on ideas (as certain Myers-Briggs Type Indicator results might lead one to believe it) but on physical aspects too. Therefore,we would like to capitalize and to assess human values thanks to different parameters: ideas, finance, sociability, health...</p>
+      <p> Actually, some start-ups have put the idea on the cryptocurrencies way (<LinkTranslated href="https://www.bitclout.com" style={{textDecoration: "none",  color: 'var(--textLink)'}}>BitClout</LinkTranslated>, <LinkTranslated href="https://www.ideamarket.io" style={{textDecoration: "none",  color: 'var(--textLink)'}}>Ideamarket</LinkTranslated>...). However, they are only based on the ideas; we consider that our humanity is not only based on ideas (as certain Myers-Briggs Type Indicator results might lead one to believe it) but on physical aspects too. Therefore,we would like to capitalize and to assess human values thanks to different parameters: ideas, finance, sociability, health...</p>
       <p>Contrary to the previously cited examples, the HVSE project wishes to avoid the main pitfall committed by mankind: the cypherpunks dream destructuration. Indeed, the initial dream of cypherpunks, like Satoshi Nakamoto, was to build technologies in order to escape to centralizing authorities. However, human nature making new entities has invaded the cryptocurrencies world: Coinbase, Binance, OpenSea ... Thus, we have pledged: <ul>
       <li>to keep our technology open-source,</li>
       <li>that our profits will only cover operating costs (including the salaries of employees),</li>
@@ -139,13 +139,13 @@ function WhitepaperPage(props) {
       <i id="General"> 2.1.1. Generalities </i>
       <p>Pavlov has shown that humans could be conditioned as other animals. This reward circus previously described in a certain way constitutes the psycho-physiological basis of leitmotif concept. When the social elevator has practically disappeared and when the social class freeing hope is weak, the existence of a social lever could only be saving.</p>
       <p>What is needed is an objective criterion to assess human value on an individual scale. Thanks to big data technologies, we could produce an index based upon personal trackers: health, finance, social life, …</p>
-      <p>A centralizing body setting itself the value of a person would be a denial of the crypto-currencies principles. As Eric Hughes wrote in 1993 in his <a href="https://www.activism.net/cypherpunk/manifesto.html" style={{textDecoration: "none", color: 'var(--textLink)'}}>manifest</a> :<blockquote> <i>"Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world."</i></blockquote> Indeed, the HVSE concept strives to model the societal capital of a person according to the society point of view. In this way, the favoritism absence face to popular sentiment, which once was only an utopia, could thus become a reality. Everyone should thus prove their usefulness to society in various ways to obtain financial leverage (thanks to their tokenization). </p>
+      <p>A centralizing body setting itself the value of a person would be a denial of the crypto-currencies principles. As Eric Hughes wrote in 1993 in his <LinkTranslated href="https://www.activism.net/cypherpunk/manifesto.html" style={{textDecoration: "none", color: 'var(--textLink)'}}>manifest</LinkTranslated> :<blockquote> <i>"Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world."</i></blockquote> Indeed, the HVSE concept strives to model the societal capital of a person according to the society point of view. In this way, the favoritism absence face to popular sentiment, which once was only an utopia, could thus become a reality. Everyone should thus prove their usefulness to society in various ways to obtain financial leverage (thanks to their tokenization). </p>
       <i id="Applied"> 2.1.2. Applied to our subject </i>
       <p> This way, even if we don't believe in HVSE, and we don't believe in HVSEcoin, and we don't believe in the tokenized person, and we don't believe in IHVPTs, we cannot fail to believe in the impact that society has on us and that we are having on it! Indeed, thanks to HVSE technology, this interaction is verifiable! </p>
       <p> The main problem with this lies in anonymity. Indeed, it is necessary both to deal with the anonymity necessary for the IHVPTs holders / gamblers but to ensure the real identity of these in order to prohibit the mass actions of bots. This is why we created HVSE in order to overcome this problem while respecting the standards of consent of both the person betting and the person on whom we bet! </p>
       <p>Another major point concerning personal data, their means of collection and their use. Indeed, unlike GAFAs, we do not wish to collect data in order to create personalized advertisements, to resell them or to use them for other harmful purposes! Each data collected concerning a tokenized person (editor's note. With an IHVPT in his name) will be immediately published on the page dedicated to this IHVPT. In this way, all the community will be aware of the existence of this new data. In addition, each of the things specific to the HVSE foundation (HVSEcore, HVSEcoin blockchain, HVSE website, IHVPT blockchain ...) will be available in open-source on our Github repository. In this way, transparency will be queen in the matter.</p>
       <b id="Business"> 2.2. Business model </b>
-      <p>We use <a href="https://github.com/C-ORG/whitepaper#continuousorganizations" style={{textDecoration: "none",  color: 'var(--textLink)'}}>the Continuous Organization model</a> as the main approach.</p>
+      <p>We use <LinkTranslated href="https://github.com/C-ORG/whitepaper#continuousorganizations" style={{textDecoration: "none",  color: 'var(--textLink)'}}>the Continuous Organization model</LinkTranslated> as the main approach.</p>
       <i id="Description"> 2.2.1. Description</i>
       <p>The <i>Decentralized Autonomous Trust</i> (DAT) is a specific immutable smart-contract that implements a bonding curve contract with sponsored burning to automatically mint, burn and distribute fully digital security tokens called <i>FAIR securities</i> (FAIRs). These FAIRs represent a claim on the future cash-flows handled by the DAT.</p>
       <p>It is important to note that the DAT is not the organization; like an irrevocable Trust, it is a contract external to the organization.</p>
@@ -205,7 +205,7 @@ function WhitepaperPage(props) {
       <p> A Minimum Funding Goal was defined to offer the initialization possibility. Till it was not reached, we are on the refundable side; and then, after the Minimum Funding Goal, the curve is launched. Maybe, we will study the possibility to go backwards in the future (but it is not current).</p></div>}/>
       <b id="blockchain"> 3.2. Blokchain</b>
       <i id="model"> 3.2.1. Model</i>
-      <p> Our blokchain model for the HVSEcoin smart contract is based upon <a href="https://github.com/C-ORG/whitepaper#continuousorganizations" style={{textDecoration: "none",  color: 'var(--textLink)'}}>the Continuous Organization model</a> developed by <a href="https://www.fairmint.co/" style={{textDecoration: "none", color: 'var(--textLink)'}}>Fairmint</a>. We have used a large part of the code while changing some contract names, and we have brought somme innovations listed below.</p>
+      <p> Our blokchain model for the HVSEcoin smart contract is based upon <LinkTranslated href="https://github.com/C-ORG/whitepaper#continuousorganizations" style={{textDecoration: "none",  color: 'var(--textLink)'}}>the Continuous Organization model</LinkTranslated> developed by <LinkTranslated href="https://www.fairmint.co/" style={{textDecoration: "none", color: 'var(--textLink)'}}>Fairmint</LinkTranslated>. We have used a large part of the code while changing some contract names, and we have brought somme innovations listed below.</p>
       <i id="innovations"> 3.2.2. Innovations</i>
       <p> </p>
       <b id="mecha"> 4. IHVPT mechanism</b>
@@ -303,14 +303,14 @@ In this way, the possibility of <b>altruism</b> is community-offered by allowing
 <p> For the IHVPTs or HVSEcoin hodler, <b>getting richer</b> by betting on the good IHVPT: indeed, you can sell the IHVPTs that you hold at any time and thus speculate on their values.</p>
 <i id='sys'>4.3.3. Governance system</i>
 <p>For every IHVPT, a <b>governance token</b> veIHVPT will be emit. In other words, if you buy 1 IHVPT, you'll receive 1 veIHVPT relating to the same tokenized person. You'll receive veIHVPT comes with full voting rights within the IHVPT in addition to becoming eligible for potential airdrops too.</p>
-<p>The voting and governance system is similar to that offered by <a href="https://snapshot.org/" style={{textDecoration: "none",  color: 'var(--textLink)'}}>Snapshot</a>. Therefore, the impact of the vote is proportional to the number of veIHVPTs held. In addition, each holder of veIHVPT can submit something to vote in order to provide advice to the tokenized person in order to improve certain things and thus be able to impact its IHVPT corresponding price.</p>
+<p>The voting and governance system is similar to that offered by <LinkTranslated href="https://snapshot.org/" style={{textDecoration: "none",  color: 'var(--textLink)'}}>Snapshot</LinkTranslated>. Therefore, the impact of the vote is proportional to the number of veIHVPTs held. In addition, each holder of veIHVPT can submit something to vote in order to provide advice to the tokenized person in order to improve certain things and thus be able to impact its IHVPT corresponding price.</p>
 <i id='passive'> 4.3.4. Passive income</i>
 <p> In order to access to the correspondent veIHVPT, <b>you need to stake</b> your IHVPT. veIHVPT is automatically compounded for your benefit. Upon unstaking, you will receive your original IHVPTs plus any additional IHVPTs from the official staking pool or other revenue sources.</p>
 <p>Staking pool are constituted thanks to the IHVPTs secondary market as describe above.</p>
 <i id='retributions'> 4.3.5. Retributions</i>
 <p>Tokenized people can if they wish <b>provide NFTs or other benefits to their IHVPTs holders</b>. No obligation in this regard exists but it remains possible.</p>
 <i id='derivatives'> 4.3.6. Derivatives</i>
-<p>This utility allows <b>to bet on IHVPTs derived products</b> which can, for example, be bearish or bullish levers (as <a href="https://en.wikipedia.org/wiki/Contract_for_difference" style={{textDecoration: "none",  color: 'var(--textLink)'}}>CFDs</a>) making it possible to bet on the rise/fall in the price of the corresponding IHVPT.</p>
+<p>This utility allows <b>to bet on IHVPTs derived products</b> which can, for example, be bearish or bullish levers (as <LinkTranslated href="https://en.wikipedia.org/wiki/Contract_for_difference" style={{textDecoration: "none",  color: 'var(--textLink)'}}>CFDs</LinkTranslated>) making it possible to bet on the rise/fall in the price of the corresponding IHVPT.</p>
     </div>
     </div>
     </Layout>

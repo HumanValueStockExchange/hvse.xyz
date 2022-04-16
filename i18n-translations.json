@@ -168,12 +168,17 @@
     "about5" : "Our products make people better. ",
     "about6" : "Individuals",
     "about7" : " can buy, use, and store them securely with our digital wallet and financial services. ",
-    "about8" : "Developers",
+    "about8" : "Developers ",
     "about9" : "get support building technologies that promote financial inclusivity. Everyone who visits HVSE.xyz can learn about the future of our system from a trusted source.",
     "about10" : "JOIN US",
     "about11": "We’re currently hiring. If our foundation mission means something to you, you’re invited to join the HVSE.xyz team.",
     "foot1": "The HVSE Foundation",
-    "foot2": " | All Rights Reserved"
+    "foot2": " | All Rights Reserved",
+    "Abstract" : "ABSTRACT",
+    "Introduction" : "1.INTRODUCTION",
+    "History" : "1.1.History Lesson",
+
+
 
     },
   "fr" : {
@@ -343,7 +348,7 @@
     "about5" : "Nos produits améliorent autrui. ",
     "about6" : "Chacun",
     "about7" : " peut les acheter, les utiliser, et les stocker de manière sécurisée avec notre portefeuille numérique et les services financiers inhérents. ",
-    "about8" : "Les développeurs",
+    "about8" : "Les développeurs ",
     "about9" : " fournissent des technologies innovantes promouvant notre inclusivité financière. Chacun visitant HVSE.xyz peut apprendre et connaître le futur de notre système, et ce à partir d'une source fiable.",
     "about10" : "REJOIGNEZ-NOUS",
     "about11": "Nous recrutons actuellement. Si la mission de notre fondation vous intéresse, vous êtes invités à rejoindre l'équipe HVSE.xyz.",
@@ -517,7 +522,7 @@
     "about5" : "Nuestros productos hacen que otros sean mejores. ",
     "about6" : "Cada uno",
     "about7" : " puede comprarlos, usarlos y almacenarlos de forma segura con nuestra billetera digital y servicios financieros relacionados. ",
-    "about8" : "Desarrolladores",
+    "about8" : "Desarrolladores ",
     "about9" : " proporcionar tecnologías innovadoras que promuevan nuestra inclusión financiera. Todos los que visiten HVSE.xyz pueden aprender y conocer el futuro de nuestro sistema de una fuente confiable.",
     "about10" : "ÚNETE A NOSOTROS",
     "about11": "Actualmente estamos reclutando. Si está interesado en la misión de nuestra fundación, está invitado a unirse al equipo HVSE.xyz.",

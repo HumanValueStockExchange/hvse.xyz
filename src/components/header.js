@@ -60,7 +60,7 @@ function Header({children, ...props}) {
               <li><LinkTranslated href="/WhatIsHVSE"><FormattedMessage id="whatishvse" defaultMessage="What is HVSE?"/></LinkTranslated></li>
               <li><LinkTranslated href="/WhatIsHVSEcoin"><FormattedMessage id="whatishvsecoin" defaultMessage="What is HVSEcoin?"/></LinkTranslated></li>
               <li><LinkTranslated href="/WhatAreIHVPTs"><FormattedMessage id="whatareihvpts" defaultMessage="What are IHVPTs?"/></LinkTranslated></li>
-              <li><LinkTranslated href="/Twhitepaper"><FormattedMessage id="white-paper" defaultMessage="Whitepaper"/></LinkTranslated></li>
+              <li><LinkTranslated href="/whitepaper"><FormattedMessage id="white-paper" defaultMessage="Whitepaper"/></LinkTranslated></li>
             </ul>
           </li>
           <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="foun" defaultMessage="Foundation"/></LinkTranslated>
@@ -119,7 +119,7 @@ function Header({children, ...props}) {
               <li><LinkTranslated href="/WhatIsHVSE"><FormattedMessage id="whatishvse" defaultMessage="What is HVSE?"/></LinkTranslated></li>
               <li><LinkTranslated href="/WhatIsHVSEcoin"><FormattedMessage id="whatishvsecoin" defaultMessage="What is HVSEcoin?"/></LinkTranslated></li>
               <li><LinkTranslated href="/WhatAreIHVPTs"><FormattedMessage id="whatareihvpts" defaultMessage="What are IHVPTs?"/></LinkTranslated></li>
-              <li><LinkTranslated href="/Twhitepaper"><FormattedMessage id="white-paper" defaultMessage="Whitepaper"/></LinkTranslated></li>
+              <li><LinkTranslated href="/whitepaper"><FormattedMessage id="white-paper" defaultMessage="Whitepaper"/></LinkTranslated></li>
             </ul>
           </li>
           <li className={unfolding}><LinkTranslated href='#'><FormattedMessage id="foun" defaultMessage="HVSE Wallets"/></LinkTranslated>
