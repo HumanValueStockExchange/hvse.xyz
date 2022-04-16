@@ -164,16 +164,16 @@ function IndexPage(props) {
 			        <p data-description="04/2022"><FormattedMessage id="wp-pubsub" defaultMessage="Whitepaper final copy published, which allows to everyone to understand our philosophy as best as possible."/></p>
 			        <p data-description="07/2022">
 			        <ul>
-			        <li><FormattedMessage id= "block-depsub1" defaultMessage="HVSEcoin and IHVPT blockchains published on GitHub."/></li>
-			        <li><FormattedMessage id= "block-depsub2" defaultMessage="Deployement of HVSEcoin."/></li>
-			        <li><FormattedMessage id= "block-depsub3" defaultMessage="Deployment of the liquidity pool on Uniswap."/></li>
-			        <li><FormattedMessage id= "block-depsub4" defaultMessage="Listing on CoinGecko and on CoinMarketCap."/></li>
-			        <li><FormattedMessage id= "block-depsub5" defaultMessage="First Security Audit."/></li>
-			        <li><FormattedMessage id= "block-depsub6" defaultMessage="Website implementation in 3.0."/></li>
+			        <li><FormattedMessage id="block-depsub1" defaultMessage="HVSEcoin and IHVPT blockchains published on GitHub."/></li>
+			        <li><FormattedMessage id="block-depsub2" defaultMessage="Deployement of HVSEcoin."/></li>
+			        <li><FormattedMessage id="block-depsub3" defaultMessage="Deployment of the liquidity pool on Uniswap."/></li>
+			        <li><FormattedMessage id="block-depsub4" defaultMessage="Listing on CoinGecko and on CoinMarketCap."/></li>
+			        <li><FormattedMessage id="block-depsub5" defaultMessage="First Security Audit."/></li>
+			        <li><FormattedMessage id="block-depsub6" defaultMessage="Website implementation in 3.0."/></li>
 			        </ul>
 			        </p>
-			        <p data-description="09/2022"><FormattedMessage id= "hvsec1" defaultMessage="First release of HVSEcore, our main software: a wallet and a DEX to buy/sell HVSEcoin."/></p>
-			        <p data-description="12/2022"><FormattedMessage id= "foundsub" defaultMessage="Administrative and juridic status of our foundation accepted by authorities, in order to recruit employees and obtain official licenses. At the same time, audits will be performed."/></p>
+			        <p data-description="09/2022"><FormattedMessage id="hvsec1" defaultMessage="First release of HVSEcore, our main software: a wallet and a DEX to buy/sell HVSEcoin."/></p>
+			        <p data-description="12/2022"><FormattedMessage id="foundsub" defaultMessage="Administrative and juridic status of our foundation accepted by authorities, in order to recruit employees and obtain official licenses. At the same time, audits will be performed."/></p>
 			        <p data-description="01/2023"><FormattedMessage id= "ambsub" defaultMessage="First part of the marketing campaign: our ambassadors recruitment."/></p>
 			        <p data-description="02/2023"><FormattedMessage id= "hvsec2" defaultMessage="HVSEcore 2.0 allowing to buy/sell IHVPTs."/></p>
 		      	  <p data-description="03/2023"><FormattedMessage id= "toksub" defaultMessage="Begining of the tokenization process for everyone."/></p>
