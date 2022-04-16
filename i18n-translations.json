@@ -193,7 +193,7 @@
     "curtok5" : " 1. a solid network of applications;",
     "curtok6" : " 2. a mutation in progress from the Proof of Work consensus mechanism to the Proof of Stake consensus mechanism (thanks to ETH 2.0);",
     "curtok7" : " 3. ERC20 allows for seamless interaction)ith other smart contracts and decentralized applications on the Ethereum blockchain. Tokens that have some but not all of the standard functions are considered to be partially ERC20 compliant and can still be easy for external parties to interact with depending upon which functions are missing.",
-    "curtok8" : " We define staking as the action to bet HVSEcoin on a person."
+    "curtok8" : " We define 'staking' as the action to bet HVSEcoin on a person."
 
     },
   "fr" : {
@@ -382,13 +382,13 @@
     "hist7" : " (depuis 2017): induisant de nouvelles limites, notamment en termes de capacité, securité et gouvernance. Les nouvelles cryptomonnaies ont émergé, comme EOS.IO, Cardano (ADA), AION, ICON (ICX) et Raiden Network (RDN), pour les plus connues. EOS.IO est elle-même dérivée de l'Ethereum. Elles apportent des innovations, mais, en août 2018, aucune n'a pris le dessus sur les autres.",
     "curtok" : "1.2. Nouvelle monnaie ou nouveau token?",
     "curtok1" : "Typiquement, les crypto tokens sont programmable, sans permission, décentralisé, et transparent. Programmable signfie simplement qu'ils peuvent fonctionner sur des protocoles de logiciels, qui sont composés de contrats intelligents esquissant de nouvelles caractéristiques et fonctions pour le token et l'engagement des règles du réseau. Sans permission signifie que chacun peut participer au système sans nécessité d'avoir des crédits particuliers. Décentralisé signifie qu'aucune entité centrale contrôle le système; au lieu de cela il fonctionne selon les règles prélablement définies dans le protocole. Enfin, transparent implique que les règles du protocole et ses transactions sont visibles et vérifiables par tous.",
-    "curtok2" : " Bien que les crypto tokens, comme les cryptomonnaies, peuvent avoir une valeur et peuvent être échangés, ils peuvent aussi représenter des avoirs physiques ou plus traditionnellement des avoirs digitaux traditionnels, ou une certaine utilité ou service. Par exemple, il y a des crypto tokens qui représentent des avoirs tangibles comme de l'immobilier ou de l'art, et d'autres des avoirs intangibles comme such comme de la puissance de calcul ou de l'espace de stockage de données. Les tokens sont aussi fréquemment utilisés dans des mécanismes de gouvernance avec des paramètres spécifiques comme des améliorations de protocoles et d'autres décisions qui décideront de la direction que prendront de nombreux projets. Le processus de créer des tokens pour ces diverses utilités est connu sous le terme de tokenization.",
+    "curtok2" : " Bien que les crypto tokens, comme les cryptomonnaies, peuvent avoir une valeur et peuvent être échangés, ils peuvent aussi représenter des avoirs physiques ou plus traditionnellement des avoirs digitaux traditionnels, ou une certaine utilité ou service. Par exemple, il y a des crypto tokens qui représentent des avoirs tangibles comme de l'immobilier ou de l'art, et d'autres sont des avoirs intangibles comme such comme de la puissance de calcul ou de l'espace de stockage de données. Les tokens sont aussi fréquemment utilisés dans des mécanismes de gouvernance avec des paramètres spécifiques comme des améliorations de protocoles et d'autres décisions qui décideront de la direction que prendront de nombreux projets. Le processus de créer des tokens pour ces diverses utilités est connu sous le terme de tokenization.",
     "curtok3" : "Après une étude de marché, nous avons conclu qu'une nouvelle cryptomonnaie n'apporterait pas grand à ce projet. En effet, nos profits personnels dans cette entreprise comptent peu. Ainsi, nous avons choisi de créer un nouveau token et non une nouvelle cryptomonnaie.",
     "curtok4" : " HVSEcoin est un token ERC20 basé sur l'Ether. Ce choix a été réalisé pour diverses raisons:",
     "curtok5" : " 1. un réseau solide d'applications;",
     "curtok6" : " 2. une mutation en cours depuis le émcanisme de consensus Proof of Work vers le mécanisme de consensus Proof of Stake (grâce à l'ETH 2.0);",
     "curtok7" : " 3. ERC20 permet des interactions transparentes avec des contrats intelligents ou des applications décentralisées sur la chaîne de blocs Ethereum. Les tokens ayant quelques fonctions standards sont considérés comme partiellement ERC20 compatibles et peuvent facilement interagir avec des partis extérieurs dont ils dépendent pour les fonctions manquantes.",
-    "curtok8" : " Nous définissons le staking comme le fait de miser des HVSEcoins sur quelqu'un."
+    "curtok8" : " Nous définissons le 'staking' comme le fait de miser des HVSEcoins sur quelqu'un."
 
   },
   "es" : {
@@ -583,7 +583,7 @@
     "curtok5" : " 1. una sólida red de aplicaciones;",
     "curtok6" : " 2. una mutación en curso del mecanismo de consenso de Prueba de trabajo al mecanismo de consenso de Prueba de participación (gracias a ETH 2.0);",
     "curtok7" : " 3. ERC20 permite una interacción perfecta con otros contratos inteligentes y aplicaciones descentralizadas en la cadena de bloques de Ethereum. Los tokens que tienen algunas, pero no todas, las funciones estándar se consideran parcialmente compatibles con ERC20 y aún pueden ser fáciles de interactuar para terceros dependiendo de las funciones que faltan.",
-    "curtok8" : " Definimos apostar como la acción de apostar HVSEcoin a una persona."
+    "curtok8" : " Definimos 'apostar' como la acción de apostar HVSEcoin a una persona."
 
   }
 }
