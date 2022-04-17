@@ -16,6 +16,7 @@ module.exports = {
     'gatsby-plugin-dark-mode',
     `gatsby-plugin-anchor-links`,
     "mathjax",
+    "mathjax-full",
     {
     resolve: `gatsby-transformer-remark`,
     options: {

@@ -1,7 +1,8 @@
 // Step 1: Import React
 import React from 'react';
 import { Helmet } from "react-helmet";
-import 'gatsby-remark-mathjax';
+
+import { withPrefix, Link } from "gatsby";
 import 'gatsby-transformer-remark';
 import Layout from '../components/layout';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -19,7 +20,7 @@ function WhitepaperPage(props) {
     <Layout>
     <Helmet>
       <script src="//polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+     <script src={withPrefix("tex-chtml.js")} id="MathJax-script" async></script>
     </Helmet>
     <div class="container">
       <div class="bar"><ul class="sidebar">
