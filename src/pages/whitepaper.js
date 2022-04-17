@@ -18,98 +18,47 @@ function WhitepaperPage(props) {
     <SimpleLocalize {...props}>
     <Layout>
     <Helmet>
-      <script src="//polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      <script id="MathJax-script" async src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
+      <script id="primo" async src="//polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </Helmet>
     <div class="container">
       <div class="bar"><ul class="sidebar">
-  <li>
-      <a href="#Abstract" title="Abstract"><p style={{marginLeft:'7px'}}><FormattedMessage id='Abstract' defaultMessage='ABSTRACT'/></p></a>
-    </li>
-    <li>
-      <a href="#Introduction"><p style={{marginLeft:'7px'}}><FormattedMessage id="Introduction" defaultMessage='1.INTRODUCTION'/></p></a>
-    </li>
-    <li><a href="#History"><p style={{marginLeft:'7px'}}><FormattedMessage id='History' defaultMessage="1.1.History Lesson"/></p></a>
-    </li>
-    <li><a href="#curtok"><p style={{marginLeft:'7px'}}><FormattedMessage id="curtok" defaultMessage="1.2.Currency or token?"/></p></a>
-    </li>
-    <li><a href="#prob"><p style={{marginLeft:'7px'}}><FormattedMessage id="probb" defaultMessage="1.3.Problems"/></p></a>
-    </li>
-    <li>
-      <a href="#HVSE"><p style={{marginLeft:'7px'}}>2.HVSE</p></a>
-    </li>
-    <li>
-      <a href="#HVSEphilosophy"><p style={{marginLeft:'7px'}}><FormattedMessage id="HVSEphilosophy" defaultMessage="2.1.HVSE philosophy"/></p></a>
-    </li>
-    <li>
-      <a href="#General"><p style={{marginLeft:'7px'}}><FormattedMessage id="General" defaultMessage="2.1.1.Generalities"/></p></a>
-    </li>
-    <li>
-      <a href="#Applied"><p style={{marginLeft:'7px'}}><FormattedMessage id="Applied" defaultMessage="2.1.2.Applied"/></p></a>
-    </li>
-    <li>
-      <a href="#Business"><p style={{marginLeft:'7px'}}>2.2.Business model</p></a>
-    </li>
-    <li>
-      <a href="#Description"><p style={{marginLeft:'7px'}}>2.2.1.Description</p></a>
-    </li>
-    <li>
-      <a href="#Pros"><p style={{marginLeft:'7px'}}>2.2.2.Pros</p></a>
-    </li>
-    <li><a href="#Organization"><p style={{marginLeft:'7px'}}>2.3.HVSE organization</p></a>
-    </li>
-    <li><a href="#HVSEcoin"><p style={{marginLeft:'7px'}}>3.HVSEcoin (Ͱ)</p></a>
-    </li>
-    <li><a href="#supply"><p style={{marginLeft:'7px'}}>3.1. Ͱ supply</p></a>
-    </li>
-    <li><a href="#bonding"><p style={{marginLeft:'7px'}}>3.1.1. Bonding curve</p></a>
-    </li>
-    <li><a href="#ini"><p style={{marginLeft:'7px'}}>3.1.2. Initialization</p></a>
-    </li>
-    <li><a href="#blockchain"><p style={{marginLeft:'7px'}}>3.2. Blockchain</p></a>
-    </li>
-    <li><a href="#model"><p style={{marginLeft:'7px'}}>3.2.1. Model</p></a>
-    </li>
-    <li><a href="#innovations"><p style={{marginLeft:'7px'}}>3.2.2. Innovations</p></a>
-    </li>
-    <li>
-      <a href="#mecha"><p style={{marginLeft:'7px'}}>4.IHVPT mechanism</p></a>
-    </li>
-  <li>
-      <a href="#staking"><p style={{marginLeft:'7px'}}>4.1.Personal staking</p></a>
-    </li>
-    <li>
-      <a href="#depowith"><p style={{marginLeft:'7px'}}>4.2.Deposit/Withdrawal</p></a>
-    </li>
-    <li>
-      <a href="#governance"><p style={{marginLeft:'7px'}}>4.3.Usefulness</p></a>
-    </li>
-    <li>
-      <a href="#altruism"><p style={{marginLeft:'7px'}}>4.3.1. Altruism</p></a>
-    </li>
-    <li>
-      <a href="#richness"><p style={{marginLeft:'7px'}}>4.3.2. Enrichment</p></a>
-    </li>
-    <li>
-      <a href="#sys"><p style={{marginLeft:'7px'}}>4.3.3. Governance</p></a>
-    </li>
-    <li>
-      <a href="#passive"><p style={{marginLeft:'7px'}}>4.3.4. Passive income</p></a>
-    </li>
-    <li>
-      <a href="#retributions"><p style={{marginLeft:'7px'}}>4.3.5. Retributions</p></a>
-    </li>
-    <li>
-      <a href="#derivatives"><p style={{marginLeft:'7px'}}>4.3.6. Derivatives</p></a>
-    </li>
+  <li><a href="#Abstract" title="Abstract"><p style={{marginLeft:'7px'}}><FormattedMessage id='Abstract' defaultMessage='ABSTRACT'/></p></a></li>
+    <li><a href="#Introduction"><p style={{marginLeft:'7px'}}><FormattedMessage id="Introduction" defaultMessage='1.INTRODUCTION'/></p></a></li>
+    <li><a href="#History"><p style={{marginLeft:'7px'}}><FormattedMessage id='History' defaultMessage="1.1.History Lesson"/></p></a></li>
+    <li><a href="#curtok"><p style={{marginLeft:'7px'}}><FormattedMessage id="curtok" defaultMessage="1.2.Currency/token?"/></p></a></li>
+    <li><a href="#prob"><p style={{marginLeft:'7px'}}><FormattedMessage id="probb" defaultMessage="1.3.Problems"/></p></a></li>
+    <li><a href="#HVSE"><p style={{marginLeft:'7px'}}>2.HVSE</p></a></li>
+    <li><a href="#HVSEphilosophy"><p style={{marginLeft:'7px'}}><FormattedMessage id="HVSEphilosophy" defaultMessage="2.1.HVSE philosophy"/></p></a></li>
+    <li><a href="#General"><p style={{marginLeft:'7px'}}><FormattedMessage id="General" defaultMessage="2.1.1.Generalities"/></p></a></li>
+    <li><a href="#Applied"><p style={{marginLeft:'7px'}}><FormattedMessage id="Applied" defaultMessage="2.1.2.Applied"/></p></a></li>
+    <li><a href="#Business"><p style={{marginLeft:'7px'}}><FormattedMessage id="Business" defaultMessage="2.2.Business model"/></p></a></li>
+    <li><a href="#Description"><p style={{marginLeft:'7px'}}><FormattedMessage id="Description" defaultMessage="2.2.1.Description"/></p></a></li>
+    <li><a href="#Pros"><p style={{marginLeft:'7px'}}><FormattedMessage id="Pros" defaultMessage="2.2.2.Pros"/></p></a></li>
+    <li><a href="#Organization"><p style={{marginLeft:'7px'}}><FormattedMessage id="organization" defaultMessage="2.3.HVSE organization"/></p></a></li>
+    <li><a href="#HVSEcoin"><p style={{marginLeft:'7px'}}><FormattedMessage id="HVSEcoin" defaultMessage="3.HVSEcoin (Ͱ)"/></p></a></li>
+    <li><a href="#supply"><p style={{marginLeft:'7px'}}><FormattedMessage id="supply" defaultMessage="3.1. Ͱ supply"/></p></a></li>
+    <li><a href="#bonding"><p style={{marginLeft:'7px'}}><FormattedMessage id="bonding" defaultMessage="3.1.1. Bonding curve"/></p></a></li>
+    <li><a href="#ini"><p style={{marginLeft:'7px'}}><FormattedMessage id="ini" defaultMessage="3.1.2. Initialization"/></p></a></li>
+    <li><a href="#blockchain"><p style={{marginLeft:'7px'}}><FormattedMessage id="blockchain" defaultMessage="3.2. Blockchain"/></p></a></li>
+    <li><a href="#model"><p style={{marginLeft:'7px'}}><FormattedMessage id="model" defaultMessage="3.2.1. Model"/></p></a></li>
+    <li><a href="#innovations"><p style={{marginLeft:'7px'}}><FormattedMessage id="innovations" defaultMessage="3.2.2. Innovations"/></p></a></li>
+    <li><a href="#mecha"><p style={{marginLeft:'7px'}}><FormattedMessage id="mecha" defaultMessage="4.IHVPT mechanism"/></p></a></li>
+  <li><a href="#staking"><p style={{marginLeft:'7px'}}><FormattedMessage id="staking" defaultMessage="4.1.Personal staking"/></p></a></li>
+    <li><a href="#depowith"><p style={{marginLeft:'7px'}}><FormattedMessage id="depowith" defaultMessage="4.2.Deposit/Withdrawal"/></p></a></li>
+    <li><a href="#governance"><p style={{marginLeft:'7px'}}><FormattedMessage id="governance" defaultMessage="4.3.Usefulness"/></p></a></li>
+    <li><a href="#altruis"><p style={{marginLeft:'7px'}}><FormattedMessage id="altruis" defaultMessage="4.3.1. Altruism"/></p></a></li>
+    <li><a href="#richness"><p style={{marginLeft:'7px'}}><FormattedMessage id="richness" defaultMessage="4.3.2. Enrichment"/></p></a></li>
+    <li><a href="#sys"><p style={{marginLeft:'7px'}}><FormattedMessage id="sys" defaultMessage="4.3.3. Governance"/></p></a></li>
+    <li><a href="#passive"><p style={{marginLeft:'7px'}}><FormattedMessage id="passive" defaultMessage="4.3.4. Passive income"/></p></a></li>
+    <li><a href="#retributions"><p style={{marginLeft:'7px'}}><FormattedMessage id="retributions" defaultMessage="4.3.5. Retributions"/></p></a></li>
+    <li><a href="#derivatives"><p style={{marginLeft:'7px'}}><FormattedMessage id="derivatives" defaultMessage="4.3.6. Derivatives"/></p></a></li>
   </ul></div>
   <div class="content">
-  <p style={{color: 'var(--textNormal)', marginRight:'auto', marginLeft:'auto', fontSize:'42px', width:'300px'}}>WHITEPAPER</p>
+  <div style={{color: 'var(--textNormal)', marginRight:'auto', marginLeft:'auto', fontSize:'42px', width:'300px'}}><FormattedMessage id="white-paper" defaultMessage="WHITEPAPER"/></div>
   <b id="Abstract"><FormattedMessage id="Abstract" defaultMessage="ABSTRACT"/></b>
      <p><FormattedMessage id="Abstract1" defaultMessage="What is the difference between each of us? Our value. This criterion seems to be subjective. Therefore, none objective parameter exist yet to assess human value on an individual scale. This societal issue joins another: the social elevator disappearance. Unlike other crypto currencies, HVSEcoin will not be a goal but a means; the means to assess your added value,  the means to improve yourself. To do this, HVSEcoin is the only way to access a new market: that of human values (Human Value Stock Exchange)."/></p>
       <b id="Introduction"><FormattedMessage id="Introduction" defaultMessage="1. INTRODUCTION"/></b>
-      <p></p>
       <b id="History"><FormattedMessage id="History" defaultMessage="1.1. History Lesson"/></b>
       <p> <FormattedMessage id="hist1" defaultMessage="There are 3 generations of cryptocurrencies."/><b><FormattedMessage id="hist2" defaultMessage=" The first generation"/></b><FormattedMessage id="hist3" defaultMessage=" is represented by Bitcoin (2009). Strongly established, initiator of the media and public madness for cryptocurrencies, it suffers from regularly pointed out shortcomings, such as its slowness, its relatively small block size, in particular."/></p>
       <p> <b><FormattedMessage id="hist4" defaultMessage="The second generation"/></b><FormattedMessage id="hist5" defaultMessage=" (2011) presents either minor improvements or technological innovations allowing new functions. The archetype  is Ethereum (which is derived from the source code of Bitcoin), which makes use of smart contracts."/></p>
@@ -134,7 +83,6 @@ function WhitepaperPage(props) {
       <li><FormattedMessage id="prob9" defaultMessage="a total transparency will exist in the treatment of the data collected,"/></li>
       <li><FormattedMessage id="prob10" defaultMessage="that the value of a man is not judged by a central body but by the human society and itself."/></li></ul></p>
       <b id="HVSE"> 2. HVSE </b>
-      <p></p>
       <b id="HVSEphilosophy"><FormattedMessage id="HVSEphilosophy" defaultMessage="2.1. Philosophy"/> </b>
       <i id="General"><FormattedMessage id="General" defaultMessage="2.1.1. Generalities"/> </i>
       <p><FormattedMessage id="General1" defaultMessage="Pavlov has shown that humans could be conditioned as other animals. This reward circus previously described in a certain way constitutes the psycho-physiological basis of leitmotif concept. When the social elevator has practically disappeared and when the social class freeing hope is weak, the existence of a social lever could only be saving."/></p>
@@ -144,31 +92,31 @@ function WhitepaperPage(props) {
       <p><FormattedMessage id="Applied1" defaultMessage="This way, even if we don't believe in HVSE, and we don't believe in HVSEcoin, and we don't believe in the tokenized person, and we don't believe in IHVPTs, we cannot fail to believe in the impact that society has on us and that we are having on it! Indeed, thanks to HVSE technology, this interaction is verifiable!"/> </p>
       <p> <FormattedMessage id="Applied2" defaultMessage="The main problem with this lies in anonymity. Indeed, it is necessary both to deal with the anonymity necessary for the IHVPTs holders / gamblers but to ensure the real identity of these in order to prohibit the mass actions of bots. This is why we created HVSE in order to overcome this problem while respecting the standards of consent of both the person betting and the person on whom we bet!"/> </p>
       <p><FormattedMessage id="Applied3" defaultMessage="Another major point concerning personal data, their means of collection and their use. Indeed, unlike GAFAs, we do not wish to collect data in order to create personalized advertisements, to resell them or to use them for other harmful purposes! Each data collected concerning a tokenized person (editor's note. With an IHVPT in his name) will be immediately published on the page dedicated to this IHVPT. In this way, all the community will be aware of the existence of this new data. In addition, each of the things specific to the HVSE foundation (HVSEcore, HVSEcoin blockchain, HVSE website, IHVPT blockchain ...) will be available in open-source on our Github repository. In this way, transparency will be queen in the matter."/></p>
-      <b id="Business"> 2.2. Business model </b>
-      <p>We use <a href="https://github.com/C-ORG/whitepaper#continuousorganizations" style={{textDecoration: "none",  color: 'var(--textLink)'}}>the Continuous Organization model</a> as the main approach.</p>
-      <i id="Description"> 2.2.1. Description</i>
-      <p>The <i>Decentralized Autonomous Trust</i> (DAT) is a specific immutable smart-contract that implements a bonding curve contract with sponsored burning to automatically mint, burn and distribute fully digital security tokens called <i>FAIR securities</i> (FAIRs). These FAIRs represent a claim on the future cash-flows handled by the DAT.</p>
-      <p>It is important to note that the DAT is not the organization; like an irrevocable Trust, it is a contract external to the organization.</p>
+      <b id="Business"><FormattedMessage id="Business" defaultMessage="2.2. Business model"/> </b>
+      <p><FormattedMessage id="busi1" defaultMessage="We use "/><a href="https://github.com/C-ORG/whitepaper#continuousorganizations" style={{textDecoration: "none",  color: 'var(--textLink)'}}><FormattedMessage id="busi2" defaultMessage="the Continuous Organization model"/></a><FormattedMessage id="busi3" defaultMessage=" as the main approach."/></p>
+      <i id="Description"><FormattedMessage id="Description" defaultMessage="2.2.1. Description"/></i>
+      <p><FormattedMessage id="des1" defaultMessage="The "/><i><FormattedMessage id="des2" defaultMessage="Decentralized Autonomous Trust"/></i><FormattedMessage id="des3" defaultMessage=" (DAT) is a specific immutable smart-contract that implements a bonding curve contract with sponsored burning to automatically mint, burn and distribute fully digital security tokens called "/><i><FormattedMessage id="des4" defaultMessage="FAIR securities"/></i><FormattedMessage id="des5" defaultMessage=" (FAIRs). These FAIRs represent a claim on the future cash-flows handled by the DAT."/></p>
+      <p><FormattedMessage id="des6" defaultMessage="It is important to note that the DAT is not the organization; like an irrevocable Trust, it is a contract external to the organization."/></p>
       <SplitSection
       id="Continuous organization Description"
-      primarySlot={<ul><li><b>Buying FAIRs</b>. New FAIRs are minted by the DAT, which increases the price of FAIRs. Part of the money invested goes to the organization and part of it is held back by the DAT in its buy-back reserve.</li>
-      <li><b>Selling FAIRs</b>. The FAIRs sold are burnt by the DAT, which decreases the price of FAIRs, and the DAT refunds the investor with ETH using its buy-back reserve.</li>
-      <li>DAT receiving <b>payement</b>. A payment fraction is used by the DAT to mint new FAIRs (increase both the price of FAIRs and the buy-back reserve). Those newly minted FAIRs are distributed to the current FAIRs holders. The payment rest is transferred to the organization.</li>
-      <li>DAT receiving <b>dividend payement</b>.The amount sent is used to mint new FAIRs (increasing both the price of FAIRs and the buy-back reserve). Those newly minted FAIRs are distributed to the current FAIRs holders.</li></ul>}
+      primarySlot={<ul><li><b><FormattedMessage id="des7" defaultMessage="Buying FAIRs"/></b><FormattedMessage id="des8" defaultMessage=". New FAIRs are minted by the DAT, which increases the price of FAIRs. Part of the money invested goes to the organization and part of it is held back by the DAT in its buy-back reserve."/></li>
+      <li><b><FormattedMessage id="des9" defaultMessage="Selling FAIRs"/></b><FormattedMessage id="des10" defaultMessage=". The FAIRs sold are burnt by the DAT, which decreases the price of FAIRs, and the DAT refunds the investor with ETH using its buy-back reserve."/></li>
+      <li><b><FormattedMessage id="des11" defaultMessage="DAT receiving payement"/></b><FormattedMessage id="des12" defaultMessage=". A payment fraction is used by the DAT to mint new FAIRs (increase both the price of FAIRs and the buy-back reserve). Those newly minted FAIRs are distributed to the current FAIRs holders. The payment rest is transferred to the organization."/></li>
+      <li><b><FormattedMessage id="des13" defaultMessage="DAT receiving dividend payement"/></b><FormattedMessage id="des14" defaultMessage=".The amount sent is used to mint new FAIRs (increasing both the price of FAIRs and the buy-back reserve). Those newly minted FAIRs are distributed to the current FAIRs holders."/></li></ul>}
       secondarySlot={
       <StaticImage
         style={{maxWidth:"500px"}}
         alt="Introduction of the Continous Organization system"
         src="../images/whitepaper iconography/Introducing-Continuous0.png"
       />}/>
-      <i id="Pros"> 2.2.2. Pros</i>
-      <p>1. <b>Continuous Fundraising</b>. Continuous open primary market where tokens get minted whenever demand exceeds supply. So, it provides ongoing funding and makes the organization less fragile.</p>
-      <p>2. <b>Fully liquid</b>. An investor will always be able to buy/sell its FAIRs (not necessarily at the price he wants), even in the public market listing absence.</p>
-      <p>3. <b>Attractive to long-term investors</b>. It limits short-selling speculators and attracts long-terms investors, by definition.</p>
-      <p>4. <b>Securities</b>.  Claim on the future cash-flows handled by the DAT and should be valued as such.</p>
-      <p>5. <b>Permission-less, friction-less and supra-national</b>. Accessibility for everyone fom anywhere without permission.</p>
-      <p>6. <b>Governance agnostic</b>. No governance rights. Immutable system and no governance favoritism. So, "Bring Your Own Governance."</p>
-      <b id="Organization"> 2.3. HVSE organization</b>
+      <i id="Pros"><FormattedMessage id="Pros" defaultMessage="2.2.2. Pros"/></i>
+      <p>1. <b><FormattedMessage id="pro1" defaultMessage="Continuous Fundraising"/></b><FormattedMessage id="pro2" defaultMessage=". Continuous open primary market where tokens get minted whenever demand exceeds supply. So, it provides ongoing funding and makes the organization less fragile."/></p>
+      <p>2. <b><FormattedMessage id="pro3" defaultMessage="Fully liquid"/></b><FormattedMessage id="pro4" defaultMessage=". An investor will always be able to buy/sell its FAIRs (not necessarily at the price he wants), even in the public market listing absence."/></p>
+      <p>3. <b><FormattedMessage id="pro5" defaultMessage="Attractive to long-term investors"/></b><FormattedMessage id="pro6" defaultMessage=". It limits short-selling speculators and attracts long-terms investors, by definition."/></p>
+      <p>4. <b><FormattedMessage id="pro7" defaultMessage="Securities"/></b><FormattedMessage id="pro8" defaultMessage=".  Claim on the future cash-flows handled by the DAT and should be valued as such."/></p>
+      <p>5. <b><FormattedMessage id="pro9" defaultMessage="Permission-less, friction-less and supra-national"/></b><FormattedMessage id="pro10" defaultMessage=". Accessibility for everyone fom anywhere without permission."/></p>
+      <p>6. <b><FormattedMessage id="pro11" defaultMessage="Governance agnostic"/></b><FormattedMessage id="pro12" defaultMessage=". No governance rights. Immutable system and no governance favoritism. 'So, Bring Your Own Governance.'"/></p>
+      <b id="Organization"> <FormattedMessage id="Organization" defaultMessage="2.3. HVSE organization"/></b>
       <SplitSection
       id="HVSE organization"
       primarySlot=
@@ -178,17 +126,16 @@ function WhitepaperPage(props) {
         src="../images/whitepaper iconography/General scheme.PNG"
       />}
       secondarySlot=
-      {<div><p>We define the HSVEcoin as a gate between crypto-traders and tokenization candidate. Each crypto-traders can buy some HVSEcoin (with fiat) or trade it against other crypto-currencies. Only HVSEcoin could be used to buy or to sell tokenized user action.</p>
-      <p> We define a tokenized user as a person who has achieved the tokenization process allowing to be quoted on the Human Value Stock Market.</p>
-      <p> The problem of course is the ethic and philosophical ones: the unavailability principle of the body (and the soul). However, this argument seems fallacious and assimilates more to fear in view of different existing practices (surrogacy, euthanasia ...).</p></div>}/>
-      <b id="HVSEcoin"> 3. HVSEcoin (Ͱ) </b>
-      <p></p>
-      <b id="supply"> 3.1. Ͱ token supply</b>
+      {<div><p><FormattedMessage id="org1" defaultMessage="We define the HSVEcoin as a gate between crypto-traders and tokenization candidate. Each crypto-traders can buy some HVSEcoin (with fiat) or trade it against other crypto-currencies. Only HVSEcoin could be used to buy or to sell tokenized user action."/></p>
+      <p><FormattedMessage id="org2" defaultMessage="We define a tokenized user as a person who has achieved the tokenization process allowing to be quoted on the Human Value Stock Market."/></p>
+      <p><FormattedMessage id="org3" defaultMessage="The problem of course is the ethic and philosophical ones: the unavailability principle of the body (and the soul). However, this argument seems fallacious and assimilates more to fear in view of different existing practices (surrogacy, euthanasia ...)."/></p></div>}/>
+      <b id="HVSEcoin"><FormattedMessage id="HVSEcoin" defaultMessage="3. HVSEcoin (Ͱ)"/> </b>
+      <b id="supply"><FormattedMessage id="supply" defaultMessage=" 3.1. Ͱ token supply"/></b>
       <SplitSection
       id="Bonding Curve"
       primarySlot={<div>
-      <i id="bonding"> 3.1.1. Bonding curve</i>
-      <p> As other financial products, Ͱ will obey to the demand/supply law. Therefore, its prices will change according to this. Differences between sell and buy price allow to create a second market: futures, derived options...Bid asks prices bounded. This makes possible to maintain a market security.</p>
+      <i id="bonding"><FormattedMessage id="bonding" defaultMessage="3.1.1. Bonding curve"/></i>
+      <p><FormattedMessage id="bonding1" defaultMessage="As other financial products, Ͱ will obey to the demand/supply law. Therefore, its prices will change according to this. Differences between sell and buy price allow to create a second market: futures, derived options...Bid asks prices bounded. This makes possible to maintain a market security."/></p>
       </div>}
       secondarySlot={<StaticImage         style={{maxWidth:"500px"}}
         alt="Bonding curve explanation"
@@ -201,19 +148,19 @@ function WhitepaperPage(props) {
         src="../images/whitepaper iconography/initialization.png"
       />}
       secondarySlot={<div>
-      <i id="ini"> 3.1.2. Bonding curve initialization</i>
-      <p> A Minimum Funding Goal was defined to offer the initialization possibility. Till it was not reached, we are on the refundable side; and then, after the Minimum Funding Goal, the curve is launched. Maybe, we will study the possibility to go backwards in the future (but it is not current).</p></div>}/>
-      <b id="blockchain"> 3.2. Blokchain</b>
-      <i id="model"> 3.2.1. Model</i>
-      <p> Our blokchain model for the HVSEcoin smart contract is based upon <a href="https://github.com/C-ORG/whitepaper#continuousorganizations" style={{textDecoration: "none",  color: 'var(--textLink)'}}>the Continuous Organization model</a> developed by <a href="https://www.fairmint.co/" style={{textDecoration: "none", color: 'var(--textLink)'}}>Fairmint</a>. We have used a large part of the code while changing some contract names, and we have brought somme innovations listed below.</p>
-      <i id="innovations"> 3.2.2. Innovations</i>
-      <p> </p>
-      <b id="mecha"> 4. IHVPT mechanism</b>
+      <i id="ini"><FormattedMessage id="bonding2" defaultMessage="3.1.2. Bonding curve initialization"/></i>
+      <p> <FormattedMessage id="bonding3" defaultMessage="A Minimum Funding Goal was defined to offer the initialization possibility. Till it was not reached, we are on the refundable side; and then, after the Minimum Funding Goal, the curve is launched. Maybe, we will study the possibility to go backwards in the future (but it is not current)."/></p></div>}/>
+      <b id="blockchain"> <FormattedMessage id="blockchain" defaultMessage="3.2. Blokchain"/></b>
+      <i id="model"><FormattedMessage id="model" defaultMessage="3.2.1. Model"/></i>
+      <p> <FormattedMessage id="model1" defaultMessage="Our blokchain model for the HVSEcoin smart contract is based upon "/><a href="https://github.com/C-ORG/whitepaper#continuousorganizations" style={{textDecoration: "none",  color: 'var(--textLink)'}}><FormattedMessage id="busi2" defaultMessage="the Continuous Organization model"/></a><FormattedMessage id="model2" defaultMessage=" developed by "/><a href="https://www.fairmint.co/" style={{textDecoration: "none", color: 'var(--textLink)'}}>Fairmint</a><FormattedMessage id="model3" defaultMessage=". We have used a large part of the code while changing some contract names, and we have brought somme innovations listed below."/></p>
+      <i id="innovations"> <FormattedMessage id="innovations" defaultMessage="3.2.2. Innovations"/></i>
+      <p><FormattedMessage id="innov1" defaultMessage="The main technical innovation is the multi-bridge between ETHEREUM, DOGECOIN, BITCOIN and POLYGON blockchains."/></p>
+      <b id="mecha"><FormattedMessage id="mecha" defaultMessage=" 4. IHVPT mechanism"/></b>
       <SplitSection
       id="IHVPT mechanism introduction"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <p> Incoming Ͱ is split between: buying back reserve to guarantee liquidity of Ͱ and individual reserve available to the user for deposit or withdrawal.</p>
+          <p> <FormattedMessage id="mecha1" defaultMessage="Incoming Ͱ is split between: buying back reserve to guarantee liquidity of Ͱ and individual reserve available to the user for deposit or withdrawal."/></p>
         </div>
       }
       secondarySlot={<StaticImage         style={{maxWidth:"500px"}}
@@ -229,10 +176,10 @@ function WhitepaperPage(props) {
       />}
         secondarySlot={
         <div className="lg:pr-32 xl:pr-48">
-        <b id="staking"> 4.1. Personal staking</b>
-        <p>Users use their Ͱ to buy IHVPT ( Individual Human Value Personnal Token).</p>
+        <b id="staking"><FormattedMessage id="staking" defaultMessage="4.1. Personal staking"/></b>
+        <p><FormattedMessage id="stak1" defaultMessage="Users use their Ͱ to buy IHVPT ( Individual Human Value Personnal Token)."/></p>
         $$P_s (n)=k_s \cdot n$$
-        where \(k_s\) constant is the same accross all IHVPT and never changes during token life.
+        <FormattedMessage id="stak2" defaultMessage="where k_s constant is the same accross all IHVPT and never changes during token life."/>
         </div>
         }
       />
@@ -240,10 +187,10 @@ function WhitepaperPage(props) {
         id="HVPT individual reserve status"
         primarySlot={
         <div>
-          <p>Buy price is determined by number of issued token and individual reserve status:</p>
-          <p>If individual reserve is untouched:</p>
+          <p><FormattedMessage id="stak3" defaultMessage="Buy price is determined by number of issued token and individual reserve status:"/></p>
+          <p><FormattedMessage id="stak4" defaultMessage="If individual reserve is untouched:"/></p>
           $$P_b (n)=P_s (n)=k_s \cdot n$$
-          <p>If individual reserve is empty:</p>
+          <p><FormattedMessage id="stak5" defaultMessage="If individual reserve is empty:"/></p>
           $$P_b (n)=k_r \cdot P_s (n)=k_r \cdot k_s \cdot n$$
         </div>
         }
@@ -260,15 +207,15 @@ function WhitepaperPage(props) {
         src="../images/whitepaper iconography/buyback reserves.png"
       />}
       secondarySlot={<div>
-      <b>BETWEEN:</b>
-      <p>1. Buyback reserve</p>
+      <b><FormattedMessage id="stak6" defaultMessage="BETWEEN:"/></b>
+      <p><FormattedMessage id="stak7" defaultMessage="1. Buyback reserve"/></p>
       $$bb=\int_0^n k_r\cdot P_s(z)dz$$
       $$bb=\int_0^n k_r\cdot k_s\cdot z \cdot dz$$
       $$bb=(k_r\cdot k_s)/2  \cdot n^2$$
 </div>}
       />
 <div>
-      <p >2. Individual reserve max and \(\%\) calculus where \(0\leq k_i \leq 1-k_r \)</p>
+      <p ><FormattedMessage id="stak8" defaultMessage="2. Individual reserve max and % calculus where"/> \(0\leq k_i \leq 1-k_r \)</p>
       <StaticImage         style={{maxWidth:"500px", marginRight:'auto', marginLeft:'auto', display:'flex', textAlign: 'center'}}
         alt="IHVPT individual reserve max"
         src="../images/whitepaper iconography/HVPT individual reserve max.png"
@@ -281,7 +228,7 @@ function WhitepaperPage(props) {
       $$\forall p_i \in [0;1], p_i=(k_i)/(1-k_r)= (2 \cdot ir)/[(1-k_r)(k_s \cdot n^2)]$$
 </div>
         <div>
-        <b id="depowith">4.2. Deposit/Withdrawal</b>
+        <b id="depowith"><FormattedMessage id="depowith" defaultMessage="4.2. Deposit/Withdrawal"/></b>
         <StaticImage         style={{maxWidth:"500px", marginRight:'auto', marginLeft:'auto', display:'flex', textAlign: 'center'}}
         alt="IHVPT individual reserve max"
         src="../images/whitepaper iconography/depositwithdrawal.png"
@@ -294,23 +241,22 @@ function WhitepaperPage(props) {
         $$k(iw)=[2 \cdot(ir-w)][k_s \cdot n^2]=k_i-[2 \cdot w][k_s \cdot n^2]$$
         $$p(iw)=[(k_i-2 \cdot w)/(k_s \cdot n^2)]/(1-k_r)=p_i -[2 \cdot w]/[k_s \cdot n^2 \cdot (1-k_r)]$$
         </div>
-        <b id="governance">4.3. Usefulness</b>
-<p>Regarding the usefulness of holding this or that IHVPT, it lies in few points:altruism, enrichement, governance, passive income. </p>
-<i id='altruism'>4.3.1. Altruism</i>
-<p>After tokenization, the tokenized one will hold 51% of the IHVPTs initially issued. In this way, he will be his majority shareholder in order to avoid any ethical abuse. Then, he may, at his discretion, sell/buy them in order to increase value/capital rising.
-In this way, the possibility of <b>altruism</b> is community-offered by allowing the tokenized person to indirectly raise funds (if she sell their IHVPTs) and promote her success by highlighting her in the community eyes. </p>
-<i id='richness'>4.3.2. Enrichment</i>
-<p> For the IHVPTs or HVSEcoin hodler, <b>getting richer</b> by betting on the good IHVPT: indeed, you can sell the IHVPTs that you hold at any time and thus speculate on their values.</p>
-<i id='sys'>4.3.3. Governance system</i>
-<p>For every IHVPT, a <b>governance token</b> veIHVPT will be emit. In other words, if you buy 1 IHVPT, you'll receive 1 veIHVPT relating to the same tokenized person. You'll receive veIHVPT comes with full voting rights within the IHVPT in addition to becoming eligible for potential airdrops too.</p>
-<p>The voting and governance system is similar to that offered by <a href="https://snapshot.org/" style={{textDecoration: "none",  color: 'var(--textLink)'}}>Snapshot</a>. Therefore, the impact of the vote is proportional to the number of veIHVPTs held. In addition, each holder of veIHVPT can submit something to vote in order to provide advice to the tokenized person in order to improve certain things and thus be able to impact its IHVPT corresponding price.</p>
-<i id='passive'> 4.3.4. Passive income</i>
-<p> In order to access to the correspondent veIHVPT, <b>you need to stake</b> your IHVPT. veIHVPT is automatically compounded for your benefit. Upon unstaking, you will receive your original IHVPTs plus any additional IHVPTs from the official staking pool or other revenue sources.</p>
-<p>Staking pool are constituted thanks to the IHVPTs secondary market as describe above.</p>
-<i id='retributions'> 4.3.5. Retributions</i>
-<p>Tokenized people can if they wish <b>provide NFTs or other benefits to their IHVPTs holders</b>. No obligation in this regard exists but it remains possible.</p>
-<i id='derivatives'> 4.3.6. Derivatives</i>
-<p>This utility allows <b>to bet on IHVPTs derived products</b> which can, for example, be bearish or bullish levers (as <a href="https://en.wikipedia.org/wiki/Contract_for_difference" style={{textDecoration: "none",  color: 'var(--textLink)'}}>CFDs</a>) making it possible to bet on the rise/fall in the price of the corresponding IHVPT.</p>
+        <b id="governance"><FormattedMessage id="governance" defaultMessage="4.3. Usefulness"/></b>
+<p><FormattedMessage id="gov1" defaultMessage="Regarding the usefulness of holding this or that IHVPT, it lies in few points:altruism, enrichement, governance, passive income."/> </p>
+<i id='altruis'><FormattedMessage id="altruis" defaultMessage="4.3.1. Altruism"/></i>
+<p><FormattedMessage id="altruis1" defaultMessage="After tokenization, the tokenized one will hold 51% of the IHVPTs initially issued. In this way, he will be his majority shareholder in order to avoid any ethical abuse. Then, he may, at his discretion, sell/buy them in order to increase value/capital rising. In this way, the possibility of "/> <b><FormattedMessage id="altruism" defaultMessage="Altruism"/></b><FormattedMessage id="altruis2" defaultMessage=" is community-offered by allowing the tokenized person to indirectly raise funds (if she sell their IHVPTs) and promote her success by highlighting her in the community eyes."/></p>
+<i id='richness'><FormattedMessage id="richness" defaultMessage="4.3.2. Enrichment"/></i>
+<p> <FormattedMessage id="rich1" defaultMessage="For the IHVPTs or HVSEcoin hodler, "/><b><FormattedMessage id="rich2" defaultMessage="getting richer"/></b><FormattedMessage id="rich3" defaultMessage=" by betting on the good IHVPT: indeed, you can sell the IHVPTs that you hold at any time and thus speculate on their values."/></p>
+<i id='sys'><FormattedMessage id="sys" defaultMessage="4.3.3. Governance system"/></i>
+<p><FormattedMessage id="sys1" defaultMessage="For every IHVPT, a "/><b><FormattedMessage id="sys2" defaultMessage="governance token"/></b><FormattedMessage id="sys3" defaultMessage=" veIHVPT will be emit. In other words, if you buy 1 IHVPT, you'll receive 1 veIHVPT relating to the same tokenized person. You'll receive veIHVPT comes with full voting rights within the IHVPT in addition to becoming eligible for potential airdrops too."/></p>
+<p><FormattedMessage id="sys4" defaultMessage="The voting and governance system is similar to that offered by "/><a href="https://snapshot.org/" style={{textDecoration: "none",  color: 'var(--textLink)'}}>Snapshot</a><FormattedMessage id="sys5" defaultMessage=". Therefore, the impact of the vote is proportional to the number of veIHVPTs held. In addition, each holder of veIHVPT can submit something to vote in order to provide advice to the tokenized person in order to improve certain things and thus be able to impact its IHVPT corresponding price."/></p>
+<i id='passive'><FormattedMessage id="passive" defaultMessage="4.3.4. Passive income"/></i>
+<p><FormattedMessage id="pass1" defaultMessage="In order to access to the correspondent veIHVPT, "/><b><FormattedMessage id="pass2" defaultMessage="you need to stake"/></b><FormattedMessage id="pass3" defaultMessage=" your IHVPT. veIHVPT is automatically compounded for your benefit. Upon unstaking, you will receive your original IHVPTs plus any additional IHVPTs from the official staking pool or other revenue sources."/></p>
+<p><FormattedMessage id="pass4" defaultMessage="Staking pool are constituted thanks to the IHVPTs secondary market as describe above."/></p>
+<i id='retributions'><FormattedMessage id="retributions" defaultMessage="4.3.5. Retributions"/></i>
+<p><FormattedMessage id="retri1" defaultMessage="Tokenized people can if they wish "/><b><FormattedMessage id="retri2 " defaultMessage="provide NFTs or other benefits to their IHVPTs holders"/></b><FormattedMessage id="retri3" defaultMessage=". No obligation in this regard exists but it remains possible."/></p>
+<i id='derivatives'><FormattedMessage id="derivatives" defaultMessage="4.3.6. Derivatives"/></i>
+<p><FormattedMessage id="deriva1" defaultMessage="This utility allows "/><b><FormattedMessage id="deriva2" defaultMessage="to bet on IHVPTs derived products"/></b><FormattedMessage id="deriva3" defaultMessage=" which can, for example, be bearish or bullish levers (as "/><a href="https://en.wikipedia.org/wiki/Contract_for_difference" style={{textDecoration: "none",  color: 'var(--textLink)'}}>CFDs</a><FormattedMessage id="deriva4" defaultMessage=") making it possible to bet on the rise/fall in the price of the corresponding IHVPT."/></p>
     </div>
     </div>
     </Layout>
