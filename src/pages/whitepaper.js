@@ -10,12 +10,14 @@ import '../components/css/objects/scroller.css';
 import {FormattedMessage} from "react-intl";
 import LinkTranslated from "../components/LinkTranslated";
 import SimpleLocalize from "../components/SimpleLocalize";
+import SEO from '../components/seo';
 
 // Step 2: Define your component
 
 function WhitepaperPage(props) {
   return (
     <SimpleLocalize {...props}>
+    <SEO title="HVSE Whitepaper"/>
     <Layout>
     <Helmet>
       <script src="//polyfill.io/v3/polyfill.min.js?features=es6"></script>

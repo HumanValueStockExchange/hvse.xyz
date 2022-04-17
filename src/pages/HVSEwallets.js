@@ -1,14 +1,16 @@
-import * as React from "react"
-import Layout from '../components/layout'
+import * as React from "react";
+import Layout from '../components/layout';
 import Card from '../components/Card';
 import {FormattedMessage} from "react-intl";
 import LinkTranslated from "../components/LinkTranslated";
 import SimpleLocalize from "../components/SimpleLocalize";
+import SEO from "../components/seo";
 
 // Step 2: Define your component
 function HVSEwallets(props) {
   return (
     <SimpleLocalize {...props}>
+    <SEO title="HVSEcore"/>
     <Layout>
     <div style={{fontWeight:'100', fontSize: '1.25rem', lineHeight: '2rem', textAlign:'center', alignItems:'center', contentAlign:'middle', whiteSpace:'nowrap'}}><FormattedMessage id="hvse-wallets" defaultMessage="HVSE Wallets"/></div>
     <Card

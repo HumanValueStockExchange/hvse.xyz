@@ -14,6 +14,7 @@ import Stock from '../images/theme/Stock.js';
 import {FormattedMessage} from "react-intl";
 import LinkTranslated from "../components/LinkTranslated";
 import SimpleLocalize from "../components/SimpleLocalize";
+import SEO from "../components/seo";
 
 // Step 2: Define your component
 
@@ -22,6 +23,7 @@ import SimpleLocalize from "../components/SimpleLocalize";
 function IndexPage(props) {
   return (
     <SimpleLocalize {...props}>
+    <SEO title=""/>
     <Layout>
     <MainBlock
     id="Get started"

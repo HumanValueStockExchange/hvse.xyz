@@ -1,15 +1,16 @@
 // Step 1: Import React
-import * as React from 'react'
-import Layout from '../components/layout'
-
+import * as React from 'react';
+import Layout from '../components/layout';
 import {FormattedMessage} from "react-intl";
 import LinkTranslated from "../components/LinkTranslated";
 import SimpleLocalize from "../components/SimpleLocalize";
+import SEO from "../components/seo";
 
 // Step 2: Define your component
 function AboutPage(props){
   return (
     <SimpleLocalize {...props}>
+    <SEO title="HVSE Foundation"/>
       <Layout pageTitle="About us">
         <div style={{paddingBottom:'10px', paddingLeft:'10px', marginLeft:'10px'}}><b><FormattedMessage id="making-you-better" defaultMessage="IMPROVING HELP"/></b></div>
         <div style={{paddingBottom:'10px', paddingLeft:'10px', marginLeft:'10px'}}><FormattedMessage id="about1" defaultMessage="What is the difference between each of us? Our value. This criterion seems to be subjective. Therefore, none objective parameter exists yet to assess human value on an individual scale.The ability to find keys to success  is a vital component of human dignity and a fundamental human right. That’s why we stand for improve yourself without limits."/></div>

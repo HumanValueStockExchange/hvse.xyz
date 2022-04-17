@@ -8,11 +8,13 @@ import { StaticImage } from 'gatsby-plugin-image';
 import {FormattedMessage} from "react-intl";
 import LinkTranslated from "../components/LinkTranslated";
 import SimpleLocalize from "../components/SimpleLocalize";
+import SEO from "../components/seo";
 
 // Step 2: Define your component
 function WhatAreIHVPTs(props) {
   return (
     <SimpleLocalize {...props}>
+    <SEO title="IHVPTs"/>
     <Layout style={{minHeight:'100%'}}>
     <MainBlock
       primarySlot={

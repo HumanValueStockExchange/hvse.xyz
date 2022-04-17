@@ -5,11 +5,13 @@ import '../css/WhatIsHVSE.css';
 import {FormattedMessage} from "react-intl";
 import LinkTranslated from "../components/LinkTranslated";
 import SimpleLocalize from "../components/SimpleLocalize";
+import SEO from "../components/seo";
 
 // Step 2: Define your component
 function WhatIsHVSE(props) {
   return (
     <SimpleLocalize {...props}>
+    <SEO title="HVSE"/>
     <Layout>
     <div class="container">
       <StaticImage class="img"

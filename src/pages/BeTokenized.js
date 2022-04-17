@@ -6,11 +6,13 @@ import { StaticImage } from 'gatsby-plugin-image';
 import {FormattedMessage} from "react-intl";
 import LinkTranslated from "../components/LinkTranslated";
 import SimpleLocalize from "../components/SimpleLocalize";
+import SEO from "../components/seo";
 
 // Step 2: Define your component
 function BeTokenized(props) {
   return (
     <SimpleLocalize {...props}>
+    <SEO title="Tokenization"/>
     <Layout>
     <div class="container">
     <div class="mainbox" style={{outline:'none', borderColor: 'inherit',  boxShadow: 'none', textAlign:'center', backgroundColor:'var(--bg)'}}><div style={{fontWeight:'100', fontSize: '1.25rem', lineHeight: '2rem', whiteSpace:'nowrap', textAlign:'center'}}><FormattedMessage id="betok" defaultMessage="Be Tokenized"/></div></div>

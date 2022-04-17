@@ -5,11 +5,13 @@ import SplitSection from '../components/SplitSection';
 import {FormattedMessage} from "react-intl";
 import LinkTranslated from "../components/LinkTranslated";
 import SimpleLocalize from "../components/SimpleLocalize";
+import SEO from "../components/seo";
 
 // Step 2: Define your component
 function FAQPage(props) {
   return (
     <SimpleLocalize {...props}>
+    <SEO title="F.A.Q."/>
     <Layout pageTitle="FAQ">
     <div><FormattedMessage id="faq1" defaultMessage="Here we answer the most common questions about the HVSE project. If by any chance you have others, please let us know."/></div>
     <SplitSection
