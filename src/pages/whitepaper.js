@@ -1,8 +1,7 @@
 // Step 1: Import React
 import React from 'react';
 import { Helmet } from "react-helmet";
-
-import { withPrefix, Link } from "gatsby";
+import 'gatsby-remark-mathjax';
 import 'gatsby-transformer-remark';
 import Layout from '../components/layout';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -20,7 +19,7 @@ function WhitepaperPage(props) {
     <Layout>
     <Helmet>
       <script src="//polyfill.io/v3/polyfill.min.js?features=es6"></script>
-     <script src={withPrefix("tex-chtml.js")} id="MathJax-script" async></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </Helmet>
     <div class="container">
       <div class="bar"><ul class="sidebar">
@@ -179,7 +178,7 @@ function WhitepaperPage(props) {
         <div className="lg:pr-32 xl:pr-48">
         <b id="staking"><FormattedMessage id="staking" defaultMessage="4.1. Personal staking"/></b>
         <p><FormattedMessage id="stak1" defaultMessage="Users use their Ͱ to buy IHVPT ( Individual Human Value Personnal Token)."/></p>
-        $$P_s (n)=k_s \cdot n$$
+        <tr><td nowrap align="center">P<sub>s</sub> (n)=k<sub>s</sub> &#183; n</td></tr>
         <FormattedMessage id="stak2" defaultMessage="where k_s constant is the same accross all IHVPT and never changes during token life."/>
         </div>
         }
@@ -190,10 +189,10 @@ function WhitepaperPage(props) {
         <div>
           <p><FormattedMessage id="stak3" defaultMessage="Buy price is determined by number of issued token and individual reserve status:"/></p>
           <p><FormattedMessage id="stak4" defaultMessage="If individual reserve is untouched:"/></p>
-          $$P_b (n)=P_s (n)=k_s \cdot n$$
+          <tr><td nowrap align="center">P<sub>b</sub> (n)=P<sub>s</sub> (n)=k<sub>s</sub> &#183; n</td></tr>
           <p><FormattedMessage id="stak5" defaultMessage="If individual reserve is empty:"/></p>
-          $$P_b (n)=k_r \cdot P_s (n)=k_r \cdot k_s \cdot n$$
-        </div>
+          <tr><td nowrap align="center">P<sub>b</sub> (n)=k<sub>r</sub> &#183; P<sub>s</sub> (n)=k<sub>r</sub> &#183; k<sub>s</sub> &#183; n</td></tr>
+          </div>
         }
         secondarySlot={<StaticImage         style={{maxWidth:"500px"}}
         alt="IHVT individual reserve status"
@@ -210,37 +209,39 @@ function WhitepaperPage(props) {
       secondarySlot={<div>
       <b><FormattedMessage id="stak6" defaultMessage="BETWEEN:"/></b>
       <p><FormattedMessage id="stak7" defaultMessage="1. Buyback reserve"/></p>
-      $$bb=\int_0^n k_r\cdot P_s(z)dz$$
-      $$bb=\int_0^n k_r\cdot k_s\cdot z \cdot dz$$
-      $$bb=(k_r\cdot k_s)/2  \cdot n^2$$
+      <table border="0" align="center">
+      <tr><td nowrap align="center">bb=</td><td align="left" class="cl"><font face="symbol">ó<br/>õ</font></td><td nowrap align="center"><sub>0</sub><sup>n</sup> k<sub>r</sub>&#183; P<sub>s</sub>(z)dz</td></tr>
+      <tr><td nowrap align="center">bb=</td><td align="left" class="cl"><font face="symbol">ó<br/>õ</font></td><td nowrap align="center"><sub>0</sub><sup>n</sup> k<sub>r</sub>&#183; k<sub>s</sub>&#183; z &#183; dz</td></tr>
+      <tr><td nowrap align="center">bb=(k<sub>r</sub>&#183; k<sub>s</sub>)/2  &#183; n<sup>2</sup></td></tr></table>
 </div>}
       />
 <div>
-      <p ><FormattedMessage id="stak8" defaultMessage="2. Individual reserve max and % calculus where"/> \(0\leq k_i \leq 1-k_r \)</p>
+      <p ><FormattedMessage id="stak8" defaultMessage="2. Individual reserve max and % calculus where"/> 0 <font face="symbol">£</font>  k<sub>i</sub>  <font face="symbol">£</font>  1<font face="symbol">-</font>k<sub>r</sub></p>
       <StaticImage         style={{maxWidth:"500px", marginRight:'auto', marginLeft:'auto', display:'flex', textAlign: 'center'}}
         alt="IHVPT individual reserve max"
         src="../images/whitepaper iconography/HVPT individual reserve max.png"
       />
-      <div></div>
-      $$ir =\int_0^n k_i \cdot P_s(z)\cdot dz =\int_0^n k_i\cdot k_s \cdot z \cdot dz = (k_i \cdot k_s)/2 \cdot n^2$$
-      $$ir(min)=0$$
-      $$ir(max)=((1-k_r \cdot k_s)/2 \cdot n^2$$
-      $$k_i=(2\cdot ir)/(k_s\cdot n^2)$$
-      $$\forall p_i \in [0;1], p_i=(k_i)/(1-k_r)= (2 \cdot ir)/[(1-k_r)(k_s \cdot n^2)]$$
-</div>
+      <table border="0" align="center">
+      <tr><td nowrap align="center">ir =</td><td align="left" class="cl"><font face="symbol">ó<br/>õ</font></td><td nowrap align="center"><sub>0</sub><sup>n</sup> k<sub>i</sub> &#183; P<sub>s</sub>(z)&#183; dz =</td><td align="left" class="cl"><font face="symbol">ó<br/>õ</font></td><td nowrap align="center"><sub>0</sub><sup>n</sup> k<sub>i</sub>&#183; k<sub>s</sub> &#183; z &#183; dz = (k<sub>i</sub> &#183; k<sub>s</sub>)/2 &#183; n<sup>2</sup></td></tr>
+      <tr><td nowrap align="center">ir(min)=0</td></tr>
+      <tr><td nowrap align="center">ir(max)=((1<font face="symbol">-</font>k<sub>r</sub> &#183; k<sub>s</sub>)/2 &#183; n<sup>2</sup></td></tr>
+      <tr><td nowrap align="center">k<sub>i</sub>=(2&#183; ir)/(k<sub>s</sub>&#183; n<sup>2</sup>)</td></tr>
+      <tr><td nowrap align="center"><font face="symbol">"</font> p<sub>i</sub>  <font face="symbol">Î</font>  [0;1], p<sub>i</sub>=(k<sub>i</sub>)/(1<font face="symbol">-</font>k<sub>r</sub>)= (2 &#183; ir)/[(1<font face="symbol">-</font>k<sub>r</sub>)(k<sub>s</sub> &#183; n<sup>2</sup>)]</td></tr>
+</table></div>
         <div>
         <b id="depowith"><FormattedMessage id="depowith" defaultMessage="4.2. Deposit/Withdrawal"/></b>
         <StaticImage         style={{maxWidth:"500px", marginRight:'auto', marginLeft:'auto', display:'flex', textAlign: 'center'}}
         alt="IHVPT individual reserve max"
         src="../images/whitepaper iconography/depositwithdrawal.png"
       />
-        $$w(max)=ir$$
-        $$d(max)=ir(max)-ir=[(1-k_r)\cdot k_s]/2 \cdot n^2-ir$$
-        $$ir_d=ir+d$$
-        $$ir_w=ir-w$$
-        $$k(id)=[2 \cdot(ir+d)]/(k_s \cdot n^2)=k_i+(2 \cdot d)/(k_s \cdot n^2)$$
-        $$k(iw)=[2 \cdot(ir-w)][k_s \cdot n^2]=k_i-[2 \cdot w][k_s \cdot n^2]$$
-        $$p(iw)=[(k_i-2 \cdot w)/(k_s \cdot n^2)]/(1-k_r)=p_i -[2 \cdot w]/[k_s \cdot n^2 \cdot (1-k_r)]$$
+      <table  border="0" align="center">
+        <tr><td nowrap align="center">w(max)=ir</td></tr>
+        <tr><td nowrap align="center">d(max)=ir(max)<font face="symbol">-</font>ir=[(1<font face="symbol">-</font>k<sub>r</sub>)&#183; k<sub>s</sub>]/2 &#183; n<sup>2</sup><font face="symbol">-</font>ir</td></tr>
+        <tr><td nowrap align="center">ir<sub>d</sub>=ir+d</td></tr>
+        <tr><td nowrap align="center">ir<sub>w</sub>=ir<font face="symbol">-</font>w</td></tr>
+        <tr><td nowrap align="center">k(id)=[2 &#183;(ir+d)]/(k<sub>s</sub> &#183; n<sup>2</sup>)=k<sub>i</sub>+(2 &#183; d)/(k<sub>s</sub> &#183; n<sup>2</sup>)</td></tr>
+        <tr><td nowrap align="center">k(iw)=[2 &#183;(ir<font face="symbol">-</font>w)][k<sub>s</sub> &#183; n<sup>2</sup>]=k<sub>i</sub><font face="symbol">-</font>[2 &#183; w][k<sub>s</sub> &#183; n<sup>2</sup>]</td></tr>
+        <tr><td nowrap align="center">p(iw)=[(k<sub>i</sub><font face="symbol">-</font>2 &#183; w)/(k<sub>s</sub> &#183; n<sup>2</sup>)]/(1<font face="symbol">-</font>k<sub>r</sub>)=p<sub>i</sub> <font face="symbol">-</font>[2 &#183; w]/[k<sub>s</sub> &#183; n<sup>2</sup> &#183; (1<font face="symbol">-</font>k<sub>r</sub>)]</td></tr></table>
         </div>
         <b id="governance"><FormattedMessage id="governance" defaultMessage="4.3. Usefulness"/></b>
 <p><FormattedMessage id="gov1" defaultMessage="Regarding the usefulness of holding this or that IHVPT, it lies in few points:altruism, enrichement, governance, passive income."/> </p>
