@@ -179,7 +179,7 @@ function WhitepaperPage(props) {
         <b id="staking"><FormattedMessage id="staking" defaultMessage="4.1. Personal staking"/></b>
         <p><FormattedMessage id="stak1" defaultMessage="Users use their Ͱ to buy IHVPT ( Individual Human Value Personnal Token)."/></p>
         $$P_s (n)=k_s \cdot n$$
-        <FormattedMessage id="stak2" defaultMessage="where \(k_s\) constant is the same accross all IHVPT and never changes during token life."/>
+        <FormattedMessage id="stak2" defaultMessage="where k_s constant is the same accross all IHVPT and never changes during token life."/>
         </div>
         }
       />
@@ -215,7 +215,7 @@ function WhitepaperPage(props) {
 </div>}
       />
 <div>
-      <p ><FormattedMessage id="stak8" defaultMessage="2. Individual reserve max and \(\%\) calculus where"/> \(0\leq k_i \leq 1-k_r \)</p>
+      <p ><FormattedMessage id="stak8" defaultMessage="2. Individual reserve max and % calculus where"/> \(0\leq k_i \leq 1-k_r \)</p>
       <StaticImage         style={{maxWidth:"500px", marginRight:'auto', marginLeft:'auto', display:'flex', textAlign: 'center'}}
         alt="IHVPT individual reserve max"
         src="../images/whitepaper iconography/HVPT individual reserve max.png"
