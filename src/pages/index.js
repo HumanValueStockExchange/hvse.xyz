@@ -109,7 +109,7 @@ function IndexPage(props) {
         <h1><FormattedMessage id="hvse-prog" defaultMessage="HVSE progression"/></h1>
       <div class="flex-parent">
         <div class="input-flex-container">
-		      <input type="radio" name="timeline-dot" data-description="11/2021" checked/>
+		      <input type="radio" name="timeline-dot" data-description="11/2021"/>
 		      <div class="dot-info" data-description="11/2021">
 			      <span class="year">11/2021</span>
 			      <span class="label"><FormattedMessage id="website" defaultMessage="Website"/></span>

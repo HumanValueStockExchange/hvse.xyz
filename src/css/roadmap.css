@@ -143,7 +143,7 @@ input[data-description="11/2021"]:checked ~ #timeline-descriptions-wrapper p[dat
   display: block;
 }
 
-input[data-description="02/2022"]:checked ~ #timeline-descriptions-wrapper p[data-description="02/2022"] {
+input[data-description="04/2022"]:checked ~ #timeline-descriptions-wrapper p[data-description="04/2022"] {
   display: block;
 }
 
