@@ -15,6 +15,15 @@ module.exports = {
     'react-intl',
     'gatsby-plugin-dark-mode',
     `gatsby-plugin-anchor-links`,
+    "mathjax",
+    {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-mathjax`,
+      ],
+    },
+  },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
