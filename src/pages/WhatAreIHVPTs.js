@@ -19,7 +19,7 @@ function WhatAreIHVPTs(props) {
     <MainBlock
       primarySlot={
         <div  class="mainbox" style={{backgroundColor:'var(--bg)', maxWidth:'100%', minHeight:'100%'}}>
-        <div style={{fontWeight:'100', fontSize:'1.25rem', lineHeight:'1rem', textAlign:'center', textTransform:'uppercase', marginTop:'5px', marginBottom:'5px'}}><FormattedMessage id="whatareihvpts" defaultMessage="What are IHVPTs?"/></div>
+        <div style={{fontWeight:'100', fontSize:'1.25rem', lineHeight:'1rem', textAlign:'center', textTransform:'uppercase', marginTop:'5px', marginBottom:'5px', paddingBottom:'5px', paddingTop:'5px'}}><FormattedMessage id="whatareihvpts" defaultMessage="What are IHVPTs?"/></div>
         <ul style={{fontSize: '0.75rem', lineHeight: '1.5rem',}}>
           <li><FormattedMessage id="whatareihvpts1" defaultMessage="One person, one token. Your value, your token."/></li>
           <li><FormattedMessage id="whatareihvpts2" defaultMessage="IHVPTs are Individual Human Value Personalized Tokens."/></li>
